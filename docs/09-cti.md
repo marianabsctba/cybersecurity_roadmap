@@ -210,3 +210,157 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 - CTI serve à decisão, não ao ego
 
 ---
+
+# 📘 Cyber Threat Intelligence (CTI) – Livros Essenciais
+
+Lista curada de livros **fundamentais para profissionais de CTI**, cobrindo desde **análise estratégica**, **inteligência tática e operacional**, até **malware analysis e engenharia reversa**, pilares para CTI de verdade.
+
+---
+
+## 🧠 Fundamentos de Cyber Threat Intelligence
+
+### Intelligence-Driven Incident Response  
+**Autor:** Scott J. Roberts, Rebekah Brown  
+**Foco:** CTI aplicada à resposta a incidentes  
+**Conteúdo-chave:**
+- Integração entre CTI e IR
+- Ciclo de inteligência aplicado a SOC
+- Uso de indicadores, TTPs e contexto
+- Transição de IOC-driven para intelligence-driven
+
+---
+
+### The Threat Intelligence Handbook  
+**Organização:** Recorded Future  
+**Foco:** Visão ampla de CTI  
+**Conteúdo-chave:**
+- Estratégia, operações e tática
+- Consumo de CTI por executivos, SOC e Red Team
+- Modelos de maturidade
+- Casos reais de uso
+
+---
+
+### Practical Threat Intelligence and Data-Driven Threat Hunting  
+**Autor:** Valentina Costa-Giomi  
+**Foco:** CTI operacional e hunting  
+**Conteúdo-chave:**
+- Construção de pipelines de CTI
+- Enriquecimento de dados
+- Threat hunting orientado por inteligência
+- Uso de dados internos + externos
+
+---
+
+## 🧭 CTI Estratégico & Analítico
+
+### Cyber Warfare – Truth, Tactics, and Strategies  
+**Autor:** Chase Cunningham (Dr. Zero Trust)  
+**Foco:** CTI estratégico e geopolítico  
+**Conteúdo-chave:**
+- Atores estatais
+- Guerra cibernética
+- Estratégia, dissuasão e impacto
+- CTI para tomada de decisão executiva
+
+---
+
+### Structured Analytic Techniques for Intelligence Analysis  
+**Autores:** Richards J. Heuer Jr., Randolph H. Pherson  
+**Foco:** Metodologia analítica  
+**Conteúdo-chave:**
+- Redução de vieses cognitivos
+- Análise estruturada
+- ACH (Analysis of Competing Hypotheses)
+- Pensamento crítico aplicado à inteligência
+
+---
+
+## 🧬 Malware, Engenharia Reversa & CTI Técnico
+
+### Practical Malware Analysis  
+**Autores:** Michael Sikorski, Andrew Honig  
+**Foco:** Malware analysis aplicada  
+**Conteúdo-chave:**
+- Análise estática e dinâmica
+- Debugging e unpacking
+- Compreensão de payloads e comportamento
+- Base técnica para CTI técnico
+
+---
+
+### Malware Analysis and Detection Engineering  
+**Autor:** Abhijit Mohanta  
+**Foco:** Detecção e engenharia defensiva  
+**Conteúdo-chave:**
+- Malware moderno
+- Como transformar análise em detecção
+- YARA, regras e lógica comportamental
+- Ponte entre CTI e Blue Team
+
+---
+
+### Learning Malware Analysis  
+**Autor:** Monnappa K A  
+**Foco:** Malware moderno e TTPs  
+**Conteúdo-chave:**
+- Windows internals
+- Técnicas de evasão
+- Análise comportamental
+- Correlação com MITRE ATT&CK
+
+---
+
+### Blue Fox: Arm Assembly Internals and Reverse Engineering  
+**Autora:** Maria Markstedter  
+**Foco:** Engenharia reversa de baixo nível  
+**Conteúdo-chave:**
+- ARM assembly
+- Arquitetura interna
+- Reverse engineering profundo
+- Base sólida para CTI técnico avançado (IoT, mobile, malware moderno)
+
+---
+
+## 🕵️ OSINT, Atribuição & Mentalidade Investigativa
+
+### Open Source Intelligence Techniques  
+**Autor:** Michael Bazzell  
+**Foco:** OSINT profissional  
+**Conteúdo-chave:**
+- Coleta estruturada
+- Análise de personas digitais
+- Correlação de dados
+- OSINT aplicado a investigações e CTI
+
+---
+
+### The Art of Intelligence  
+**Autor:** Henry A. Crumpton  
+**Foco:** Mentalidade de inteligência  
+**Conteúdo-chave:**
+- Operações reais de inteligência
+- Tomada de decisão sob incerteza
+- Ética e análise estratégica
+- Pensamento de longo prazo
+
+---
+
+## 🎯 Observação Final
+
+CTI **não é feed de IOC**.
+
+Esses livros ajudam a construir:
+- Pensamento analítico
+- Capacidade de correlação
+- Compreensão profunda do adversário
+- CTI estratégico, operacional e técnico de verdade
+
+São leituras comuns para profissionais que atuam com:
+- SOC orientado por CTI
+- Threat Hunting
+- Malware Research
+- Digital Risk & APT Tracking
+
+---
+
