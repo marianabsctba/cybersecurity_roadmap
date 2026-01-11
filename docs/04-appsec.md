@@ -19,6 +19,55 @@ AppSec existe para **evitar que vulnerabilidades cheguem à produção** — e, 
 
 ---
 
+## 🧩 Fabricantes & Plataformas (AppSec no mercado)
+
+> AppSec “no mundo real” costuma ser um **stack** (não um produto único).  
+> Abaixo estão **fabricantes e plataformas amplamente usados**, por domínio.
+
+### 🧬 SAST (Static Application Security Testing)
+- **Snyk Code** — SAST integrado ao fluxo de dev
+- **Checkmarx** — SAST enterprise
+- **Veracode** — SAST + políticas/gestão
+- **SonarSource (SonarQube/SonarCloud)** — qualidade + security rules (muito usado em SDLC)
+
+### 🌐 DAST (Dynamic Application Security Testing)
+- **Invicti (Netsparker)** — DAST web comercial
+- **Acunetix** — DAST web comercial
+- **Rapid7 InsightAppSec** — DAST + integração com pipeline
+- **Burp Suite Professional (PortSwigger)** — padrão de mercado para testes manuais (apoia DAST “humano”)
+
+### 🧬 IAST (Interactive Application Security Testing) — *Comerciais (exemplos reais)*
+- **Contrast Security (IAST/RASP)** — instrumentação da aplicação + detecção em execução
+- **Veracode IAST** — instrumentação e testes durante execução
+- **Synopsys Seeker (IAST)** — IAST para apps em execução (linha Seeker)
+> IAST costuma entrar quando você quer **achar falhas em runtime** com contexto de código e requisição.
+
+### 📦 SCA (Software Composition Analysis) / Dependências
+- **Snyk Open Source** — SCA + priorização
+- **Mend (WhiteSource)** — SCA enterprise
+- **JFrog Xray** — SCA na cadeia de artefatos
+- **Sonatype Nexus Lifecycle** — SCA + governança de dependências
+
+### 🔑 Secrets & Exposure (segredos e vazamentos)
+- **GitGuardian** — detecção de secrets e vazamentos em repos
+- **Truffle Security (TruffleHog)** — detecção de secrets (muito usado em pipelines)
+
+### ☁️ IaC Security (Terraform/K8s manifests/policy)
+- **Snyk IaC** — IaC scanning
+- **Palo Alto Prisma Cloud** — IaC + CNAPP (stack cloud)
+- **Wiz** — posture/exposure (stack cloud)
+- **Checkmarx / Bridgecrew (Checkov)** — muito usado em IaC scanning (via Checkov)
+
+### 🔗 WAAP / API Security (proteção e governança de API)
+- **Cequence Security** — **API Security** e proteção contra abuso/bots (forte em APIs)
+- **Akamai** — WAAP / edge security (dependendo do pacote/arquitetura)
+- **Cloudflare** — WAAP e controles para APIs (quando aplicável)
+- **F5** — WAF/WAAP e proteção de apps/APIs
+> 📌 **API Security nasce em AppSec** (design/autorização/contratos).  
+> WAAP/API Gateway/WAF ajudam na **camada de proteção/observabilidade** em produção.
+
+---
+
 ## 🧠 Habilidades Técnicas Essenciais
 
 ### 🛡️ Secure SDLC (Base de Tudo)
@@ -119,6 +168,10 @@ Instrumentação da aplicação durante execução.
 
 - Predominantemente comercial
 - Uso comum: integração com APM + testes
+- Exemplos comerciais (IAST):
+  - Contrast Security – https://www.contrastsecurity.com/
+  - Veracode IAST – https://www.veracode.com/
+  - Synopsys Seeker – https://www.synopsys.com/software-integrity/security-testing/interactive-application-security-testing.html
 
 ---
 
@@ -250,130 +303,62 @@ Esta lista apresenta **livros reconhecidos e amplamente recomendados** para cons
 
 ---
 
-## 🧱 Fundamentos de Segurança de Aplicações
+## 🧱 Fundamentos e Web/AppSec “raiz”
 
-### 🔐 The Web Application Hacker’s Handbook  
+### The Web Application Hacker’s Handbook  
 **Autores:** Dafydd Stuttard & Marcus Pinto  
-👉 O clássico absoluto para entender como aplicações web são atacadas e como se defender.  
-Cobre:
-- Ataques e defesas em aplicações web
-- Exploração de lógica e falhas reais
-- Técnicas de reconhecimento, fuzzing, injeções, autenticação, sessões e muito mais.
+Clássico para entender ataques web e defesa prática (auth, sessão, injeções, lógica, etc.).
+
+### The Tangled Web  
+**Autor:** Michal Zalewski  
+Fundamentos de segurança web moderna (browsers, same-origin, sessões, etc.).
 
 ---
 
-### 🧠 Secure Coding in C and C++  
-**Autor:** Robert C. Seacord  
-👉 Focado em boas práticas de codificação segura em linguagens de baixo nível.  
-Cobre:
-- Prevenção de vulnerabilidades comuns
-- Exploração de memória e mitigação
-- Técnicas de design defensivo
+## 🧠 Threat Modeling (Design seguro)
 
----
-
-## 🔍 Arquitetura e Princípios de AppSec
-
-### 📘 Security Engineering: A Guide to Building Dependable Distributed Systems  
-**Autor:** Ross Anderson  
-👉 Mais do que AppSec — um guia completo sobre segurança de sistemas distribuídos.  
-Cobre:
-- Princípios de segurança
-- Análise de risco
-- Controle de acesso
-- Segurança de protocolos e redes
-
----
-
-### 🛡️ Threat Modeling: Designing for Security  
+### Threat Modeling: Designing for Security  
 **Autor:** Adam Shostack  
-👉 O livro de referência para **modelagem de ameaças** em aplicações.  
-Cobre:
-- STRIDE, PASTA e outras metodologias
-- Integração de threat modeling em SDLC
-- Casos reais e abordagem prática
+O livro referência para incorporar threat modeling no SDLC.
 
 ---
 
-## 🧪 Testes e Análise
+## 🔍 Code Review / Avaliação de software
 
-### 🛠️ The Art of Software Security Assessment  
+### The Art of Software Security Assessment  
 **Autores:** Mark Dowd, John McDonald & Justin Schuh  
-👉 Um clássico profundo em análise de software.  
-Cobre:
-- Vulnerabilidades em baixo nível
-- Análise estática e dinâmica
-- Técnicas de fuzzing e revisão de código
+Profundo e técnico para análise de código e identificação de falhas reais.
+
+### Secure Coding in C and C++  
+**Autor:** Robert C. Seacord  
+Clássico para vulnerabilidades e boas práticas em baixo nível.
 
 ---
 
-### 🧠 Gray Hat Python – Python Programming for Hackers and Reverse Engineers  
-**Autor:** Justin Seitz  
-👉 Embora com foco em segurança ofensiva, é útil para AppSec com scripts e automação de análise.
+## 🔗 APIs, Auth e Identidade
 
----
-
-## 🧪 Prático & Ferramentas
-
-### 🛡️ Web Application Security, A Beginner’s Guide  
-**Autores:** Bryan Sullivan & Vincent Liu  
-👉 Ótimo para quem está **começando** com AppSec de forma prática.  
-Cobre:
-- Conceitos de segurança web
-- Testes práticos
-- Exemplos de ataques reais
-
----
-
-### 📘 Real-World Bug Hunting  
-**Autor:** Peter Yaworski  
-👉 Casos reais de bugs encontrados em programas de recompensa (bug bounties).  
-Cobre:
-- Exploits em aplicações reais
-- Como pensar como atacante
-- Estratégias de hunting e validação
-
----
-
-## 📚 Especial APIs & Modern Security
-
-### 📗 API Security in Action  
+### API Security in Action  
 **Autor:** Neil Madden  
-👉 Focado em **segurança de APIs** (REST, JWT, OAuth, etc.).  
-Cobre:
-- Proteção de endpoints
-- Autenticação e autorização
-- Ferramentas e padrões modernos
+Excelente para segurança real de APIs (authn/authz, tokens, JWT, práticas modernas).
 
----
-
-### 📘 OAuth 2 in Action  
+### OAuth 2 in Action  
 **Autores:** Justin Richer & Antonio Sanso  
-👉 Guia prático de um dos protocolos mais usados no mundo moderno.  
-Cobre:
-- OAuth 2 fluxos
-- Segurança de APIs e tokens
-- Melhores práticas de design
+Guia prático e sólido sobre OAuth2 e padrões usados no mundo real.
 
 ---
 
-## 🎯 Dicas de Uso
+## 🏗️ Engenharia de segurança aplicada (base “senior”)
 
-- 📌 **Comece pelos essenciais** (Web Application Hacker’s Handbook e Threat Modeling)  
-- 📌 **Combine teoria + prática** (leitura + laboratórios)  
-- 📌 **Use livros de APIs** para aplicações modernas (REST/GraphQL)  
-- 📌 **Automação e ferramentas** fazem diferença em ambientes reais
-
----
-
-## ⚠️ Observação
-
-Esses livros:
-- não são superficiais;
-- exigem tempo e dedicação;
-- constroem **mentalidade defensiva profunda**.  
-
-Mas formam uma base que separa profissionais **que entendem segurança de verdade** daqueles que decoram checklists.
+### Security Engineering: A Guide to Building Dependable Distributed Systems  
+**Autor:** Ross Anderson  
+Livro gigante e fundamental para pensamento de segurança em sistemas distribuídos.
 
 ---
 
+## 🧪 Bug bounty / mundo real (complementar)
+
+### Real-World Bug Hunting  
+**Autor:** Peter Yaworski  
+Casos reais que ajudam a treinar o olhar para falhas que passam em checklist.
+
+---
