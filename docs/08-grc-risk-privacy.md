@@ -1,73 +1,102 @@
 # 🧩 GRC, Risco & Privacidade
 
-Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em **gestão de riscos corporativos, conformidade regulatória, auditoria de controles e proteção de dados pessoais**.
+Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em **gestão de riscos corporativos, conformidade regulatória, auditoria de controles, proteção de dados pessoais e tomada de decisão executiva baseada em evidências**.
 
 > GRC **não é burocracia**.  
-> É o que conecta **segurança técnica, negócio, jurídico e decisão executiva**.
+> GRC é o que traduz **problemas técnicos em risco de negócio**, conecta **segurança, jurídico e compliance** e sustenta **decisão executiva consciente**.
 
 ---
 
 ## 👥 Carreiras
 
 - **GRC Analyst**  
-  Executa avaliações de risco, controles, evidências, políticas e suporte a auditorias.
+  Executa avaliações de risco, controles, evidências, políticas, inventários e suporte a auditorias.
 
 - **Risk Manager**  
-  Define metodologias de risco, prioriza tratamentos e conecta risco técnico ao risco de negócio.
+  Define metodologia de risco, prioriza tratamentos, mede impacto e conecta risco técnico ao risco estratégico.
 
 - **Compliance Officer**  
-  Garante aderência a normas, leis e regulamentos (ISO, LGPD, contratos, setor regulado).
+  Garante aderência a normas, leis e contratos (ISO, LGPD, setor regulado, cláusulas de segurança).
 
 - **CISO Office / Security Governance**  
-  Atua na governança estratégica, métricas, relatórios executivos e alinhamento com o board.
+  Atua em **governança estratégica**, indicadores, relatórios executivos, apetite a risco e comunicação com o board.
 
 ---
 
-## 🧠 Habilidades Técnicas Essenciais
+## 🧠 Domínios de Conhecimento Essenciais
 
-### 📘 Normas e Frameworks
-- **ISO/IEC 27001** – Sistema de Gestão de Segurança da Informação (SGSI)
-- **ISO/IEC 27002** – Controles de segurança
-- **ISO/IEC 27701** – Privacidade (PIMS)
-- **NIST Cybersecurity Framework (CSF)**
-- **NIST SP 800-53 / 800-30** (controles e risco)
-- **CIS Controls v8**
+### 📘 Governança de Segurança da Informação
+
+Governança define **quem decide, com base em quê e com qual responsabilidade**.
+
+- Estrutura de governança (comitês, papéis, RACI)
+- Políticas, normas e diretrizes
+- Alinhamento com estratégia de negócio
+- Indicadores (KPIs e KRIs)
+- Accountability e prestação de contas
+
+📌 Sem governança, segurança vira esforço isolado.
 
 ---
 
-### ⚠️ Gestão de Riscos
-- Identificação de ativos, ameaças e vulnerabilidades
+### ⚠️ Gestão de Riscos Corporativos (ERM + Cyber)
+
+Risco **não é vulnerabilidade** — é **impacto no negócio**.
+
+- Identificação de ativos, processos e dependências
+- Ameaças, vulnerabilidades e cenários
 - Avaliação qualitativa e quantitativa
-- Análise de impacto no negócio
-- Tratamento de riscos (aceitar, mitigar, transferir, evitar)
-- KRIs e métricas de risco
+- Impacto financeiro, operacional, legal e reputacional
+- Tratamento de riscos:
+  - Mitigar
+  - Aceitar
+  - Transferir
+  - Evitar
+- Registro e acompanhamento contínuo
+
+📌 Risco bom é **rastreável, mensurável e priorizável**.
 
 ---
 
-### 🔍 Auditoria & Compliance
+### 🔍 Compliance & Auditoria
+
+Compliance **não é checklist**, é **prova contínua**.
+
 - Auditorias internas e externas
-- Evidências e rastreabilidade
+- Evidências técnicas e processuais
 - Gap analysis
 - Planos de ação (POA&M)
 - Auditoria baseada em risco
+- Continuous compliance
+
+📌 Se não tem evidência, **não existe compliance**.
 
 ---
 
 ### 🔐 Privacidade & Proteção de Dados
+
+Privacidade é **requisito legal, reputacional e técnico**.
+
 - LGPD / GDPR
 - Privacy by Design & Default
 - DPIA / RIPD
-- Inventário de dados pessoais
-- Gestão de consentimento
+- Inventário e mapeamento de dados pessoais
+- Bases legais e consentimento
+- Retenção e descarte
 - Resposta a incidentes de privacidade
+
+📌 Incidente de privacidade **não é só técnico**, é jurídico.
 
 ---
 
-## 🧱 Frameworks e Referências Oficiais
+## 🧱 Frameworks e Normas de Referência
 
-### Governança e Risco
-- **ISO/IEC 27001 Overview**  
+### Governança & Risco
+- **ISO/IEC 27001** – SGSI  
   https://www.iso.org/isoiec-27001-information-security.html
+
+- **ISO/IEC 27002** – Controles  
+  https://www.iso.org/standard/75652.html
 
 - **NIST Cybersecurity Framework (CSF)**  
   https://www.nist.gov/cyberframework
@@ -81,10 +110,10 @@ Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em 
 ---
 
 ### Privacidade
-- **ISO/IEC 27701 (Privacy Extension)**  
+- **ISO/IEC 27701 – PIMS**  
   https://www.iso.org/standard/71670.html
 
-- **ANPD – LGPD Guias Oficiais (Brasil)**  
+- **ANPD – Guias LGPD (Brasil)**  
   https://www.gov.br/anpd/pt-br/documentos-e-publicacoes
 
 - **EDPB – GDPR Guidelines**  
@@ -92,43 +121,97 @@ Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em 
 
 ---
 
-## 🧪 Labs e Exercícios Práticos (GRC & Privacidade)
+## 🧪 Exercícios Práticos (GRC de Verdade)
 
 > GRC **se aprende aplicando framework em ambiente real**, não só lendo norma.
 
-### Labs / Exercícios
-- **OWASP SAMM – Assessment Prático**  
+- OWASP SAMM – Assessment  
   https://owasp.org/www-project-samm/
 
-- **NIST CSF Profile Builder (Hands-on)**  
+- NIST CSF Profile Builder  
   https://www.nist.gov/cyberframework/profile-builder
 
-- **ISO 27001 Risk Assessment (Templates Práticos)**  
+- ISO 27001 Risk Assessment Templates  
   https://advisera.com/iso27001academy/free-downloads/
 
-- **Privacy Impact Assessment (DPIA) Templates**  
+- DPIA / RIPD Templates  
   https://gdpr.eu/data-protection-impact-assessment-template/
+
+---
+
+## 🏭 Fabricantes & Plataformas de GRC (Exemplos de Mercado)
+
+> Ferramentas **não substituem metodologia**,  
+> mas **operacionalizam governança, risco e evidência em escala**.
+
+---
+
+### 🧩 GRC, Risco & Compliance
+
+- **RiskOne (e-Safer)**  
+  Plataforma de GRC focada em:
+  - Gestão de riscos
+  - Controles e evidências
+  - Conformidade (ISO, LGPD, regulatórios)
+  - Auditoria e rastreabilidade  
+  > Forte aderência a ambientes regulados e requisitos de licitação.
+
+- **ServiceNow GRC**
+- **RSA Archer**
+- **MetricStream**
+- **IBM OpenPages**
+- **LogicGate**
+- **OneTrust (GRC & Privacy)**
+
+---
+
+### 🔐 Privacidade & Data Protection
+
+- **OneTrust**
+- **TrustArc**
+- **BigID**
+- **DataGrail**
+- **PrivacyEngine**
+
+---
+
+### 📊 Auditoria & Evidências
+
+- **AuditBoard**
+- **Drata**
+- **Vanta**
+- **Secureframe**
+
+---
+
+### 🧠 Risk Quantification
+
+- **RiskLens (FAIR)**
+- **SAFE Security**
+- **Panaseer**
 
 ---
 
 ## 🧰 Ferramentas Open Source Importantes
 
 ### GRC / Risco
-- **OpenGRC** – https://github.com/opengrc/opengrc
-- **SimpleRisk (Community)** – https://www.simplerisk.com/
-- **Eramba (Community Edition)** – https://www.eramba.org/
+- **SimpleRisk (Community)**  
+  https://www.simplerisk.com/
 
----
+- **Eramba (Community Edition)**  
+  https://www.eramba.org/
 
-### Privacidade
-- **OpenPIMS** – https://github.com/opengovfoundation/openpims
-- **Privacy Tools (Inventário & DPIA)** – https://github.com/topics/privacy
+- **OpenGRC**  
+  https://github.com/opengrc/opengrc
 
 ---
 
 ### Auditoria & Evidências
-- **Dradis Community** – https://dradisframework.com/
-- **Markdown / Git** – versionamento de políticas e evidências
+- **Dradis Community**  
+  https://dradisframework.com/
+
+- **Git / Markdown**  
+  Versionamento de políticas, riscos e evidências
 
 ---
 
@@ -138,52 +221,39 @@ Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em 
 - **ISACA – Training & Resources**  
   https://www.isaca.org/training-and-events
 
-- **NIST Cybersecurity Framework Training**  
+- **NIST CSF – Getting Started**  
   https://www.nist.gov/cyberframework/getting-started
 
 ---
 
 ### Privacidade
-- **IAPP – Privacy Training (LGPD / GDPR)**  
+- **IAPP – LGPD / GDPR Training**  
   https://iapp.org/train/
 
-- **ENISA – Privacy & Data Protection**  
+- **ENISA – Data Protection**  
   https://www.enisa.europa.eu/topics/data-protection
 
 ---
 
-## 🏅 Certificações (Validação de Conhecimento)
+## 🏅 Certificações
 
 ### GRC / Governança / Risco
-- **CISA – Certified Information Systems Auditor**  
-  https://www.isaca.org/credentialing/cisa
-
-- **CISM – Certified Information Security Manager**  
-  https://www.isaca.org/credentialing/cism
-
-- **CRISC – Certified in Risk and Information Systems Control**  
-  https://www.isaca.org/credentialing/crisc
-
-- **CCISO – Certified Chief Information Security Officer (EC-Council)**  
-  https://www.eccouncil.org/train-certify/certified-chief-information-security-officer-cciso/
+- **CISA – ISACA**  
+- **CISM – ISACA**  
+- **CRISC – ISACA**  
+- **CCISO – EC-Council**
 
 ---
 
 ### Privacidade
-- **CDPSE – Certified Data Privacy Solutions Engineer (ISACA)**  
-  https://www.isaca.org/credentialing/cdpse
-
-- **ISO/IEC 27701 Lead Implementer / Auditor**  
-  https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27701
+- **CDPSE – ISACA**
+- **ISO/IEC 27701 Lead Implementer / Auditor**
 
 ---
 
-### Segurança Geral (Complementar)
-- **CISSP – ISC2**  
-  https://www.isc2.org/certifications/cissp
-
-- **ISO/IEC 27001 Lead Implementer / Auditor**  
-  https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001
+### Complementares
+- **CISSP – ISC2**
+- **ISO/IEC 27001 Lead Implementer / Auditor**
 
 ---
 
@@ -192,17 +262,18 @@ Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em 
 - **Cloud Security** – risco e compliance em nuvem
 - **AppSec / DevSecOps** – controles no SDLC
 - **IAM & Zero Trust** – identidade como controle-chave
-- **SOC / DFIR** – métricas de risco e impacto
-- **Executivo / Board** – tomada de decisão baseada em risco
+- **SOC / DFIR** – métricas, impacto e evidências
+- **Executivo / Board** – decisão baseada em risco
 
 ---
 
 ## 📌 Princípios-Chave de GRC & Privacidade
 
 - Risco sem contexto não decide
-- Compliance sem controle não protege
-- Evidência vale mais que opinião
-- Privacidade é requisito legal e reputacional
-- GRC conecta técnica ao negócio
+- Compliance sem evidência não protege
+- Ferramenta não substitui método
+- Privacidade é obrigação legal e estratégica
+- GRC traduz técnica em decisão
 
----
+> GRC é onde **segurança vira governança**  
+> e **governança vira decisão**.
