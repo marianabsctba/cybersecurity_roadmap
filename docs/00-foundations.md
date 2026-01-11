@@ -1,260 +1,228 @@
 # 🧱 Fundamentos de Cibersegurança
+> **Base obrigatória para qualquer trilha do roadmap**
 
-Base obrigatória para **qualquer trilha**.
+Esta seção estabelece o **alicerce técnico comum** a todas as áreas da cibersegurança.  
+Sem estes fundamentos, não existe SOC eficiente, Red Team consistente, CTI de qualidade ou GRC técnico.
 
 ---
 
-## 🌐 Redes
+## 🌐 Redes (Fundamentos Essenciais)
 
-### Modelos e Arquitetura de Rede
-- Modelo **OSI** (camadas, funções e troubleshooting)
-- Modelo **TCP/IP**
-- Arquitetura cliente-servidor
-- Arquitetura peer-to-peer
-- Tipos de rede: **LAN, WAN, MAN, WLAN**
+> Redes são o **sistema circulatório da cibersegurança**.  
+> Entender tráfego, protocolos e segmentação é entender **onde ataques nascem, se movem e são detectados**.
 
-### Endereçamento IP
-- **IPv4 e IPv6**
-- Endereçamento estático vs dinâmico
-- **CIDR e subnetting**
-- Gateway padrão
-- **ARP** e **Neighbor Discovery (IPv6)**
+---
 
-### Protocolos Fundamentais
-- **TCP vs UDP** (confiabilidade, latência, uso)
-- **DNS** (registros A, AAAA, CNAME, MX, TXT)
-- **HTTP / HTTPS**
-- **TLS/SSL** (handshake, certificados, cadeia de confiança)
-- **ICMP** (diagnóstico e troubleshooting)
-- **DHCP** (processo DORA)
-- **NTP** (sincronização de tempo para logs)
+### 🗺️ Modelos e Arquitetura de Rede
 
-### Switching e Segmentação
-- Switching Ethernet
-- **VLANs**
-- Trunking (802.1Q)
-- Conceito de **STP**
-- Unicast, multicast e broadcast
-- Segmentação de rede como controle de segurança
+| Conceito | O que você precisa saber |
+|--------|--------------------------|
+| **Modelo OSI** | Camadas, funções e troubleshooting por camada |
+| **Modelo TCP/IP** | Pilha prática usada na Internet |
+| **Cliente-servidor** | Serviços centralizados, autenticação, logs |
+| **Peer-to-peer** | Comunicação direta, riscos e limitações |
+| **Tipos de rede** | LAN, WAN, MAN, WLAN |
 
-### Wireless (WLAN)
-- Padrões 802.11 (a/b/g/n/ac/ax)
+---
+
+### 🧩 Modelo OSI – Visão Operacional
+
+| Camada | Função | Exemplos práticos |
+|------|------|------------------|
+| 7 – Aplicação | Interface com o usuário | HTTP, DNS, SMTP |
+| 6 – Apresentação | Formato e criptografia | TLS, SSL |
+| 5 – Sessão | Controle de sessão | Sessões autenticadas |
+| 4 – Transporte | Confiabilidade | TCP, UDP |
+| 3 – Rede | Roteamento | IP, ICMP |
+| 2 – Enlace | Endereçamento físico | Ethernet, ARP |
+| 1 – Física | Meio físico | Cabo, sinal, Wi-Fi |
+
+> 💡 **Dica prática:**  
+> Saber **mapear um problema para a camada correta** acelera troubleshooting e investigação de incidentes.
+
+---
+
+### 📍 Endereçamento IP
+
+- IPv4 e IPv6  
+- Endereçamento **estático vs dinâmico**  
+- CIDR e subnetting  
+- Gateway padrão  
+- ARP (IPv4) e Neighbor Discovery (IPv6)
+
+---
+
+### 🔌 Protocolos Fundamentais
+
+| Protocolo | Papel |
+|---------|------|
+| TCP | Confiabilidade e controle |
+| UDP | Baixa latência |
+| DNS | Resolução de nomes (A, AAAA, CNAME, MX, TXT) |
+| HTTP / HTTPS | Comunicação de aplicações |
+| TLS/SSL | Criptografia, handshake e certificados |
+| ICMP | Diagnóstico e troubleshooting |
+| DHCP | Atribuição automática de IP (DORA) |
+| NTP | Sincronização de tempo (logs e correlação) |
+
+---
+
+### 🔀 Switching e Segmentação
+
+- Switching Ethernet  
+- VLANs  
+- Trunking (802.1Q)  
+- STP (conceito)  
+- Unicast, multicast e broadcast  
+- Segmentação como **controle de segurança**
+
+---
+
+### 📶 Wireless (WLAN)
+
+- Padrões 802.11 (a/b/g/n/ac/ax)  
 - Autenticação e criptografia:
-  - WPA2
-  - WPA3
+  - WPA2  
+  - WPA3  
 - Principais riscos em redes sem fio
 
-### Segurança de Rede (Fundamentos)
-- Firewalls (stateless vs stateful – conceito)
-- **NAT / PAT**
-- **VPNs**:
-  - Site-to-site
-  - Remote access
-- **IDS vs IPS** (conceito)
-- Segmentação de rede e redução de superfície de ataque
+---
 
-### Troubleshooting de Rede
-- Ferramentas:
-  - `ping`
-  - `traceroute / tracert`
-  - `nslookup / dig`
-  - `netstat`
-  - `ip a / ifconfig`
-- Análise de caminhos de rede
-- Correlação entre falhas de rede e incidentes de segurança
+### 🔐 Segurança de Rede (Fundamentos)
+
+| Conceito | Visão essencial |
+|--------|----------------|
+| Firewalls | Stateless vs Stateful |
+| NAT / PAT | Tradução de endereços |
+| VPN | Site-to-site e Remote Access |
+| IDS vs IPS | Detecção vs prevenção |
+| Segmentação | Redução de superfície de ataque |
 
 ---
 
-## 🐧 Linux (Fundamentos Operacionais)
-- Processos e gerenciamento (`ps`, `top`, `htop`)
-- Permissões e ownership
-- Filesystem
-- Logs (`/var/log`)
-- Serviços (`systemd`)
-- Comandos básicos de rede (`ip`, `ss`, `tcpdump` – nível introdutório)
+### 🛠️ Troubleshooting de Rede
+
+**Ferramentas essenciais:**
+- `ping`
+- `traceroute / tracert`
+- `nslookup / dig`
+- `netstat`
+- `ip a / ifconfig`
+
+**Habilidades-chave:**
+- Análise de caminhos de rede  
+- Correlação entre falhas de rede e incidentes de segurança  
 
 ---
 
-## 🪟 Windows (Fundamentos Operacionais)
-- Serviços do Windows
-- Event Viewer (Security, System, Application)
-- Registry (estrutura e impacto)
-- Usuários, grupos e permissões
-- Conceitos básicos de Active Directory
+## 🐧 Linux – Fundamentos Operacionais
+
+- Processos (`ps`, `top`, `htop`)  
+- Permissões e ownership  
+- Filesystem  
+- Logs (`/var/log`)  
+- Serviços (`systemd`)  
+- Comandos de rede (`ip`, `ss`, `tcpdump` – nível introdutório)
+
+---
+
+## 🪟 Windows – Fundamentos Operacionais
+
+- Serviços do Windows  
+- Event Viewer (Security, System, Application)  
+- Registry (estrutura e impacto)  
+- Usuários, grupos e permissões  
+- Conceitos básicos de Active Directory  
 
 ---
 
 ## 📊 Logs e Observabilidade
-- Tipos de logs:
-  - Sistema
-  - Aplicação
-  - Segurança
-  - Rede
-- Timestamp, timezone e sincronização
-- Correlação de eventos
-- Conceito introdutório de SIEM
+
+| Aspecto | Importância |
+|------|------------|
+| Tipos de logs | Sistema, Aplicação, Segurança, Rede |
+| Timestamp | Base da investigação |
+| Timezone | Evita erro de correlação |
+| Correlação | Entender o ataque como fluxo |
+| SIEM (intro) | Centralização e análise |
 
 ---
 
 ## 🧠 MITRE ATT&CK
-- O que é o MITRE ATT&CK
-- Táticas, Técnicas e Subtécnicas
-- Uso ofensivo vs defensivo
-- ATT&CK como linguagem comum entre times
+
+- O que é o MITRE ATT&CK  
+- Táticas, Técnicas e Subtécnicas  
+- Uso ofensivo vs defensivo  
+- ATT&CK como **linguagem comum entre times**
 
 ---
 
 ## ⚙️ Automação (Fundamentos)
-- **Bash** – automação operacional em ambientes Linux
-- **PowerShell** – automação e resposta a incidentes em Windows
-- **Python** – scripts, parsing de logs, integrações simples
+
+| Linguagem | Uso principal |
+|--------|--------------|
+| Bash | Automação operacional em Linux |
+| PowerShell | Automação e IR em Windows |
+| Python | Scripts, parsing de logs, integrações |
 
 ---
 
 ## 🧠 Conceitos Fundamentais de Segurança
-- **CIA** – Confidencialidade, Integridade, Disponibilidade
-- **AAA** – Authentication, Authorization, Accounting
-- **Zero Trust**
-- **Least Privilege**
-- **Defense in Depth**
-- Separação de funções (SoD)
-- Redução de superfície de ataque
+
+- CIA (Confidencialidade, Integridade, Disponibilidade)  
+- AAA (Authentication, Authorization, Accounting)  
+- Zero Trust  
+- Least Privilege  
+- Defense in Depth  
+- Separação de funções (SoD)  
+- Redução de superfície de ataque  
 
 ---
 
-## 🎓 Cursos e Certificações – Fundamentos (Links Oficiais)
+## 🎓 Cursos e Certificações – Fundamentos
 
-Esta seção separa **cursos (formação e aprendizado)** de **certificações (validação de conhecimento)**, conforme boas práticas de roadmap profissional.
+> Esta seção separa **formação** de **validação de conhecimento**, conforme boas práticas de roadmap profissional.
 
----
+### 📘 Cursos (Formação)
 
-## 📘 Cursos (Formação)
+**Redes**  
+Cisco Networking Essentials – Cisco NetAcad  
+https://www.netacad.com/courses/networking/networking-essentials  
 
-### Redes
-- **Cisco Networking Essentials – Cisco NetAcad**  
-  https://www.netacad.com/courses/networking/networking-essentials  
-  > Curso introdutório de redes: modelos, endereçamento IP, switching básico e troubleshooting.
+**Linux**  
+NDG Linux Essentials – Cisco NetAcad  
+https://www.netacad.com/courses/os-it/ndg-linux-essentials  
 
-### Linux
-- **NDG Linux Essentials – Cisco NetAcad (alinhado ao LPI)**  
-  https://www.netacad.com/courses/os-it/ndg-linux-essentials  
-  > Curso oficial de Linux oferecido pela Cisco Networking Academy, cobrindo fundamentos de sistema operacional, linha de comando, processos, permissões e uso do Linux.  
-  > **Preparatório direto para a certificação LPI Linux Essentials (LPIC)**.
+**Inglês Técnico para TI**  
+English for IT 1  
+https://www.netacad.com/courses/english-for-it/english-for-it-1  
 
-
-### Idiomas (Inglês Técnico para TI)
-- **English for IT 1 – Cisco Networking Academy**  
-  https://www.netacad.com/courses/english-for-it/english-for-it-1  
-  > Inglês técnico aplicado à TI: vocabulário essencial, leitura de documentação, comunicação básica em ambientes técnicos.
-
-- **English for IT 2 – Cisco Networking Academy**  
-  https://www.netacad.com/courses/english-for-it/english-for-it-2  
-  > Inglês técnico intermediário: leitura avançada de documentação, comunicação profissional, reuniões técnicas e troubleshooting.
+English for IT 2  
+https://www.netacad.com/courses/english-for-it/english-for-it-2  
 
 ---
 
-## 🏅 Certificações (Validação de Conhecimento)
+## 📡 Canais de Cibersegurança – Redes & Segurança de Infraestrutura
 
-### Base / Entry Level
-- **ISC2 – Certified in Cybersecurity (CC)**  
-  https://www.isc2.org/certifications/cc  
-  > Validação de conhecimentos fundamentais em segurança da informação, risco e governança.
+### 🧱 Fundação Técnica
+- Professor Messer  
+  https://www.youtube.com/@professormesser
 
-- **CompTIA ITF+ (IT Fundamentals+)**  
-  https://www.comptia.org/certifications/it-fundamentals  
-  > Fundamentos de TI: hardware, software, redes e noções iniciais de segurança.
+- David Bombal  
+  https://www.youtube.com/@DavidBombal
 
-- **CompTIA A+**  
-  https://www.comptia.org/certifications/a  
-  > Validação de conhecimentos em sistemas operacionais, hardware e troubleshooting.
+### 🔐 Segurança de Redes
+- NetworkChuck  
+  https://www.youtube.com/@NetworkChuck
 
-- **LPI – Linux Essentials**  
-  https://www.lpi.org/our-certifications/linux-essentials-overview  
-  > Validação de fundamentos de Linux, linha de comando, processos e permissões.
+### 🧪 Tráfego e Pacotes
+- Chris Greer  
+  https://www.youtube.com/@ChrisGreer
 
-- **CompTIA Security+**  
-  https://www.comptia.org/certifications/security  
-  > Validação de fundamentos de segurança: ameaças, vulnerabilidades, criptografia, identidade e risco.
+### 🧠 Visão Profissional
+- Black Hills Information Security  
+  https://www.youtube.com/@BlackHillsInformationSecurity
 
-- **Cisco CCNA – Cisco Certified Network Associate**  
-  https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html  
-  > Validação prática de conhecimentos em redes, routing, switching, wireless e segurança básica.
-
-- **CompTIA Network+**  
-  https://www.comptia.org/certifications/network  
-  > Validação vendor neutral de fundamentos de redes, protocolos e operações.
-
----
-*** Essas certificações não necessariamente precisam ser feitas. Estudar o conteúdo delas pode ajudar e ser enriquecedor.
-
-
-# 📡 Canais de Cibersegurança – Redes, CCNA & Network Security
-
-Curadoria de **canais técnicos e confiáveis** para aprender **redes de computadores**, **CCNA**, **análise de tráfego** e **segurança de redes**, do nível iniciante ao avançado.
-
----
-
-## 🧱 Redes & CCNA (Fundação Técnica)
-
-### Professor Messer
-- CCNA, Network+, Security+
-- Explicações diretas e objetivas
-- Forte em fundamentos de protocolos
-
-YouTube: https://www.youtube.com/@professormesser
-
----
-
-### David Bombal
-- CCNA, CCNP, automação
-- Packet Tracer, GNS3, Wireshark
-- Muito focado em **laboratórios práticos**
-
-YouTube: https://www.youtube.com/@DavidBombal
-
----
-
-## 🔐 Segurança de Redes (Ataque & Defesa)
-
-
-### NetworkChuck
-- Redes + segurança + labs
-- Wireshark, VPN, Linux, Zero Trust
-- Conteúdo acessível e prático
-
-YouTube: https://www.youtube.com/@NetworkChuck
-
----
-
-## 🧪 Análise de Tráfego & Pacotes
-
-### Chris Greer
-- Análise de tráfego em nível avançado
-- Casos reais de troubleshooting
-- Forma analistas de SOC de verdade
-
-YouTube: https://www.youtube.com/@ChrisGreer
-
----
-
-## 🧠 Redes + Cibersegurança Profissional
-
-### Black Hills Information Security (BHIS)
-- Ataques e detecção em rede
-- Conteúdo Blue Team e Red Team
-- Alto nível técnico
-
-YouTube: https://www.youtube.com/@BlackHillsInformationSecurity
-
----
-
-
-## 🇧🇷 Conteúdo em Português
-
-### Bóson Treinamentos
-- Redes, CCNA, Linux
-- Muito bom para fundamentos
-
-YouTube: https://www.youtube.com/@bosontreinamentos
-
----
+### 🇧🇷 Conteúdo em Português
+- Bóson Treinamentos  
+  https://www.youtube.com/@bosontreinamentos
