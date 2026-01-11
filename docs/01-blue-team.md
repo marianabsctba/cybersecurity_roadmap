@@ -526,3 +526,225 @@ O objetivo **não é prescrever stack**, mas ajudar a entender:
 > Primeiro entenda **o fluxo operacional do SOC**.  
 > Depois escolha **as ferramentas que sustentam esse fluxo**.
 
+---
+
+# 📚 Livros Essenciais para Blue Team, SOC & Incident Response (IR/DFIR)
+
+Estes livros são amplamente reconhecidos por profissionais e times de segurança defensiva, SOC, detecção e resposta a incidentes — cobrindo desde fundamentos técnicos até práticas de investigação e análise forense.
+
+---
+
+## 🧱 Fundamentos (Base Obrigatória)
+
+### The Practice of Network Security Monitoring  
+**Autor:** Richard Bejtlich  
+📌 Livro clássico que define o mindset e as práticas de **monitoramento contínuo de rede**.
+
+**Por que é essencial**
+- Conceitos de Network Security Monitoring (NSM)
+- Arquitetura de sensores / coletores
+- Análise de tráfego e detecção baseada em evidências
+- Casos reais e estrutura operacional
+
+> Leitura recomendada para **quem quer pensar como um analista de SOC**.
+
+---
+
+### Applied Network Security Monitoring
+**Autor:** Chris Sanders & Jason Smith  
+📌 Guia prático para implementação de NSM com exemplos reais.
+
+**Cobre**
+- Arquitetura de NSM
+- Ferramentas (Zeek, Suricata, Wireshark)
+- Técnicas de captura e análise de pacotes
+- Casos práticos de detecção e investigação
+
+> Excelente para **quem quer praticar análise de rede com ferramentas reais**.
+
+---
+
+## 🧠 Log, Detecção & SIEM
+
+### Logging and Log Management  
+**Autor:** Anton Chuvakin, Kevin Schmidt, Chris Phillips  
+📌 Referência para entender logs, sua ingestão e uso em detecção.
+
+**Cobre**
+- Tipos de logs
+- Normalização e retenção
+- Correlação e priorização
+- Preparação para SIEM e análise
+
+> Base técnica para **quem vai trabalhar com SIEM e telemetria em produção**.
+
+---
+
+### Security Operations Center – Building, Operating, and Maintaining your SOC  
+**Autor:** Joseph Muniz, Gary McIntyre, Nadhem AlFardan  
+📌 Manual abrangente de SOC como operação.
+
+**Cobre**
+- Metrics e KPIs
+- Operação L1/L2/L3
+- Tuning de deteções
+- Integração de controles (EDR, NDR, logs, rede)
+  
+> Útil para **engenheiros defensivos e líderes de times SOC**.
+
+---
+
+## 🔍 Incident Response & Forensics
+
+### Incident Response & Computer Forensics  
+**Autor:** Jason T. Luttgens, Matthew Pepe, Kevin Mandia  
+📌 Clássico técnico para resposta a incidentes e análise forense.
+
+**Cobre**
+- Coleta de evidências
+- Preservação de provas
+- Análise de sistemas e memória
+- Ferramentas e táticas forenses
+
+> Um guia realista para **investigadores técnicos**.
+
+---
+
+### The Practice of Computer Network Defense  
+**Autor:** Richard Bejtlich  
+📌 Complementa NSM com foco operacional e resposta.
+
+**Cobre**
+- Operações defensivas diárias
+- Táticas para equipes de detecção e resposta
+- Estudos de caso
+
+> Ideal para quem atua no **meio do ciclo de detecção → resposta**.
+
+---
+
+## 🔬 DFIR (Digital Forensics & Incident Response)
+
+### The Art of Memory Forensics  
+**Autores:** Michael Hale Ligh, Andrew Case, Jamie Levy, AAron Walters  
+📌 Padrão ouro em **forense de memória**.
+
+**Cobre**
+- Análise de dumps de RAM
+- Estruturas de dados de SO
+- Investigação de malware
+- Técnicas avançadas
+
+> Uma leitura profunda para quem faz **análise de incidentes sofisticados**.
+
+---
+
+### Windows Forensic Analysis
+**Autor:** Harlan Carvey  
+📌 Focado em **Windows DFIR** (logs, artefatos, timeline).
+
+**Cobre**
+- Registry
+- Artefatos de usuário
+- Eventos e timestamps
+- Ferramentas DFIR populares
+
+> Essencial para ambientes corporativos com Windows.
+
+---
+
+## 🧠 Threat Hunting & Behavioral Detection
+
+### The Threat Hunter’s Handbook  
+**Autor:** Thoroughly Reviewed Community Book  
+📌 Um guia prático de **atividades proativas de hunt**.
+
+**Cobre**
+- Hipóteses de ameaça
+- Detecção orientada por dados
+- Playbooks hunters
+- Correlação ATT&CK
+
+> Leitura recomendada para quem já domina o básico de SIEM/NSM e quer ir para **detecção proativa**.
+
+---
+
+### Practical Threat Intelligence and Data-Driven Threat Hunting  
+**Autora:** Valentina Costa-Giomi  
+📌 Conecta CTI com hunting operacional.
+
+**Cobre**
+- Dados para detecção
+- Enriquecimento e priorização
+- Técnicas modernas de busca
+- Métricas de eficácia
+
+> Excelente ponte entre **CTI, SOC e hunting real**.
+
+---
+
+## 📊 Análise de Tráfego & Protocolos
+
+### Practical Packet Analysis  
+**Autor:** Chris Sanders  
+📌 Introdução sólida à análise de pacotes de rede.
+
+**Cobre**
+- TCP/IP na prática
+- Troubleshooting real
+- Ferramentas (Wireshark)
+- Casos de análise
+
+> Útil para **analistas de SOC e NSM**.
+
+---
+
+## 🎯 Suplementares (Estratégicos e de Pensamento)
+
+### Blue Team Handbook  
+**Autor:** Don Murdoch  
+📌 Formato leve, rápido, prática de resposta.
+
+**Cobre**
+- Playbooks simplificados
+- Táticas de resposta
+- Checklists operacionais
+
+> Ótimo para **treinar decisões sob pressão**.
+
+---
+
+### MITRE ATT&CK® Defender Series (MAD)
+📌 Série de livros / materiais que conectam **ATT&CK a operações reais**.
+
+**Cobre**
+- Técnicas, métricas e cobertura
+- Casos de uso e correlações
+- Métricas de visibilidade
+
+> Útil para **SOC maduros e engineering teams**.
+
+---
+
+## 🎯 Como usar esta lista
+
+- 📌 Comece por **NSM, logs e SIEM**
+- 📌 Aprofunde com **IR & DFIR**
+- 📌 Estude protocolos para **análise de tráfego**
+- 📌 Faça hunting com foco em **dados contextualizados**
+- 📌 Use casos reais para validar aprendizado
+
+---
+
+## ⚠️ Observação Final
+
+Estes livros:
+- não são superficiais  
+- demandam prática e revisão constante  
+- constroem **mentalidade defensiva pragmática**
+
+Mas formam uma base que **separa analistas técnicos de generalistas**.
+
+---
+
+
