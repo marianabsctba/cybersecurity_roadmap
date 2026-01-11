@@ -1,19 +1,19 @@
 # ☁️ Cloud Security
 
-Esta trilha cobre **segurança em ambientes de computação em nuvem**, com foco em **identidade, rede, visibilidade, postura de segurança e resposta a incidentes**, considerando **AWS, Azure e Google Cloud** em cenários **single-cloud e multi-cloud**.
+Esta trilha cobre **segurança em ambientes de computação em nuvem**, com foco em **arquitetura, identidade, rede, visibilidade, postura de segurança e resposta a incidentes**, considerando **AWS, Azure e Google Cloud** em cenários **single-cloud e multi-cloud**.
 
 Cloud Security **não é firewall na nuvem**.  
-É **arquitetura, identidade, telemetria, automação e governança contínua**.
+É **design correto, identidade bem governada, telemetria completa e automação contínua**.
 
 ---
 
 ## 👥 Carreiras
 
 - **Cloud Security Engineer**  
-  Atua na implementação de controles, monitoramento, hardening, detecção e resposta a incidentes em ambientes cloud.
+  Implementa controles, hardening, logging, detecção e resposta a incidentes em ambientes cloud.
 
 - **Cloud Security Architect**  
-  Responsável por **desenhar arquiteturas seguras**, definir padrões, governar riscos e alinhar segurança com negócio e escala.
+  Desenha **arquiteturas seguras e escaláveis**, define padrões, governa riscos e conecta segurança ao negócio.
 
 ---
 
@@ -21,38 +21,38 @@ Cloud Security **não é firewall na nuvem**.
 
 ### 🔐 Identidade como Perímetro (IAM)
 
-> Em cloud, **identidade é o novo firewall**.
+> Em cloud, **quem manda é a identidade**.
 
-- Identidades humanas e não humanas (users, roles, workloads)
-- Princípio do menor privilégio aplicado de forma prática
-- RBAC, ABAC e políticas baseadas em contexto
-- MFA, autenticação forte e conditional access
+- Identidades humanas e não humanas (users, roles, services, workloads)
+- Princípio do menor privilégio aplicado na prática
+- RBAC, ABAC e políticas condicionais
+- MFA, autenticação forte e access policies
 - Federation, SSO e identidade híbrida
 - Gestão de segredos e credenciais
 
-📌 **Falha de IAM = comprometimento total do ambiente**
+📌 **Erro de IAM = comprometimento total do ambiente**
 
 ---
 
 ### 🌐 Segurança de Rede em Cloud
 
-> Rede em cloud é **controle lógico**, não cabo.
+> Rede em cloud é **controle lógico**, não físico.
 
 - VPC / VNet / Subnets
 - Security Groups, NSGs e Firewalls
 - Segmentação e microsegmentação
 - Tráfego norte-sul e leste-oeste
-- Exposição segura de serviços (LB, API, ingress)
+- Exposição segura de serviços (LB, APIs, ingress)
 - Integração com WAF e proteções de borda
 
 ---
 
-### 📊 Logging, Telemetria & Monitoramento
+### 📊 Logging, Telemetria & Visibilidade
 
-> Sem logs, **não existe segurança nem forense em cloud**.
+> Sem logs, **não existe segurança nem DFIR em cloud**.
 
 - Centralização de logs
-- Logs de identidade, rede, API e workload
+- Logs de identidade, API, rede e workload
 - Auditoria de ações administrativas
 - Integração com SIEM
 - Detecção de comportamento anômalo
@@ -70,20 +70,20 @@ Cloud Security **não é firewall na nuvem**.
 - Hardening de serviços nativos
 - Detecção de configurações inseguras
 - Benchmarks CIS
-- Gestão de risco e priorização
+- Priorização baseada em risco
 - Integração com governança e compliance
 
 ---
 
-### ⚙️ Segurança no Ciclo de Vida Cloud
+### ⚙️ Segurança ao Longo do Ciclo Cloud
 
 Cloud Security precisa existir **antes, durante e depois do deploy**.
 
-- **Design seguro (Landing Zones)**
-- **Provisionamento seguro (IaC)**
-- **Segurança em runtime**
-- **Resposta a incidentes em cloud**
-- **Governança contínua**
+- Design seguro (Landing Zones)
+- Provisionamento seguro (IaC)
+- Segurança em runtime
+- Resposta a incidentes em cloud
+- Governança contínua
 
 📌 Segurança que entra só no runtime **chega tarde**.
 
@@ -95,64 +95,58 @@ Cloud Security precisa existir **antes, durante e depois do deploy**.
 
 - Normalização de controles entre clouds
 - Visibilidade centralizada
-- Gestão unificada de identidade
-- Padronização de logging
+- Identidade unificada
+- Logging padronizado
 - Governança e políticas comuns
 - Risco de shadow IT
 
 ---
 
-## 🧪 Labs Práticos (Essenciais para Cloud Security)
+## 🧪 Labs Práticos (Essenciais)
 
 > Cloud Security **se aprende configurando, errando e corrigindo**.
 
-- **AWS Well-Architected Labs (Security Pillar)**  
+- AWS Well-Architected Labs (Security Pillar)  
   https://wellarchitectedlabs.com/security/
 
-- **AWS CloudGoat (Vulnerable by Design)**  
+- AWS CloudGoat  
   https://github.com/RhinoSecurityLabs/cloudgoat
 
-- **Azure Security Labs (Microsoft Learn)**  
+- Azure Security Labs  
   https://learn.microsoft.com/security/
 
-- **GCP Security Foundations Labs**  
+- GCP Security Foundations  
   https://cloud.google.com/security
 
-- **TryHackMe – Cloud Security Labs**  
+- TryHackMe – Cloud Security  
   https://tryhackme.com/
 
-- **DetectionLab – Cloud**  
+- DetectionLab – Cloud  
   https://github.com/clong/DetectionLab
 
 ---
 
 ## 📘 Cursos Oficiais (Formação)
 
-### ☁️ AWS
+### AWS
 - AWS Security Fundamentals  
   https://aws.amazon.com/training/digital/aws-security-fundamentals/
 
 - AWS Well-Architected – Security Pillar  
   https://aws.amazon.com/architecture/well-architected/
 
----
-
-### ☁️ Microsoft Azure
+### Microsoft Azure
 - Secure Your Cloud Data  
   https://learn.microsoft.com/training/paths/secure-your-cloud-data/
 
-- Azure Security Engineer (AZ-500)  
+- AZ-500 – Azure Security Engineer  
   https://learn.microsoft.com/training/paths/design-implement-azure-security/
 
----
-
-### ☁️ Google Cloud
+### Google Cloud
 - Google Cloud Security Foundations  
   https://cloud.google.com/training/security
 
----
-
-### 🌍 Vendor Neutral
+### Vendor Neutral
 - Cloud Security Alliance – Training  
   https://cloudsecurityalliance.org/education/
 
@@ -183,7 +177,7 @@ Cloud Security precisa existir **antes, durante e depois do deploy**.
 
 ---
 
-## 🏅 Certificações (Validação de Conhecimento)
+## 🏅 Certificações
 
 - AWS Certified Security – Specialty  
 - AZ-500 – Azure Security Engineer  
@@ -200,6 +194,44 @@ Cloud Security precisa existir **antes, durante e depois do deploy**.
 - **AppSec** – segurança de workloads e APIs
 - **DevSecOps** – IaC e pipelines
 - **GRC** – risco, compliance e governança
+
+---
+
+## 📚 Livros Técnicos Essenciais de Cloud Security
+
+### Cloud Security and Privacy  
+**Autores:** Tim Mather, Subra Kumaraswamy, Shahed Latif  
+> Base conceitual de segurança em nuvem, responsabilidade compartilhada e governança.
+
+---
+
+### Practical Cloud Security  
+**Autor:** Chris Dotson  
+> Livro extremamente prático sobre IAM, rede, logging e incident response em cloud.
+
+---
+
+### Designing Secure Cloud Architecture  
+**Autor:** Michael S. Smith  
+> Foco em **arquitetura segura**, não em ferramenta.
+
+---
+
+### Incident Response in the Cloud  
+**Autor:** Chris Dotson  
+> Resposta a incidentes específica para ambientes cloud.
+
+---
+
+### Zero Trust Networks  
+**Autores:** Evan Gilman, Doug Barth  
+> Fundamentos de Zero Trust aplicáveis diretamente a cloud.
+
+---
+
+### Security and Privacy in Cloud Computing  
+**Autores:** Siani Pearson, George Yee  
+> Visão acadêmica e estratégica sobre risco e privacidade em cloud.
 
 ---
 
