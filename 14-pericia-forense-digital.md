@@ -177,11 +177,22 @@ O produto final da perícia **não é um alerta**, é um **laudo técnico**.
 
 ## 📘 Formação e Referências
 
-- NIST SP 800-86 – Guide to Integrating Forensic Techniques  
-- NIST SP 800-101 – Mobile Device Forensics  
-- ISO/IEC 27037 – Identificação e coleta de evidências digitais  
-- ISO/IEC 27042 – Análise e interpretação de evidências digitais  
+- **NIST SP 800-86 – Guide to Integrating Forensic Techniques into Incident Response**  
+  https://csrc.nist.gov/publications/detail/sp/800-86/final  
+  > Guia oficial do NIST sobre uso de técnicas forenses, com forte base metodológica.
 
+- **NIST SP 800-101 – Guidelines on Mobile Device Forensics**  
+  https://csrc.nist.gov/publications/detail/sp/800-101/rev-1/final  
+  > Referência oficial para perícia em dispositivos móveis.
+
+- **ISO/IEC 27037 – Guidelines for identification, collection, acquisition and preservation of digital evidence**  
+  https://www.iso.org/standard/44381.html  
+  > Norma internacional para identificação, coleta e preservação de evidências digitais.
+
+- **ISO/IEC 27042 – Guidelines for the analysis and interpretation of digital evidence**  
+  https://www.iso.org/standard/44407.html  
+  > Norma internacional para análise, interpretação e validação de evidências digitais.
+  
 ---
 
 ## 📌 Princípios-Chave da Perícia Forense Digital
