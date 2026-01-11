@@ -415,16 +415,32 @@ Lista curada de livros **clássicos e amplamente reconhecidos** em **Offensive S
 - Fundamentos históricos da segurança ofensiva
 
 ---
+# 🔴 Offensive Security – Canais Essenciais (Pentest & Red Team)
 
-## 🎯 Observação Final
+### Penegui
+- Pentest prático
+- Exploração realista
+- Linguagem direta e sem firula
+- Muito bom para quem quer sair do básico
 
-Esses livros **não ensinam só ferramentas**, mas:
-- Mentalidade ofensiva
-- Encadeamento de ataques
-- Pensamento crítico
-- Fundamentos técnicos sólidos
-
-São leitura recorrente em trilhas de **Pentest, Red Team, Malware Research e Exploit Development**.
+YouTube: https://www.youtube.com/@penegui
 
 ---
 
+### Prof. Julio Della Flora
+- Pentest, segurança ofensiva e redes
+- Conteúdo didático e técnico
+- Excelente base para quem está estruturando o conhecimento
+
+YouTube: https://www.youtube.com/@juliodellaflora
+
+---
+
+### Gabriel Pato (Pato Academy / Offensive)
+- Pentest e CTFs
+- Raciocínio ofensivo
+- Conteúdo técnico e bem explicado
+
+YouTube: https://www.youtube.com/@gabrielpato
+
+---
