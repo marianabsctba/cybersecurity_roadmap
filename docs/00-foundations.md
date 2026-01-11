@@ -122,38 +122,50 @@ Base obrigatória para **qualquer trilha**.
 
 ---
 
-## 🎓 Certificações – Fundamentos (Links Oficiais)
+## 🎓 Cursos e Certificações – Fundamentos (Links Oficiais)
 
-### Base / Entry
+Esta seção separa **cursos (formação e aprendizado)** de **certificações (validação de conhecimento)**, conforme boas práticas de roadmap profissional.
+
+---
+
+## 📘 Cursos (Formação)
+
+### Redes
+- **Cisco Networking Essentials – Cisco NetAcad**  
+  https://www.netacad.com/courses/networking/networking-essentials  
+  > Curso introdutório de redes: modelos, endereçamento IP, switching básico e troubleshooting.
+
+---
+
+## 🏅 Certificações (Validação de Conhecimento)
+
+### Base / Entry Level
 - **ISC2 – Certified in Cybersecurity (CC)**  
-  https://www.isc2.org/certifications/cc
+  https://www.isc2.org/certifications/cc  
+  > Validação de conhecimentos fundamentais em segurança da informação, risco e governança.
 
-- **CompTIA ITF+**  
-  https://www.comptia.org/certifications/it-fundamentals
+- **CompTIA ITF+ (IT Fundamentals+)**  
+  https://www.comptia.org/certifications/it-fundamentals  
+  > Fundamentos de TI: hardware, software, redes e noções iniciais de segurança.
 
 - **CompTIA A+**  
-  https://www.comptia.org/certifications/a
+  https://www.comptia.org/certifications/a  
+  > Validação de conhecimentos em sistemas operacionais, hardware e troubleshooting.
 
-- **LPI Linux Essentials**  
-  https://www.lpi.org/our-certifications/linux-essentials-overview
+- **LPI – Linux Essentials**  
+  https://www.lpi.org/our-certifications/linux-essentials-overview  
+  > Validação de fundamentos de Linux, linha de comando, processos e permissões.
 
----
+- **CompTIA Security+**  
+  https://www.comptia.org/certifications/security  
+  > Validação de fundamentos de segurança: ameaças, vulnerabilidades, criptografia, identidade e risco.
 
-### Redes (Cisco + Vendor Neutral)
-- **Cisco – Networking Essentials (NetAcad)**  
-  https://www.netacad.com/courses/networking/networking-essentials
-
-- **Cisco – CCNA (Cisco Certified Network Associate)**  
-  https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html
+- **Cisco CCNA – Cisco Certified Network Associate**  
+  https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html  
+  > Validação prática de conhecimentos em redes, routing, switching, wireless e segurança básica.
 
 - **CompTIA Network+**  
-  https://www.comptia.org/certifications/network
+  https://www.comptia.org/certifications/network  
+  > Validação vendor neutral de fundamentos de redes, protocolos e operações.
 
 ---
-
-### Segurança (Fundamentos)
-- **CompTIA Security+**  
-  https://www.comptia.org/certifications/security
-
----
-
