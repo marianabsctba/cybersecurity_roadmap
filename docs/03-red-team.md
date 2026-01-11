@@ -2,19 +2,18 @@
 
 Esta trilha cobre **testes de intrusão, simulação de adversários e operações ofensivas**, com foco em **descoberta de falhas reais, exploração, pós-exploração e evasão**, sempre com **escopo autorizado**.
 
-Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
+Red Team **não é ferramenta**: é **método, processo e disciplina**.
 
 ---
 
 ## 👥 Progressão de Carreira
 
-> A progressão não é linear.  
-> Muitos profissionais alternam entre **pentest tradicional** e **red team** conforme o tipo de projeto.
-
 - Pentester Jr  
 - Pentester  
 - Red Team Operator  
 - Exploit Developer  
+
+> A progressão não é linear. Muitos profissionais alternam entre **pentest tradicional**, **red team** e **especializações** (AD, Web, Exploit Dev).
 
 ---
 
@@ -22,48 +21,40 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 
 ### 🔍 Enumeração & Reconhecimento
 - Reconhecimento passivo e ativo
-- Enumeração de serviços, usuários e permissões
-- Enumeração web, rede e identidade
+- Enumeração de rede, web e identidade
 - Descoberta de superfície de ataque
 
-**Ferramentas open source:**
-- `nmap`
-- `masscan`
-- `amass`
-- `dnsx`
-- `whatweb`
-- `enum4linux`
-- `ldapsearch`
+Ferramentas open source:
+- `nmap`, `masscan`
+- `amass`, `dnsx`
+- `whatweb`, `httpx`
+- `enum4linux`, `ldapsearch`
 
 ---
 
 ### 💥 Exploração
-- Exploração de falhas conhecidas (CVEs)
-- Exploração lógica e falhas de negócio
+- Exploração de CVEs e falhas lógicas
 - Exploração web e infraestrutura
-- Exploração manual (não só framework)
+- Uso manual de exploits
 
-**Ferramentas open source:**
+Ferramentas:
 - `metasploit`
 - `sqlmap`
+- `ffuf`, `wfuzz`
 - `nikto`
-- `ffuf`
 - `nuclei`
 - `searchsploit`
 
 ---
 
-### 🪪 Active Directory Attacks
+### 🪪 Active Directory
 - Enumeração de AD
-- Abuso de permissões
+- Abuso de permissões e delegações
 - Kerberoasting / AS-REP Roasting
-- Pass-the-Hash / Pass-the-Ticket
-- Abuso de GPO e delegações
 - Lateral movement
 
-**Ferramentas open source:**
-- `BloodHound`
-- `SharpHound`
+Ferramentas:
+- `BloodHound` / `SharpHound`
 - `CrackMapExec`
 - `Impacket`
 - `Rubeus`
@@ -74,13 +65,12 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 
 ### 🔓 Pós-Exploração
 - Escalada de privilégios
-- Lateral movement
 - Persistência
-- Pivoting
+- Pivoting e tunelamento
 - Exfiltração controlada
 
-**Ferramentas open source:**
-- `linpeas / winpeas`
+Ferramentas:
+- `linpeas` / `winpeas`
 - `pspy`
 - `chisel`
 - `ligolo-ng`
@@ -88,16 +78,15 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 
 ---
 
-### 🕵️‍♂️ Evasão & OpSec
-- Evasão de EDR/AV
-- Living off the Land (LOLBins)
+### 🕵️‍♂️ Evasão & OPSEC
+- Evasão de AV/EDR
+- Living Off the Land (LOLBins)
 - Payload obfuscation
 - Controle de ruído operacional
-- OPSEC em operações longas
 
-**Ferramentas open source:**
-- `Covenant`
+Ferramentas:
 - `Sliver`
+- `Covenant`
 - `Mythic`
 - `PowerSploit`
 - `Donut`
@@ -107,27 +96,60 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 
 ### 🧬 Exploit Development (Avançado)
 - Análise de binários
-- Buffer overflow
-- Heap exploitation
-- Exploração de memória
-- Bypass de mitigations (DEP, ASLR)
+- Buffer overflow e heap
+- Bypass de mitigações (ASLR, DEP)
 
-**Ferramentas open source:**
-- `pwntools`
+Ferramentas:
 - `Ghidra`
 - `radare2`
+- `pwntools`
 - `pwndbg`
 - `gef`
 
 ---
 
-## 📘 Cursos e Documentação (Formação)
+## 📐 Métodos e Frameworks de Pentest
+
+Pentest **profissional** segue metodologia. Framework ≠ burocracia.
+
+### Metodologias Reconhecidas
+- **PTES – Penetration Testing Execution Standard**  
+  https://www.pentest-standard.org/  
+  > Planejamento → Enumeração → Exploração → Pós-exploração → Relatório.
+
+- **NIST SP 800-115 – Technical Guide to Information Security Testing**  
+  https://csrc.nist.gov/publications/detail/sp/800-115/final  
+  > Guia técnico amplamente usado em ambientes regulados.
+
+- **OSSTMM – Open Source Security Testing Methodology Manual**  
+  https://www.isecom.org/OSSTMM.3.pdf  
+  > Metodologia focada em mensuração e controle operacional.
+
+---
+
+### Frameworks Específicos
+- **OWASP Web Security Testing Guide (WSTG)**  
+  https://owasp.org/www-project-web-security-testing-guide/
+
+- **OWASP API Security Top 10**  
+  https://owasp.org/www-project-api-security/
+
+- **MITRE ATT&CK** (para Red Team / Adversary Emulation)  
+  https://attack.mitre.org/
+
+---
+
+## 📘 Cursos e Formação (Ofensivo)
 
 ### Pentest / Red Team
+- **DESEC – Formação Pentest Profissional**  
+  https://desecsecurity.com/  
+  > Formação prática, forte no mercado brasileiro, com foco real em exploração.
+
 - **Offensive Security – Training Catalog**  
   https://www.offsec.com/courses/
 
-- **Pentester Academy (INE)**  
+- **Pentester Academy / INE**  
   https://ine.com/learning/paths/penetration-testing
 
 - **PortSwigger Web Security Academy (Gratuito)**  
@@ -135,11 +157,11 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 
 ---
 
-### Active Directory
-- **Red Team Operator AD Labs (TryHackMe)**  
+### Active Directory / Red Team
+- **TryHackMe – Red Team & AD Paths**  
   https://tryhackme.com/
 
-- **AD Security & Attacks (Hack The Box Academy)**  
+- **Hack The Box Academy – AD & Red Team**  
   https://academy.hackthebox.com/
 
 ---
@@ -148,16 +170,15 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 - **OpenSecurityTraining**  
   https://opensecuritytraining.info/
 
-- **LiveOverflow Binary Exploitation (YouTube)**  
+- **LiveOverflow – Binary Exploitation**  
   https://www.youtube.com/c/LiveOverflow
 
 ---
 
 ## 🧪 Labs Práticos (Ofensivos)
 
-> Red Team **se aprende errando em lab** antes de errar em cliente.
+> Pentest se aprende **quebrando laboratório**, não só lendo PDF.
 
-### Plataformas
 - **Hack The Box (HTB)**  
   https://www.hackthebox.com/
 
@@ -177,61 +198,97 @@ Red Team **não é ferramenta**: é **processo, técnica e disciplina**.
 
 ## 🏅 Certificações (Validação de Conhecimento)
 
-### 🔰 Entry / Intermediate
-- **eJPT – Junior Penetration Tester**  
-  https://elearnsecurity.com/product/ejpt-certification/
+### 🔰 Entry / Intermediate (Pentest e Red Team)
 
-- **PNPT – Practical Network Penetration Tester**  
-  https://certifications.tcm-sec.com/pnpt/
+- **CompTIA PenTest+**  
+  https://www.comptia.org/certifications/pentest  
+  > Pentest prático com foco em planejamento, exploração, pós-exploração e relatório.
+
+- **DESEC Pentest Certified (DPC)**  
+  https://desecsecurity.com/certificacoes/  
+  > Certificação prática amplamente reconhecida no Brasil, focada em exploração real.
+
+- **eJPT – Junior Penetration Tester**  
+  https://elearnsecurity.com/product/ejpt-certification/  
+  > Introdução prática ao pentest de redes e aplicações.
+
+- **PNPT – Practical Network Penetration Tester (TCM Security)**  
+  https://certifications.tcm-sec.com/pnpt/  
+  > Pentest prático com forte foco em Active Directory e relatório profissional.
 
 - **CEH – Certified Ethical Hacker**  
-  https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/
+  https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/  
+  > Certificação conceitual e introdutória em hacking ético.
 
 - **GPEN – GIAC Penetration Tester**  
-  https://www.giac.org/certifications/penetration-tester-gpen/
+  https://www.giac.org/certifications/penetration-tester-gpen/  
+  > Pentest de redes, metodologias e exploração em ambientes corporativos.
 
 ---
 
-### 🔥 Advanced
+### 🔥 Advanced (Red Team / Exploit / Web / Infra)
+
 - **OSCP – Offensive Security Certified Professional**  
   https://www.offsec.com/certifications/oscp/
 
-- **OSWA – Web Assessor**  
+- **OSWA – Offensive Security Web Assessor**  
   https://www.offsec.com/certifications/oswa/
 
-- **OSWE – Web Expert**  
+- **OSWE – Offensive Security Web Expert**  
   https://www.offsec.com/certifications/oswe/
 
-- **OSEP – Experienced Pentester**  
+- **OSEP – Offensive Security Experienced Pentester**  
   https://www.offsec.com/certifications/osep/
 
-- **OSED – Exploit Developer**  
+- **OSED – Offensive Security Exploit Developer**  
   https://www.offsec.com/certifications/osed/
 
-- **GXPN – GIAC Exploit Researcher**  
+- **GXPN – GIAC Exploit Researcher and Advanced Penetration Tester**  
   https://www.giac.org/certifications/exploit-researcher-gxpn/
 
 - **CREST CRT / CCT**  
-  https://www.crest-approved.org/
+  https://www.crest-approved.org/  
+  > Certificações exigidas em diversos contratos internacionais de Red Team.
 
 ---
+
+### 📌 Outras Certificações Relevantes (Contexto Pentest)
+
+- **CompTIA Security+**  
+  https://www.comptia.org/certifications/security  
+  > Base de segurança que ajuda na leitura de ambientes antes do ataque.
+
+- **CompTIA CySA+**  
+  https://www.comptia.org/certifications/cysa  
+  > Útil para transição Red ↔ Blue / Purple Team.
+
+---
+
+## 📌 Observações Importantes
+
+- **PenTest+** é a principal certificação **vendor-neutral** de pentest da CompTIA.  
+- Certificações práticas (OSCP, PNPT, DPC) têm **peso maior** que teóricas.  
+- Certificação **não substitui lab** — mas valida método, ética e maturidade.
+
+---
+
 
 ## 🔗 Integração com Outras Trilhas
 
 - **Purple Team** – validação de detecção
 - **Blue Team / SOC** – melhoria de alertas
-- **AppSec** – correção estrutural
+- **AppSec** – correções estruturais
 - **CTI** – simulação de adversários reais
-- **GRC / Jurídico** – escopo e autorização
+- **GRC / Jurídico** – escopo, ética e autorização
 
 ---
 
 ## 📌 Princípios-Chave da Trilha Red Team
 
-- Ferramenta não substitui técnica
-- Enumeração vale mais que exploit
-- OPSEC é parte do ataque
-- Relatório é tão importante quanto o acesso
-- Red Team bom melhora o Blue Team
+- Ferramenta não substitui técnica  
+- Enumeração vale mais que exploit  
+- OPSEC é parte do ataque  
+- Relatório é tão importante quanto o acesso  
+- Red Team bom **eleva o Blue Team**
 
 ---
