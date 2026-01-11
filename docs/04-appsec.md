@@ -1,37 +1,47 @@
 # 🟩 Application Security (AppSec)
 
+> **Segurança de aplicações do design ao runtime**
+
 Esta trilha aborda **segurança de aplicações ponta a ponta**, cobrindo **Secure SDLC**, **segurança de código**, **pipelines CI/CD**, **testes automatizados**, **modelagem de ameaças** e **proteção em runtime**, com foco em **reduzir risco antes, durante e depois do deploy**.
+
+AppSec existe para **evitar que vulnerabilidades cheguem à produção** — e, quando chegam, garantir que o impacto seja mínimo.
 
 ---
 
-## 👥 Carreiras
+## 👥 Carreiras em AppSec
 
 - **AppSec Engineer**
 - **Product Security Engineer**
 - **AppSec Lead**
 
-> AppSec atua como **ponte entre desenvolvimento, segurança e negócio**.  
-> Não é “time do não”, é **time do código seguro**.
+> 🧠 AppSec atua como **ponte entre desenvolvimento, segurança e negócio**.  
+> Não é “time do não”, é **time do código seguro e do design correto**.
 
 ---
 
 ## 🧠 Habilidades Técnicas Essenciais
 
-### 🛡️ Secure SDLC
+### 🛡️ Secure SDLC (Base de Tudo)
 - Requisitos de segurança
 - Design seguro
 - Threat Modeling
 - Gates de segurança
 - Segurança contínua em produção
 
+> Segurança não entra no final.  
+> **Segurança nasce no design.**
+
 ---
 
 ### ⚠️ OWASP & Classes de Ameaça
-- OWASP Top 10 (Web)
-- OWASP API Top 10
-- OWASP Mobile Top 10
-- CWE Top 25
-- Mapeamento para MITRE ATT&CK (quando aplicável)
+
+| Domínio | O que cobre |
+|------|-----------|
+| OWASP Top 10 (Web) | Vulnerabilidades clássicas de aplicações web |
+| OWASP API Top 10 | Falhas de autorização, lógica e exposição em APIs |
+| OWASP Mobile Top 10 | Segurança em apps móveis |
+| CWE Top 25 | Erros comuns de programação |
+| MITRE ATT&CK | Correlação quando aplicável |
 
 ---
 
@@ -40,6 +50,9 @@ Esta trilha aborda **segurança de aplicações ponta a ponta**, cobrindo **Secu
 - Análise de lógica e fluxo
 - Sanitização e validação de entrada
 - Autorização e controle de acesso
+
+> Muitas falhas **não são detectáveis por ferramenta**.  
+> Elas vivem na **lógica de negócio**.
 
 ---
 
@@ -52,111 +65,131 @@ Esta trilha aborda **segurança de aplicações ponta a ponta**, cobrindo **Secu
 
 ---
 
-## 🔄 Fases de Segurança de Código (AppSec Lifecycle)
+## 🔐 API Security (Parte Central de AppSec)
+
+APIs **são aplicações** — e hoje concentram **os maiores riscos modernos**.
+
+API Security não é apenas testar endpoints.  
+É garantir que **autenticação, autorização e lógica de negócio** estejam corretas **desde o design**.
+
+### Principais riscos em APIs
+- Broken Object Level Authorization (BOLA)
+- Broken Function Level Authorization (BFLA)
+- Excessive Data Exposure
+- Falhas de rate limiting
+- Abuso de lógica e automação maliciosa
+
+> 📌 **Importante**  
+> API Security **nasce em AppSec**.  
+> Blue Team entra depois, monitorando e respondendo a abuso.
+
+---
+
+## 🔄 AppSec Lifecycle – Segurança de Código
+
+> Cada técnica cobre **uma parte do risco**.  
+> Nenhuma é suficiente sozinha.
+
+---
 
 ### 🔎 SAST – Static Application Security Testing
 Análise de código-fonte sem executar a aplicação.
 
-Ferramentas open source:
-- **Semgrep** – https://semgrep.dev/
-- **Bandit (Python)** – https://github.com/PyCQA/bandit
-- **FindSecBugs (Java)** – https://find-sec-bugs.github.io/
-- **Brakeman (Ruby)** – https://brakemanscanner.org/
-- **Psalm (PHP)** – https://psalm.dev/
+**Ferramentas open source:**
+- Semgrep – https://semgrep.dev/
+- Bandit (Python) – https://github.com/PyCQA/bandit
+- FindSecBugs (Java) – https://find-sec-bugs.github.io/
+- Brakeman (Ruby) – https://brakemanscanner.org/
+- Psalm (PHP) – https://psalm.dev/
 
 ---
 
 ### 🌐 DAST – Dynamic Application Security Testing
 Testes com a aplicação em execução.
 
-Ferramentas open source:
-- **OWASP ZAP** – https://www.zaproxy.org/
-- **Nikto** – https://github.com/sullo/nikto
-- **w3af** – https://github.com/andresriancho/w3af
+**Ferramentas open source:**
+- OWASP ZAP – https://www.zaproxy.org/
+- Nikto – https://github.com/sullo/nikto
+- w3af – https://github.com/andresriancho/w3af
 
 ---
 
 ### 🧬 IAST – Interactive Application Security Testing
 Instrumentação da aplicação durante execução.
 
-Ferramentas:
-- *(predominantemente comerciais; open source limitado)*
+- Predominantemente comercial
 - Uso comum: integração com APM + testes
 
 ---
 
 ### 📱 MAST – Mobile Application Security Testing
-Segurança de aplicações móveis.
 
-Ferramentas open source:
-- **MobSF** – https://github.com/MobSF/Mobile-Security-Framework-MobSF
-- **Drozer** – https://github.com/WithSecureLabs/drozer
+**Ferramentas open source:**
+- MobSF – https://github.com/MobSF/Mobile-Security-Framework-MobSF
+- Drozer – https://github.com/WithSecureLabs/drozer
 
 ---
 
-### 🔗 API Security
-Testes e validação de APIs REST/GraphQL.
+### 🔗 API Security – Testes Técnicos
 
-Ferramentas open source:
-- **OWASP Amass (enumeração)** – https://github.com/owasp-amass
-- **OWASP ZAP API Scan**
-- **Postman + scripts**
-- **Schemathesis** – https://schemathesis.readthedocs.io/
+**Ferramentas open source:**
+- OWASP Amass (enumeração) – https://github.com/owasp-amass
+- OWASP ZAP API Scan
+- Postman + scripts
+- Schemathesis – https://schemathesis.readthedocs.io/
 
 ---
 
 ### 📦 SCA – Software Composition Analysis
 Análise de dependências e bibliotecas.
 
-Ferramentas open source:
-- **OWASP Dependency-Check** – https://owasp.org/www-project-dependency-check/
-- **Trivy** – https://github.com/aquasecurity/trivy
-- **Syft** – https://github.com/anchore/syft
-- **Grype** – https://github.com/anchore/grype
+**Ferramentas open source:**
+- OWASP Dependency-Check – https://owasp.org/www-project-dependency-check/
+- Trivy – https://github.com/aquasecurity/trivy
+- Syft – https://github.com/anchore/syft
+- Grype – https://github.com/anchore/grype
 
 ---
 
 ### ☁️ IaC Security (Infrastructure as Code)
-Segurança de Terraform, CloudFormation, Kubernetes etc.
 
-Ferramentas open source:
-- **Checkov** – https://github.com/bridgecrewio/checkov
-- **Terrascan** – https://github.com/accurics/terrascan
-- **KICS** – https://github.com/Checkmarx/kics
-- **tfsec** – https://github.com/aquasecurity/tfsec
+**Ferramentas open source:**
+- Checkov – https://github.com/bridgecrewio/checkov
+- Terrascan – https://github.com/accurics/terrascan
+- KICS – https://github.com/Checkmarx/kics
+- tfsec – https://github.com/aquasecurity/tfsec
 
 ---
 
 ### 🔑 Secrets Detection
 Detecção de chaves e segredos no código.
 
-Ferramentas open source:
-- **Gitleaks** – https://github.com/gitleaks/gitleaks
-- **TruffleHog** – https://github.com/trufflesecurity/trufflehog
+**Ferramentas open source:**
+- Gitleaks – https://github.com/gitleaks/gitleaks
+- TruffleHog – https://github.com/trufflesecurity/trufflehog
 
 ---
 
-## 🧪 Labs Práticos (Essenciais para AppSec)
+## 🧪 Labs Práticos (Essenciais)
 
 > AppSec **se aprende quebrando aplicação e corrigindo código**.
 
-### Plataformas de Labs
-- **PortSwigger Web Security Academy (gratuito)**  
+- PortSwigger Web Security Academy  
   https://portswigger.net/web-security
 
-- **OWASP Juice Shop**  
+- OWASP Juice Shop  
   https://owasp.org/www-project-juice-shop/
 
-- **TryHackMe – AppSec / Web Paths**  
+- TryHackMe – AppSec / Web Paths  
   https://tryhackme.com/
 
-- **Hack The Box Academy – Web & AppSec**  
+- Hack The Box Academy – Web & AppSec  
   https://academy.hackthebox.com/
 
-- **Secure Code Warrior Labs**  
+- Secure Code Warrior Labs  
   https://securecodewarrior.com/
 
-- **OWASP WebGoat**  
+- OWASP WebGoat  
   https://owasp.org/www-project-webgoat/
 
 ---
@@ -174,43 +207,30 @@ Ferramentas open source:
 ---
 
 ### DevSecOps / AppSec
-- **DevSecOps Foundation (DOFD)**  
+- DevSecOps Foundation (DOFD)  
   https://devopsinstitute.com/certifications/devsecops-foundation/
-
-- **Microsoft Secure DevOps**  
+- Microsoft Secure DevOps  
   https://learn.microsoft.com/training/paths/secure-devops/
-
-- **AWS DevSecOps Learning Path**  
+- AWS DevSecOps Learning Path  
   https://aws.amazon.com/training/devsecops/
 
 ---
 
 ## 🏅 Certificações
 
-### AppSec / Secure Coding
-- **CSSLP – ISC2**  
-  https://www.isc2.org/certifications/CSSLP
-
-- **GWAPT – GIAC Web App Pentest**  
-  https://www.giac.org/certifications/web-application-penetration-tester-gwapt/
-
-- **OSWE – Offensive Security Web Expert**  
-  https://www.offsec.com/certifications/oswe/
-
-- **CASE Java – EC-Council**  
-  https://www.eccouncil.org/train-certify/certified-application-security-engineer-java-case-java/
-
-- **CASE .NET – EC-Council**  
-  https://www.eccouncil.org/train-certify/certified-application-security-engineer-net-case-dot-net/
+- CSSLP – ISC2  
+- GWAPT – GIAC  
+- OSWE – Offensive Security  
+- CASE Java / .NET – EC-Council  
 
 ---
 
 ## 🔗 Integração com Outras Trilhas
 
-- **DevOps / Cloud** – pipelines e runtime
-- **SOC / Blue Team** – detecção em produção
-- **DFIR** – análise de incidentes de aplicação
-- **GRC** – requisitos e compliance
+- DevOps / Cloud → pipelines e runtime
+- SOC / Blue Team → detecção e abuso
+- DFIR → resposta a incidentes de aplicação
+- GRC → requisitos, risco e compliance
 
 ---
 
@@ -221,5 +241,3 @@ Ferramentas open source:
 - Automação sem contexto falha
 - AppSec é contínuo, não projeto
 - Quem escreve código participa da segurança
-
----
