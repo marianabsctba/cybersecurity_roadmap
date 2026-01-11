@@ -186,3 +186,145 @@ Esta seção separa **cursos (formação e aprendizado)** de **certificações (
 
 ---
 *** Essas certificações não necessariamente precisam ser feitas. Estudar o conteúdo delas pode ajudar e ser enriquecedor.
+
+
+# 📡 Canais de Cibersegurança – Redes, CCNA & Network Security
+
+Curadoria de **canais técnicos e confiáveis** para aprender **redes de computadores**, **CCNA**, **análise de tráfego** e **segurança de redes**, do nível iniciante ao avançado.
+
+---
+
+## 🧱 Redes & CCNA (Fundação Técnica)
+
+### Cisco Networking Academy (oficial)
+- Conteúdo oficial de CCNA
+- Switching, Routing, VLAN, NAT, ACL, WAN
+- Base sólida e alinhada ao currículo Cisco
+
+YouTube: https://www.youtube.com/@CiscoNetAcad
+
+---
+
+### Jeremy Cioara (CBT Nuggets)
+- Didática excelente
+- CCNA, CCNP, troubleshooting
+- Ensina como **pensar como a rede**
+
+YouTube: https://www.youtube.com/@JeremyCioara
+
+---
+
+### Professor Messer
+- CCNA, Network+, Security+
+- Explicações diretas e objetivas
+- Forte em fundamentos de protocolos
+
+YouTube: https://www.youtube.com/@professormesser
+
+---
+
+### David Bombal
+- CCNA, CCNP, automação
+- Packet Tracer, GNS3, Wireshark
+- Muito focado em **laboratórios práticos**
+
+YouTube: https://www.youtube.com/@DavidBombal
+
+---
+
+## 🔐 Segurança de Redes (Ataque & Defesa)
+
+### Practical Networking
+- Um dos melhores canais para entender redes **de verdade**
+- TCP, ARP, DNS, NAT, Routing
+- Essencial para SOC, Blue Team e CTI
+
+YouTube: https://www.youtube.com/@PracticalNetworking
+
+---
+
+### NetworkChuck
+- Redes + segurança + labs
+- Wireshark, VPN, Linux, Zero Trust
+- Conteúdo acessível e prático
+
+YouTube: https://www.youtube.com/@NetworkChuck
+
+---
+
+### The Cyber Mentor
+- Redes sob a ótica ofensiva
+- Reconhecimento, scanning, tráfego
+- Ponte entre redes e pentest
+
+YouTube: https://www.youtube.com/@TheCyberMentor
+
+---
+
+## 🧪 Análise de Tráfego & Pacotes
+
+### Wireshark (canal oficial)
+- Análise profunda de pacotes
+- TCP handshake, DNS, TLS, SMB
+- Fundamental para SOC e IR
+
+YouTube: https://www.youtube.com/@Wireshark
+
+---
+
+### Chris Greer
+- Análise de tráfego em nível avançado
+- Casos reais de troubleshooting
+- Forma analistas de SOC de verdade
+
+YouTube: https://www.youtube.com/@ChrisGreer
+
+---
+
+## 🧠 Redes + Cibersegurança Profissional
+
+### Black Hills Information Security (BHIS)
+- Ataques e detecção em rede
+- Conteúdo Blue Team e Red Team
+- Alto nível técnico
+
+YouTube: https://www.youtube.com/@BlackHillsInformationSecurity
+
+---
+
+### SANS Institute
+- Network monitoring
+- IDS/IPS, NetFlow, PCAP
+- Conteúdo avançado e confiável
+
+YouTube: https://www.youtube.com/@SANSBlueTeam
+
+---
+
+## 🇧🇷 Conteúdo em Português
+
+### Bóson Treinamentos
+- Redes, CCNA, Linux
+- Muito bom para fundamentos
+
+YouTube: https://www.youtube.com/@bosontreinamentos
+
+---
+
+### Descomplicando Redes
+- Routing, Switching
+- Linguagem simples e clara
+
+YouTube: https://www.youtube.com/@DescomplicandoRedes
+
+---
+
+## 🧭 Sugestão de Trilha de Estudo
+
+1. Cisco Networking Academy / Professor Messer  
+2. Practical Networking  
+3. David Bombal / NetworkChuck  
+4. Wireshark + Chris Greer  
+5. BHIS / The Cyber Mentor  
+
+---
