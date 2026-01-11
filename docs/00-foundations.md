@@ -476,6 +476,11 @@ O objetivo aqui **não é prescrever ferramentas**, mas ajudar a entender:
 - **Sophos**
   - Firewalls e segurança perimetral
   - Integração com endpoints
+ 
+- **Sophos**
+  - Firewalls de próxima geração
+  - Integração entre **network security e endpoint**
+  - Visibilidade e resposta coordenada a incidentes
 
 ---
 
