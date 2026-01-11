@@ -417,3 +417,96 @@ Mas:
 
 ---
 
+## 🏭 Fabricantes de Redes & Network Security
+
+Esta seção apresenta **fabricantes amplamente utilizados em ambientes corporativos**, data centers e provedores, cobrindo **infraestrutura de rede** e **segurança de rede**.
+
+O objetivo aqui **não é prescrever ferramentas**, mas ajudar a entender:
+- o que existe no mercado,
+- onde cada fabricante costuma atuar,
+- e como isso se conecta com os fundamentos estudados.
+
+---
+
+### 🌐 Infraestrutura de Redes (Switching, Routing, Wireless)
+
+- **Cisco**
+  - Switching, routing, wireless, WAN
+  - Amplamente presente em ambientes corporativos e ISP
+
+- **Juniper Networks**
+  - Routing e switching de alto desempenho
+  - Muito usado em backbone, data center e provedores
+
+- **Arista Networks**
+  - Switching para data center e ambientes de alta escala
+  - Forte em automação e redes modernas
+
+- **Huawei**
+  - Infraestrutura de redes e telecom
+  - Presença forte em backbone e ambientes de grande porte
+
+- **HPE Aruba**
+  - Switching e wireless corporativo
+  - Forte em redes campus e WLAN
+
+- **Extreme Networks**
+  - Switching e redes corporativas
+  - Ambientes de campus e data center
+
+---
+
+### 🔐 Network Security (Proteção, Controle e Monitoramento)
+
+- **Palo Alto Networks**
+  - Firewalls de próxima geração
+  - Inspeção de tráfego e controle de aplicações
+
+- **Check Point**
+  - Firewalls, gateways de segurança
+  - Segmentação e políticas de rede
+
+- **Cisco (Security)**
+  - Firewalls, IDS/IPS, segurança integrada à rede
+
+- **Fortinet**
+  - Firewalls e segurança de rede integrada
+  - Presença forte em ambientes distribuídos
+
+- **Sophos**
+  - Firewalls e segurança perimetral
+  - Integração com endpoints
+
+---
+
+### 🧠 Visibilidade, Detecção e Tráfego
+
+- **Gigamon**
+  - Network Visibility Fabric
+  - Espelhamento e inspeção de tráfego
+
+- **Arbor Networks**
+  - Proteção contra DDoS
+  - Monitoramento de tráfego em larga escala
+
+- **ExtraHop**
+  - Network Detection & Response (NDR)
+  - Análise comportamental de tráfego
+
+---
+
+### 📌 Observação Importante
+
+- Fabricantes **não substituem fundamentos**
+- Ferramentas mudam, **protocolos permanecem**
+- Quem entende **OSI, TCP/IP e tráfego** aprende qualquer fabricante
+- Segurança de rede começa no **design**, não no appliance
+
+> 💡 **Regra prática do roadmap**  
+> Primeiro entenda **como a rede funciona**.  
+> Depois entenda **como cada fabricante implementa isso**.
+
+---
+
+
+
