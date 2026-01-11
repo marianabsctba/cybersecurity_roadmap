@@ -1,93 +1,134 @@
 # 🔐 IAM & Zero Trust
 
-Esta trilha cobre **Gestão de Identidades e Acessos (IAM)** e **Arquiteturas Zero Trust**, com foco em **controle de identidade, autenticação forte, autorização granular e governança de acessos** em ambientes **on-premises, cloud e híbridos**.
+Esta trilha cobre **Gestão de Identidades e Acessos (IAM)** e **Arquiteturas Zero Trust**, com foco em **controle de identidade, autenticação forte, autorização granular, governança de acessos e privilégio**, aplicáveis a ambientes **on-premises, cloud e híbridos**.
 
 > 🔎 **Identidade é o novo perímetro.**  
-> Zero Trust não é produto: é **modelo arquitetural baseado em identidade, contexto e verificação contínua**.
+> Zero Trust não é produto.  
+> É um **modelo arquitetural baseado em identidade, contexto, verificação contínua e redução de confiança implícita**.
 
 ---
 
 ## 👥 Carreiras
 
 - **IAM Analyst**  
-  Atua na operação, suporte e análise de acessos, identidades, autenticações e eventos de identidade.
+  Operação e suporte de identidades, acessos, MFA, SSO, eventos de autenticação e revisões de acesso.
 
 - **IAM Engineer**  
-  Implementa soluções de IAM, integra aplicações, define políticas de acesso e automatiza ciclos de vida.
+  Implementa soluções de IAM, integra aplicações, automatiza ciclo de vida de identidades, define políticas e governa acessos.
 
 - **Identity / Zero Trust Architect**  
-  Desenha arquiteturas de identidade, governança e Zero Trust, alinhadas a risco, negócio e compliance.
+  Desenha **arquiteturas de identidade, acesso e confiança**, alinhando IAM, PAM, dispositivos, aplicações e risco ao negócio.
 
 ---
 
-## 🧠 Habilidades Técnicas Essenciais
+## 🧠 Domínios de Conhecimento Essenciais
+
+### 🔑 Identidade Digital (Base de Tudo)
+
+Antes de ferramenta, é preciso entender **o que é identidade**:
+
+- Identidade humana (usuários)
+- Identidade não humana (serviços, APIs, workloads)
+- Identidade técnica vs identidade de negócio
+- Identidade persistente vs temporária
+- Identidade federada
+
+📌 **Erro comum:** tratar IAM como “login e senha”.
+
+---
 
 ### 🔑 Single Sign-On (SSO)
-- Centralização de autenticação
-- Redução de credenciais
-- Integração com aplicações SaaS e on-prem
-- Melhoria de experiência do usuário (UX)
 
-Protocolos:
-- **SAML 2.0**
-- **OAuth 2.0**
-- **OpenID Connect (OIDC)**
+SSO **não é só comodidade**, é **controle centralizado**.
+
+- Centralização da autenticação
+- Redução de credenciais espalhadas
+- Integração com SaaS, aplicações internas e APIs
+- Base para auditoria e Zero Trust
+
+**Protocolos fundamentais:**
+- **SAML 2.0** (enterprise legado)
+- **OAuth 2.0** (delegação de acesso)
+- **OpenID Connect (OIDC)** (identidade moderna)
 
 ---
 
 ### 🔐 Multi-Factor Authentication (MFA)
-- Fatores de autenticação:
-  - Algo que você sabe
-  - Algo que você tem
-  - Algo que você é
-- MFA adaptativo
-- MFA resistente a phishing
+
+MFA **mitiga 90%+ dos ataques de credencial**, mas só se bem aplicado.
+
+- MFA clássico vs MFA adaptativo
+- MFA resistente a phishing (FIDO2, passkeys)
 - Passwordless
+- Step-up authentication por risco
+
+📌 MFA mal implementado **vira fricção sem segurança**.
 
 ---
 
-### 🌐 Federation
+### 🌐 Federation & Identidade Híbrida
+
 - Trust entre domínios
-- Integração entre provedores de identidade
-- Identidade híbrida (on-prem + cloud)
-- B2B e B2C Identity
+- Integração on-prem + cloud
+- B2B, B2C e parceiros
+- External Identities
+- IAM como hub central
+
+📌 Identidade híbrida é regra, não exceção.
 
 ---
 
-### 🧠 Conditional Access
-- Políticas baseadas em:
-  - Identidade
-  - Dispositivo
-  - Localização
-  - Risco
-- Avaliação contínua
-- Resposta dinâmica (step-up auth)
+### 🧠 Conditional Access & Contexto
+
+Zero Trust **vive aqui**.
+
+Políticas baseadas em:
+- Identidade
+- Dispositivo
+- Localização
+- Horário
+- Postura de segurança
+- Risco comportamental
+
+Resultado:
+- Allow
+- Block
+- Step-up MFA
+- Sessão restrita
 
 ---
 
 ### 🛡️ Privileged Access Management (PAM)
-- Proteção de contas privilegiadas
-- Just-In-Time (JIT) access
+
+PAM protege **o que realmente quebra o ambiente**.
+
+- Contas privilegiadas (humanas e técnicas)
+- Just-In-Time (JIT)
+- Just-Enough-Access (JEA)
 - Session recording
 - Segregação de funções (SoD)
-- Auditoria de acessos críticos
+- Auditoria e trilha de acesso
+
+📌 **Privilégio permanente = risco permanente.**
 
 ---
 
-## 🧱 Zero Trust (Arquitetura)
+## 🧱 Zero Trust Architecture
 
 ### Princípios Fundamentais
-- **Nunca confie, sempre verifique**
+- Nunca confie, sempre verifique
 - Menor privilégio
 - Avaliação contínua
 - Assumir violação
+- Explícita verificação
 
-### Componentes
+### Pilares do Zero Trust
 - Identidade
 - Dispositivo
 - Aplicação
 - Rede
 - Dados
+- Observabilidade
 
 ### Frameworks de Referência
 - **NIST SP 800-207 – Zero Trust Architecture**  
@@ -96,50 +137,99 @@ Protocolos:
 - **CISA Zero Trust Maturity Model**  
   https://www.cisa.gov/zero-trust-maturity-model
 
+📌 Zero Trust **é jornada**, não projeto fechado.
+
 ---
 
 ## 🧪 Labs Práticos (IAM & Zero Trust)
 
-> IAM **se aprende configurando identidades reais e quebrando acessos indevidos**.
+> IAM só se aprende **errando permissão, quebrando acesso e corrigindo fluxo**.
 
-### Plataformas de Labs
-- **Microsoft Learn – Identity & Access Labs**  
+- Microsoft Learn – Identity & Access  
   https://learn.microsoft.com/training/
 
-- **TryHackMe – Active Directory & IAM Labs**  
+- TryHackMe – Active Directory & IAM  
   https://tryhackme.com/
 
-- **Azure AD / Entra ID Labs (Free Tier)**  
+- Azure Entra ID (Free Tier)  
   https://learn.microsoft.com/entra/
 
-- **AWS IAM Hands-On Labs**  
+- AWS IAM Labs  
   https://aws.amazon.com/training/
 
-- **Keycloak Playground (Local / Docker)**  
+- Keycloak Playground (Docker)  
   https://www.keycloak.org/getting-started/
 
 ---
 
 ## 📘 Cursos Oficiais (Formação)
 
-### Identidade & Zero Trust
-- **Microsoft SC-300 Learning Path (Identity and Access Administrator)**  
+- Microsoft SC-300 – Identity and Access Administrator  
   https://learn.microsoft.com/training/paths/implement-identity-access-management/
 
-- **NIST Zero Trust Architecture (Study Resources)**  
+- NIST Zero Trust Architecture – Study Resources  
   https://csrc.nist.gov/projects/zero-trust-architecture
+
+- Cloud Security Alliance – IAM & Zero Trust  
+  https://cloudsecurityalliance.org/education/
 
 ---
 
-### Cloud & IAM
-- **AWS IAM & Security Fundamentals**  
-  https://aws.amazon.com/training/digital/aws-security-fundamentals/
+## 🏭 Fabricantes & Plataformas (Exemplos Reais de Mercado)
 
-- **Google Cloud Identity Training**  
-  https://cloud.google.com/identity/docs
+> Fabricantes **implementam controles**.  
+> Arquitetura, processo e identidade **definem segurança**.
 
-- **Cloud Security Alliance – Zero Trust & IAM Training**  
-  https://cloudsecurityalliance.org/education/
+---
+
+### 🧩 IAM (Identity Governance & Access)
+
+- **Microsoft Entra ID (Azure AD)**
+- **Okta**
+- **Ping Identity**
+- **ForgeRock**
+- **IBM Security Verify**
+- **Google Cloud Identity**
+- **AWS IAM**
+- **ManageEngine IAM Suite**
+  - ADSelfService Plus (SSO, MFA, Passwordless)
+  - AD360 (IGA)
+  - PAM360 (PAM)
+  - Identity Manager Plus
+
+📌 **ManageEngine** é muito usado em ambientes híbridos e enterprise por unir **IAM + IGA + PAM**.
+
+---
+
+### 🛡️ PAM (Privileged Access)
+
+- **CyberArk**
+- **BeyondTrust**
+- **Delinea**
+- **ManageEngine PAM360**
+- **Wallix**
+- **One Identity Safeguard**
+
+---
+
+### 🌐 Zero Trust / Access
+
+- **Zscaler**
+- **Cloudflare Zero Trust**
+- **Palo Alto Prisma Access**
+- **Cisco Duo**
+- **Microsoft Entra + Defender**
+- **Akamai EAA**
+
+---
+
+### 🔐 Identity Governance (IGA)
+
+- **SailPoint**
+- **Saviynt**
+- **One Identity**
+- **IBM IGA**
+- **ManageEngine Identity Manager Plus**
 
 ---
 
@@ -151,65 +241,38 @@ Protocolos:
 - **Authelia** – https://www.authelia.com/
 - **Dex (OIDC)** – https://dexidp.io/
 
----
-
-### PAM / Privileged Access
-- **Teleport (Community Edition)**  
-  https://goteleport.com/
-
-- **HashiCorp Vault (Community)**  
-  https://www.vaultproject.io/
-
----
-
-### Policy & Authorization
+### Policy & Autorização
 - **Open Policy Agent (OPA)**  
   https://www.openpolicyagent.org/
 
-- **OPA Gatekeeper**  
-  https://github.com/open-policy-agent/gatekeeper
-
 ---
 
-## 🏅 Certificações (Validação de Conhecimento)
+## 🏅 Certificações
 
-### IAM / Zero Trust
-- **SC-300 – Microsoft Identity and Access Administrator**  
-  https://learn.microsoft.com/credentials/certifications/identity-and-access-administrator/
-
-- **CCSP – Certified Cloud Security Professional (ISC2)**  
-  https://www.isc2.org/certifications/ccsp
-
-- **CISSP – Certified Information Systems Security Professional**  
-  https://www.isc2.org/certifications/cissp
-
----
-
-### Complementares Relevantes
-- **AZ-500 – Azure Security Engineer**  
-  https://learn.microsoft.com/credentials/certifications/azure-security-engineer/
-
-- **AWS Certified Security – Specialty**  
-  https://aws.amazon.com/certification/certified-security-specialty/
+- **SC-300 – Microsoft Identity and Access Administrator**
+- **CCSP – ISC2**
+- **CISSP – ISC2**
+- **AZ-500 – Azure Security Engineer**
+- **AWS Security – Specialty**
 
 ---
 
 ## 🔗 Integração com Outras Trilhas
 
 - **Cloud Security** – identidade como perímetro
-- **DevSecOps / Kubernetes** – service identity e workload identity
+- **DevSecOps / Kubernetes** – service & workload identity
 - **SOC / Blue Team** – detecção de abuso de identidade
-- **DFIR** – investigação de compromissos de contas
-- **GRC** – compliance, auditoria e risco
+- **DFIR** – investigação de comprometimento de contas
+- **GRC** – auditoria, risco e compliance
 
 ---
 
 ## 📌 Princípios-Chave de IAM & Zero Trust
 
 - Identidade vem antes da rede
-- MFA é obrigatório, não opcional
-- Acesso deve ser **contextual**
-- Privilégio permanente é risco
-- Zero Trust é jornada, não produto
+- MFA é obrigatório
+- Acesso deve ser contextual
+- Privilégio permanente é falha de design
+- Zero Trust é **arquitetura viva**
 
----
+> Quem controla identidade, controla o ambiente.
