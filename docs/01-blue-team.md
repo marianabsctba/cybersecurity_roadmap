@@ -257,3 +257,17 @@ Blue Team **não é apenas o SOC reagindo a alertas**.
 - Logs sem contexto geram ruído, não segurança
 
 ---
+
+## 📌 Regra de Ouro do Blue Team
+
+> Blue Team não é só reagir.  
+> É **reduzir a chance do ataque dar certo** e **responder rápido quando ele acontece**.
+
+Ciclo prático:
+- Gevul / Hardening → evita ataque  
+- Firewall / WAF / IDS → bloqueia cedo  
+- SIEM / EDR → detecta e responde  
+- CTI / ATT&CK → prioriza e melhora  
+- SOAR → escala operação  
+
+Tudo isso é **Blue Team**, em momentos diferentes do ataque.
