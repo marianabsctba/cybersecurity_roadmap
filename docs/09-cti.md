@@ -154,6 +154,9 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 - **MITRE ATT&CK Defender (MAD)**  
   https://attack.mitre.org/resources/training/
 
+- **Cyber Threat Intelligence 101 – Arcx**  
+  https://arcx.io/courses/cyber-threat-intelligence-101  
+
 ---
 
 ### OSINT (Base)
