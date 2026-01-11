@@ -68,6 +68,89 @@ Blue Team **não é apenas o SOC reagindo a alertas**.
 
 ---
 
+---
+
+## 🏢 O que é um SOC (Security Operations Center)
+
+O **SOC (Security Operations Center)** é a **estrutura operacional** responsável por **executar o Blue Team no dia a dia**, funcionando como o **centro nervoso da detecção e resposta**.
+
+Enquanto **Blue Team** representa o **conjunto de capacidades defensivas**, o **SOC é o modelo operacional** que organiza pessoas, processos e tecnologia para executar essas capacidades de forma contínua.
+
+### 🎯 Objetivo do SOC
+- Monitorar eventos de segurança em tempo quase real
+- Detectar atividades maliciosas ou suspeitas
+- Tomar decisões rápidas de contenção
+- Coordenar resposta inicial a incidentes
+- Garantir continuidade operacional e redução de impacto
+
+---
+
+### 🧱 Componentes Fundamentais de um SOC
+
+| Pilar | Descrição |
+|-----|----------|
+| **Pessoas** | Analistas L1/L2/L3, Detection Engineers, Threat Hunters, SecOps |
+| **Processos** | Playbooks, SLAs, escalonamento, comunicação, pós-incidente |
+| **Tecnologia** | SIEM, EDR/XDR, NDR, SOAR, CTI, ferramentas de apoio |
+| **Governança** | Métricas, KPIs, melhoria contínua, alinhamento com negócio |
+
+---
+
+### 🔁 O que o SOC faz (e o que ele NÃO faz)
+
+**O SOC faz:**
+- Triagem e validação de alertas
+- Correlação de eventos
+- Contenção inicial
+- Escalonamento técnico e gerencial
+- Comunicação durante incidentes
+- Registro e melhoria contínua
+
+**O SOC NÃO faz (por padrão):**
+- Investigação forense profunda
+- Análise detalhada de malware
+- Recuperação de ambientes
+- Decisões estratégicas de risco
+
+> Essas atividades pertencem a **DFIR, Threat Research, Engenharia ou GRC**, mas são **acionadas pelo SOC**.
+
+---
+
+### 🧭 Modelos de SOC
+
+- **SOC Interno (In-house)**  
+  Total controle, maior custo, maior maturidade interna.
+
+- **SOC Terceirizado (MSS / MDR)**  
+  Escala rápida, dependência do fornecedor.
+
+- **SOC Híbrido**  
+  Operação compartilhada (modelo mais comum).
+
+---
+
+### 📊 Métricas Clássicas de um SOC Maduro
+
+- MTTD (Mean Time to Detect)
+- MTTR (Mean Time to Respond)
+- Taxa de falsos positivos
+- Cobertura ATT&CK
+- Incidentes contidos vs escalados
+- Aderência a playbooks
+
+---
+
+### 🧠 Relação SOC × Blue Team
+
+> Todo SOC é Blue Team.  
+> Nem todo Blue Team se resume ao SOC.
+
+- **Blue Team** define capacidades
+- **SOC** executa, monitora e responde
+- **Engenharia, Gevul, Firewall, AppSec e Cloud** suportam o SOC
+
+---
+
 ## 👥 Progressão de Carreira
 
 > **Importante:** não existe progressão linear obrigatória.  
