@@ -237,9 +237,10 @@ Conteúdos:
 
 ---
 
-## 🎓 Certificações (Estado Atual do Mercado)
+### 🤖 Certificação em Segurança de Inteligência Artificial (AI Security)
 
-> Ainda **não existe certificação única e madura** de AI Security.
+- **CompTIA SecAI+ (CY0-001)**  
+  https://www.comptia.org/en-us/certifications/secai/
 
 Recomenda-se combinar:
 - **AppSec (OSWE, CSSLP)**
