@@ -4,6 +4,70 @@ Esta trilha aborda **operações de segurança defensiva**, com foco em **monito
 
 ---
 
+## 🧩 Domínios Operacionais do Blue Team / SOC
+
+Blue Team **não é apenas o SOC reagindo a alertas**.  
+É o conjunto de **capacidades preventivas, detectivas e responsivas** que atuam **antes, durante e depois do ataque**.
+
+### 📊 Enquadramento de Atividades, Ferramentas e Responsabilidades
+
+| Domínio Blue Team | Atividades Principais | Tecnologias / Ferramentas | Perfis Envolvidos |
+|------------------|----------------------|---------------------------|-------------------|
+| **Detection & Response (Core SOC)** | Monitoramento, correlação, resposta inicial, escalonamento | SIEM, EDR/XDR, NDR, UEBA | SOC L1 / L2 / L3 |
+| **Exposure Management (Gevul)** | Scans de vulnerabilidade, priorização por risco, correlação com CTI | Vulnerability Management, Exposure Management | SOC L2/L3, SecOps, AppSec |
+| **Network Security Controls** | Regras, segmentação, bloqueios emergenciais | Firewall / NGFW, IDS, IPS | SOC L2/L3, Network Security |
+| **Application Perimeter** | Proteção e detecção em apps expostos | WAF, API Security, Bot Protection | AppSec + SOC |
+| **Endpoint Protection** | Detecção comportamental e contenção | EDR / XDR | SOC L1/L2 |
+| **Threat-Informed Defense** | Contextualização e priorização de alertas | CTI, MITRE ATT&CK | Threat Hunter, SOC L3 |
+| **Automation & Orchestration** | Playbooks, resposta automática | SOAR, Scripts | SOC L3, Detection Engineer |
+| **Logging & Telemetry** | Coleta, normalização e qualidade de logs | Agents, Syslog, APIs | SecOps, SOC |
+| **Hardening & Preventive Controls** | Redução de superfície de ataque | Patch, Baselines, CIS Benchmarks | SecOps, Infra |
+| **Cloud & Platform Security** | Telemetria e controles em nuvem | CSPM, CNAPP, Cloud Logs | SOC + Cloud Security |
+
+---
+
+## 🔍 Considerações Importantes sobre Controles no Blue Team
+
+### 🟠 Gestão de Vulnerabilidades (Gevul)
+- Atua **antes do incidente**
+- Reduz superfície de ataque
+- Alimenta o SOC com contexto de exploração real
+- Deve ser correlacionada com **CTI e SIEM**
+
+> Gevul é **Blue Team preventivo**, não ofensivo e não apenas GRC.
+
+---
+
+### 🟠 Firewall / NGFW
+- Atua como **controle preventivo e detectivo**
+- Permite contenção rápida durante incidentes
+- Gera logs críticos para correlação no SIEM
+
+> Firewall é **sensor e atuador** do Blue Team, não apenas “rede”.
+
+---
+
+### 🟠 IDS / IPS / NDR
+- Detecção de scans, exploits e C2
+- Complementa EDR (rede ≠ endpoint)
+- Fundamental para threat hunting
+
+---
+
+### 🟠 WAF / API Security
+- Interseção entre **AppSec e Blue Team**
+- Protege aplicações e APIs
+- SOC responde, AppSec define regra
+
+---
+
+### 🟠 EDR / XDR
+- Núcleo da resposta inicial
+- Detecção comportamental
+- Contenção local imediata
+
+---
+
 ## 👥 Progressão de Carreira
 
 > **Importante:** não existe progressão linear obrigatória.  
@@ -74,6 +138,11 @@ Esta trilha aborda **operações de segurança defensiva**, com foco em **monito
 - **ATT&CK Training – Portal Oficial**  
   https://attack.mitre.org/resources/learn-more-about-attack/training/
 
+---
+
+### 🟦 Blue Team / Defesa (Brasil)
+- **RSquad Academy – Cursos de Blue Team, SOC e Defesa**  
+  http://rsquadacademy.com.br/cursos
 ---
 
 ### 🛡️ Wazuh (SIEM / XDR Open Source)
