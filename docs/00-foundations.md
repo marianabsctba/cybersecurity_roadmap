@@ -234,14 +234,6 @@ YouTube: https://www.youtube.com/@DavidBombal
 
 ## 🔐 Segurança de Redes (Ataque & Defesa)
 
-### Practical Networking
-- Um dos melhores canais para entender redes **de verdade**
-- TCP, ARP, DNS, NAT, Routing
-- Essencial para SOC, Blue Team e CTI
-
-YouTube: https://www.youtube.com/@PracticalNetworking
-
----
 
 ### NetworkChuck
 - Redes + segurança + labs
