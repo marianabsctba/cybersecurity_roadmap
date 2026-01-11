@@ -64,6 +64,9 @@ Este repositório reúne **carreiras, trilhas técnicas, habilidades e certifica
 
 ## 📚 Índice de Trilhas
 
+### 📄 Currículos & Carreira (Faça um currículo otimizado para vaga e ATS)
+- [Currículos em Cibersegurança](docs/13-curriculos.md)
+
 ### 🧱 Fundamentos (obrigatório para todos)
 - [Fundamentos](docs/00-foundations.md)
 
