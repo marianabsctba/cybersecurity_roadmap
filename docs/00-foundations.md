@@ -135,6 +135,12 @@ Esta seção separa **cursos (formação e aprendizado)** de **certificações (
   https://www.netacad.com/courses/networking/networking-essentials  
   > Curso introdutório de redes: modelos, endereçamento IP, switching básico e troubleshooting.
 
+### Linux
+- **NDG Linux Essentials – Cisco NetAcad (alinhado ao LPI)**  
+  https://www.netacad.com/courses/os-it/ndg-linux-essentials  
+  > Curso oficial de Linux oferecido pela Cisco Networking Academy, cobrindo fundamentos de sistema operacional, linha de comando, processos, permissões e uso do Linux.  
+  > **Preparatório direto para a certificação LPI Linux Essentials (LPIC)**.
+
 ---
 
 ## 🏅 Certificações (Validação de Conhecimento)
