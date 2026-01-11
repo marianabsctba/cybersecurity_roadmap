@@ -1,6 +1,6 @@
 # 🟦 Blue Team / SOC / Security Operations
 
-Esta trilha aborda **operações de segurança defensiva**, com foco em **monitoramento, detecção, resposta inicial a incidentes e engenharia de detecção**, tendo o **SIEM como núcleo operacional**, integrado a outras fontes de telemetria (EDR, Cloud, Apps, CTI).
+Esta trilha aborda **operações de segurança defensiva**, com foco em **monitoramento, detecção, resposta a incidentes e engenharia de detecção**, tendo o **SIEM como núcleo operacional**, integrado a outras fontes de telemetria (EDR, Cloud, Apps, CTI).
 
 ---
 
@@ -33,25 +33,35 @@ Esta trilha aborda **operações de segurança defensiva**, com foco em **monito
 - Detecção baseada em comportamento
 - Uso de fontes de dados corretas por TTP
 - Validação contínua de regras
-- Integração SIEM ↔ EDR ↔ CTI
+- Integração **SIEM ↔ EDR ↔ CTI**
 
 ### MITRE ATT&CK Aplicado
 - Mapeamento de alertas para TTPs
 - Uso do ATT&CK como linguagem comum
 - Cobertura de técnicas vs visibilidade real
-- ATT&CK para threat hunting e purple team
+- ATT&CK aplicado a **threat hunting** e **purple team**
 
-### Operações e Resposta Inicial
-- Triagem de alertas
-- Análise inicial de incidentes
-- Escalonamento e contenção básica
-- Comunicação com DFIR e outras áreas
+---
+
+### 🚨 Resposta a Incidentes (no contexto do SOC)
+
+> No SOC, resposta a incidentes **não é investigação profunda**, mas **contenção, decisão rápida e coordenação**.
+
+- Triagem e classificação de incidentes
+- Análise inicial e validação de alertas
+- Escalonamento técnico e gerencial
+- Contenção básica (isolamento, bloqueios, revogação de acessos)
+- Preservação inicial de evidências
+- Comunicação com DFIR, TI, Cloud e Negócio
+- Registro e lições aprendidas (post-incident)
+
+---
 
 ### Playbooks e Automação
 - Criação de playbooks operacionais
 - Automação de tarefas repetitivas
 - Scripts (Bash, PowerShell, Python)
-- Conceitos de SOAR (orquestração)
+- Conceitos de **SOAR** (orquestração e resposta automatizada)
 
 ---
 
@@ -99,6 +109,33 @@ Esta trilha aborda **operações de segurança defensiva**, com foco em **monito
 
 ---
 
+## 🧪 Labs Práticos (Essenciais para Blue Team / SOC)
+
+> SOC **não se aprende só em curso**. Esses labs simulam **ambientes reais, alertas reais e incidentes reais**.
+
+### Plataformas de Labs
+- **TryHackMe – Blue Team & SOC Paths**  
+  https://tryhackme.com/paths  
+  > Trilhas de SOC, SIEM, incident response e threat hunting.
+
+- **CyberDefenders (Blue Team Labs Online)**  
+  https://cyberdefenders.org/  
+  > Laboratórios focados em análise de logs, PCAPs, alertas e incidentes.
+
+- **LetsDefend (SOC Analyst Labs)**  
+  https://letsdefend.io/  
+  > Simulações de SOC com tickets, alertas e fluxo operacional real.
+
+- **DetectionLab (Open Source – GitHub)**  
+  https://github.com/clong/DetectionLab  
+  > Ambiente local para testes de detecção, SIEM, ATT&CK e ataques simulados.
+
+- **Wazuh Labs (Hands-on)**  
+  https://documentation.wazuh.com/current/proof-of-concept-guide/index.html  
+  > Casos práticos oficiais com Wazuh.
+
+---
+
 ## 🏅 Certificações (Validação de Conhecimento)
 
 ### SOC / Blue Team / Operações
@@ -135,21 +172,19 @@ Esta trilha aborda **operações de segurança defensiva**, com foco em **monito
 ---
 
 ## 🔗 Integração com Outras Trilhas
-
-- **DFIR / Incident Response** – investigação aprofundada  
-- **Cyber Threat Intelligence (CTI)** – enriquecimento e priorização  
-- **Cloud Security** – telemetria e detecção em nuvem  
-- **AppSec** – eventos e segurança de aplicações  
-- **GRC** – métricas, risco e conformidade  
+- **DFIR / Incident Response** – investigação aprofundada
+- **Cyber Threat Intelligence (CTI)** – enriquecimento e priorização
+- **Cloud Security** – telemetria e detecção em nuvem
+- **AppSec** – eventos e segurança de aplicações
+- **GRC** – métricas, risco e conformidade
 
 ---
 
 ## 📌 Princípios-Chave da Trilha
-
-- SIEM é **meio**, não fim  
-- Detecção sem ATT&CK vira regra cega  
-- SOC sem automação não escala  
-- Threat hunting complementa, não substitui, monitoramento  
-- Logs sem contexto geram ruído, não segurança  
+- SIEM é **meio**, não fim
+- Detecção sem ATT&CK vira regra cega
+- SOC sem automação não escala
+- Threat hunting complementa, não substitui, monitoramento
+- Logs sem contexto geram ruído, não segurança
 
 ---
