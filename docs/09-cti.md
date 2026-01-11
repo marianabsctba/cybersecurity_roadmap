@@ -27,6 +27,8 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 - Fontes abertas, técnicas e humanas (quando aplicável)
 - Avaliação de confiabilidade da fonte
 - Validação e deduplicação de dados
+- Automação, análise de dados
+- Pesquisa incessante
 
 ---
 
@@ -39,7 +41,7 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 ---
 
 ### 🧠 Análise de Ameaças
-- Kill Chain e ATT&CK
+- Kill Chain, Diamond Model e ATT&CK
 - Análise de campanhas
 - Atribuição (com cautela)
 - Análise de malware (nível CTI)
