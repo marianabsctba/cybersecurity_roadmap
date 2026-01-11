@@ -4,17 +4,17 @@ Esta trilha aborda **segurança integrada ao ciclo de entrega de software e à c
 
 > ⚠️ **Importante**  
 > DevSecOps **não é** um cargo isolado nem apenas “rodar SAST no CI”.  
-> DevSecOps é a **prática de integrar segurança ao fluxo de engenharia**, enquanto **Platform / Kubernetes Security** trata da **proteção da infraestrutura, do cluster e do runtime**.
+> DevSecOps é a **prática de integrar segurança ao fluxo de engenharia**, enquanto **Platform / Kubernetes Security** trata da **proteção da infraestrutura, do cluster e do runtime**, onde o impacto é real.
 
 ---
 
 ## 👥 Carreiras
 
 - **DevSecOps Engineer**  
-  Integra segurança ao SDLC, pipelines CI/CD, IaC e supply chain, atuando junto a DevOps e AppSec.
+  Atua no **ponto de interseção entre desenvolvimento, infraestrutura e segurança**, integrando controles ao SDLC, pipelines CI/CD, IaC e supply chain.
 
 - **Platform / Kubernetes Security Engineer**  
-  Responsável pela segurança da plataforma: **clusters, workloads, identidade, rede, políticas e runtime**.
+  Responsável por **garantir que a plataforma seja segura por padrão**, cobrindo clusters, workloads, identidade, rede, políticas e runtime.
 
 ---
 
@@ -22,12 +22,13 @@ Esta trilha aborda **segurança integrada ao ciclo de entrega de software e à c
 
 ### 📦 IaC Security (Infrastructure as Code)
 
-> Erros de IaC **escalam rápido e replicam falhas**.
+> Em cloud e Kubernetes, **infraestrutura é código** — e código inseguro escala rápido.
 
 - Segurança de Terraform, Helm, CloudFormation e ARM
-- Validação antes do deploy
-- Detecção de misconfiguration
-- Enforcement de padrões (policy as code)
+- Validação de configurações **antes do deploy**
+- Detecção de misconfiguration replicável
+- Enforcement de padrões técnicos (policy as code)
+- Prevenção de drift entre código e ambiente real
 
 Ferramentas open source:
 - **Checkov** – https://github.com/bridgecrewio/checkov  
@@ -39,10 +40,13 @@ Ferramentas open source:
 
 ### 🐳 Container Image Security
 
-- Image scanning
-- Vulnerabilidades e dependências
-- Imagens imutáveis
-- Assinatura e verificação de imagens
+> Uma imagem insegura vira **mil containers inseguros**.
+
+- Scanning de imagens em build e registry
+- Vulnerabilidades em SO base e dependências
+- Uso de imagens mínimas e imutáveis
+- Assinatura, verificação e confiança de imagens
+- Controle de origem (base images confiáveis)
 
 Ferramentas open source:
 - **Trivy** – https://github.com/aquasecurity/trivy  
@@ -54,14 +58,14 @@ Ferramentas open source:
 
 ### ☸️ Kubernetes Security (Cluster & Workloads)
 
-> Kubernetes **não é seguro por padrão**.
+> Kubernetes **não é seguro por padrão** — ele é flexível por padrão.
 
-- Hardening de cluster
-- RBAC e identidade
-- Network Policies
+- Hardening de cluster (control plane e nodes)
+- RBAC, service accounts e identidade
+- Network Policies e isolamento de tráfego
 - Pod Security Standards
-- Segregação de namespaces
-- Segurança do etcd
+- Segregação de namespaces e ambientes
+- Proteção e acesso seguro ao etcd
 
 Ferramentas open source:
 - **kube-bench** – https://github.com/aquasecurity/kube-bench  
@@ -74,10 +78,13 @@ Ferramentas open source:
 
 ### 🧠 Admission Control & Policy as Code
 
-- Validação de manifests
-- Bloqueio de configurações inseguras
-- Enforcement automático
-- Compliance contínuo
+> Segurança declarativa é **controle escalável**.
+
+- Validação de manifests no momento do deploy
+- Bloqueio automático de configurações inseguras
+- Enforcement técnico (não só guideline)
+- Compliance contínuo e versionável
+- Redução de erro humano em escala
 
 Ferramentas:
 - **OPA / Gatekeeper** – https://www.openpolicyagent.org/  
@@ -87,12 +94,13 @@ Ferramentas:
 
 ### 🧬 Runtime Security
 
-> O ataque **acontece em runtime**, não no pipeline.
+> O pipeline falha. O ataque **acontece em runtime**.
 
 - Detecção de comportamento anômalo
-- Monitoramento de syscalls
-- Detecção de escape de container
-- Proteção em tempo real
+- Monitoramento de syscalls e eventos do kernel
+- Detecção de container escape
+- Visibilidade de processos e chamadas suspeitas
+- Resposta em tempo real
 
 Ferramentas open source:
 - **Falco** – https://falco.org/  
@@ -103,12 +111,13 @@ Ferramentas open source:
 
 ### 🔗 Supply Chain Security
 
-> O pipeline virou alvo.
+> O atacante agora entra **antes do deploy**.
 
-- Proteção do CI/CD
-- Integridade de artefatos
-- Assinatura e verificação
-- Proveniência de builds (SLSA)
+- Proteção de pipelines CI/CD
+- Integridade de artefatos e builds
+- Assinatura e verificação criptográfica
+- Proveniência e rastreabilidade (SLSA)
+- Redução de dependência não confiável
 
 Ferramentas open source:
 - **Sigstore / cosign** – https://www.sigstore.dev/  
@@ -158,45 +167,32 @@ Ferramentas open source:
 ## 🏅 Certificações
 
 - **CKA – Certified Kubernetes Administrator**  
-  https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/
-
 - **CKS – Certified Kubernetes Security Specialist**  
-  https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/
-
-- **AWS Security – Specialty**  
-  https://aws.amazon.com/certification/certified-security-specialty/
+- **AWS Security – Specialty**
 
 ---
 
 ## 📚 Livros Técnicos Essenciais (DevSecOps & Kubernetes)
 
-### Kubernetes Security
+### Kubernetes Security  
 **Autor:** Liz Rice, Michael Hausenblas  
 > Referência moderna e prática sobre **segurança real em Kubernetes**.
 
----
-
-### Container Security
+### Container Security  
 **Autor:** Liz Rice  
-> Fundamentos de containers, namespaces, cgroups e runtime security.
+> Base sólida sobre containers, namespaces, cgroups e runtime.
 
----
-
-### Practical Cloud Native Security
+### Practical Cloud Native Security  
 **Autor:** Mark Coleman, Dan Nemeth  
 > Segurança aplicada a ambientes cloud native, do build ao runtime.
 
----
-
-### Securing DevOps
+### Securing DevOps  
 **Autor:** Julien Vehent  
 > Clássico sobre **segurança em pipelines, automação e cultura DevSecOps**.
 
----
-
-### Software Supply Chain Security
+### Software Supply Chain Security  
 **Autores:** Seth Vargo et al.  
-> Base conceitual moderna sobre **supply chain attacks e mitigação**.
+> Base moderna sobre ataques à cadeia de suprimentos e mitigação.
 
 ---
 
