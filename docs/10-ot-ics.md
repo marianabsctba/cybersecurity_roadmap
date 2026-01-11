@@ -3,28 +3,28 @@
 Esta trilha aborda **segurança de ambientes industriais e sistemas de controle** (OT/ICS), com foco em **disponibilidade, segurança funcional, resiliência operacional e proteção de processos físicos**, considerando **plantas industriais, energia, saneamento, manufatura, óleo & gás e infraestrutura crítica**.
 
 > ⚠️ **OT não é IT mal configurado.**  
-> Em OT, **disponibilidade e segurança física** vêm antes de confidencialidade, e mudanças exigem **controle extremo**.
+> Em OT, **disponibilidade e segurança física** vêm antes de confidencialidade, e mudanças exigem **controle extremo, validação e coordenação com engenharia**.
 
 ---
 
 ## 👥 Carreiras
 
 - **OT Security Engineer**  
-  Atua na proteção de ambientes industriais, integração entre IT/OT, visibilidade de rede e mitigação de riscos operacionais.
+  Atua na proteção de ambientes industriais, integração IT/OT, visibilidade de rede, segmentação e mitigação de riscos operacionais.
 
 - **ICS Security Specialist**  
   Especialista em protocolos industriais, arquiteturas de automação, hardening de controladores e resposta a incidentes OT.
 
 ---
 
-## 🧠 Habilidades Técnicas Essenciais
+## 🧠 Domínios Técnicos Essenciais
 
 ### 🏗️ Arquitetura OT / ICS
 - Purdue Model (níveis 0–5)
-- Zonas e conduítes
+- Zonas e conduítes (IEC 62443)
 - Segmentação IT/OT
 - DMZ industrial
-- Integração segura com TI corporativa
+- Integração segura com TI corporativa e cloud (IIoT)
 
 ---
 
@@ -35,76 +35,75 @@ Esta trilha aborda **segurança de ambientes industriais e sistemas de controle*
 - OPC / OPC UA
 - Profinet, EtherNet/IP
 
-> Entender protocolo é essencial para **detecção de abuso**, não para “pentest agressivo”.
+> Entender protocolo é essencial para **detecção de abuso e anomalias**, não para “pentest agressivo” em produção.
 
 ---
 
 ### 🔍 Visibilidade e Monitoramento
-- Descoberta passiva de ativos
-- Inventário de controladores, IEDs e HMIs
+- Descoberta **passiva** de ativos
+- Inventário de PLCs, RTUs, IEDs e HMIs
 - Detecção de comportamento anômalo
-- Monitoramento de comandos e estados
+- Monitoramento de comandos, estados e mudanças de lógica
 
 ---
 
 ### 🛡️ Hardening & Gestão de Risco OT
-- Gestão de vulnerabilidades (com cautela)
-- Patch management controlado
-- Avaliação de risco operacional
-- Segurança funcional vs cibersegurança
+- Gestão de vulnerabilidades **orientada a risco operacional**
+- Patch management controlado e testado
+- Avaliação de risco OT (segurança funcional × ciber)
+- Priorização por impacto físico e segurança de pessoas
 
 ---
 
 ### 🚨 Resposta a Incidentes em OT
-- Identificação de incidentes industriais
-- Contenção sem interromper processo
-- Coordenação com engenharia e operação
+- Identificação e classificação de incidentes industriais
+- Contenção **sem interromper processo**
+- Coordenação com engenharia, operação e segurança
 - Preservação de evidências OT
-- Comunicação de impacto físico e de negócio
+- Comunicação de impacto físico, ambiental e financeiro
 
 ---
 
 ## 📘 Frameworks, Normas e Referências
 
 ### Normas e Padrões
-- **IEC 62443 – Industrial Automation and Control Systems Security**  
-  https://www.iec.ch/dyn/www/f?p=103:85:0::::FSP_LANG_ID:25
+- IEC 62443 – Industrial Automation and Control Systems Security  
+  https://www.iec.ch
 
-- **NIST SP 800-82 – Guide to ICS Security**  
+- NIST SP 800-82 – Guide to ICS Security  
   https://csrc.nist.gov/publications/detail/sp/800-82/rev-3/final
 
-- **ISA Secure / ISA99**  
+- ISA Secure / ISA99  
   https://www.isasecure.org/
 
 ---
 
 ### Modelos de Referência
-- **Purdue Enterprise Reference Architecture**  
+- Purdue Enterprise Reference Architecture  
   https://www.cisa.gov/ics
 
-- **MITRE ATT&CK for ICS**  
+- MITRE ATT&CK for ICS  
   https://attack.mitre.org/matrices/ics/
 
 ---
 
 ## 🧪 Labs Práticos (OT / ICS)
 
-> Em OT, laboratório **vem antes** de qualquer ação em produção.
+> Em OT, **laboratório vem antes** de qualquer ação em produção.
 
-### Plataformas e Labs
-- **CISA – ICS Training & Labs**  
+- CISA – ICS Training & Labs  
   https://www.cisa.gov/ics-training-available-through-cisa
 
-- **RangeForce – ICS / OT Labs (Community/Academy)**  
+- RangeForce – ICS / OT Labs  
   https://www.rangeforce.com/
 
-- **TryHackMe – ICS & Industrial Rooms**  
+- TryHackMe – ICS & Industrial Rooms  
   https://tryhackme.com/
 
-- **OpenPLC Project (Simulação de PLC)**  
+- OpenPLC Project  
   https://www.openplcproject.com/
 
-- **MiniCPS / PowerGrid Labs (Pesquisa)**  
+- MiniCPS / PowerGrid Labs  
   https://github.com/satejnikamane/miniCPS
 
 ---
@@ -112,83 +111,85 @@ Esta trilha aborda **segurança de ambientes industriais e sistemas de controle*
 ## 🧰 Ferramentas Open Source Importantes
 
 ### 🔎 Visibilidade & Análise
-- **Zeek (ICS plugins)** – https://zeek.org/
-- **Wireshark (protocolos industriais)** – https://www.wireshark.org/
-- **Snort / Suricata (ICS rules)** – https://suricata.io/
+- Zeek (ICS plugins) – https://zeek.org/
+- Wireshark (protocolos industriais) – https://www.wireshark.org/
+- Snort / Suricata (ICS rules) – https://suricata.io/
+
+### 🏭 OT / ICS Específicas
+- GRASSMARLIN (CISA) – https://github.com/nsacyber/GRASSMARLIN
+- ICSREF – https://github.com/udacity/icsref
+- Conpot (ICS Honeypot) – https://github.com/mushorg/conpot
 
 ---
 
-### 🏭 OT / ICS Specific
-- **GRASSMARLIN (CISA)**  
-  https://github.com/nsacyber/GRASSMARLIN
+## 🏭 Fabricantes e Soluções Comerciais (Exemplos)
 
-- **ICSREF (Pesquisa de vulnerabilidades ICS)**  
-  https://github.com/udacity/icsref
+> Fabricantes **não substituem engenharia**, mas viabilizam **escala, visibilidade e governança** em OT.
 
-- **Conpot (ICS Honeypot)**  
-  https://github.com/mushorg/conpot
+### Visibilidade, Risco e Vulnerabilidades OT
+- **Tenable One (OT Security)**  
+  Descoberta passiva, inventário OT, correlação IT + OT e priorização por **exposição e impacto operacional**.
+
+- Claroty  
+  Visibilidade OT, inventário de ativos e monitoramento de tráfego industrial.
+
+- Nozomi Networks  
+  Detecção de anomalias OT e monitoramento profundo de protocolos industriais.
+
+- Dragos  
+  OT threat intelligence, detecção e resposta focadas em ICS.
 
 ---
 
-### 🧠 Threat Intelligence OT
-- **MITRE ATT&CK for ICS Navigator**  
-  https://mitre-attack.github.io/attack-navigator/
+### Segmentação & Microsegmentação (IT / OT)
+- **Akamai Guardicore Segmentation**  
+  **Microsegmentação baseada em identidade e fluxo**, aplicável a ambientes híbridos e convergência IT/OT, reduzindo movimento lateral e impacto de incidentes.
 
-- **CISA ICS Advisories**  
-  https://www.cisa.gov/ics-advisories
+- Palo Alto Networks (Industrial NGFW)  
+  Segmentação por zonas e conduítes com inspeção de tráfego.
+
+- Cisco Industrial Security  
+  Segmentação, switches industriais e integração IT/OT.
 
 ---
 
 ## 📘 Cursos e Conteúdos Oficiais
 
-### OT / ICS Security
-- **SANS ICS410 – ICS/SCADA Security Essentials**  
-  https://www.sans.org/cyber-security-courses/ics-scada-cyber-security-essentials/
+- SANS ICS410 – ICS/SCADA Security Essentials  
+  https://www.sans.org
 
-- **SANS ICS515 – ICS Visibility, Detection & Response**  
-  https://www.sans.org/cyber-security-courses/ics-active-defense-and-incident-response/
+- SANS ICS515 – ICS Visibility, Detection & Response  
+  https://www.sans.org
 
-- **CISA ICS Training Program**  
+- CISA ICS Training Program  
   https://www.cisa.gov/ics-training
 
 ---
 
-### Normas & Governança OT
-- **IEC 62443 Training (ISA / PECB)**  
-  https://pecb.com/en/education-and-certification-for-individuals/iec-62443
+## 🏅 Certificações
+
+- GICSP – GIAC Global Industrial Cyber Security Professional  
+- IEC 62443 Cybersecurity Expert / Lead Implementer  
+- CSSA – Certified SCADA Security Architect  
 
 ---
 
-## 🏅 Certificações (Validação de Conhecimento)
+## 📚 Livros Essenciais de OT / ICS / IoT Security
 
-### OT / ICS
-- **GICSP – GIAC Global Industrial Cyber Security Professional**  
-  https://www.giac.org/certifications/global-industrial-cyber-security-professional-gicsp/
+### Industrial Cybersecurity – Pascal Ackerman  
+Base prática de segurança industrial e integração IT/OT.
 
-- **IEC 62443 Cybersecurity Expert / Lead Implementer**  
-  https://pecb.com/en/education-and-certification-for-individuals/iec-62443
+### Applied Industrial Cybersecurity – Pascal Ackerman  
+Aplicação real de controles de segurança em ambientes industriais.
 
-- **CSSA – Certified SCADA Security Architect**  
-  https://www.ics-certification.com/cssa
+### Securing Industrial Control Systems – Tyson Macaulay  
+Fundamentos técnicos e alinhamento com NIST e cenários reais.
 
----
+### Industrial Network Security – Eric D. Knapp  
+Segmentação, redes industriais e proteção de comunicação OT.
 
-### Complementares Relevantes
-- **CISSP** – visão estratégica  
-  https://www.isc2.org/certifications/cissp
-
-- **CCSP** – OT conectado à cloud  
-  https://www.isc2.org/certifications/ccsp
-
----
-
-## 🔗 Integração com Outras Trilhas
-
-- **SOC / Blue Team** – monitoramento OT
-- **DFIR** – investigação de incidentes industriais
-- **GRC / Risco** – risco operacional e regulatório
-- **Cloud Security** – OT conectado (IIoT)
-- **Executivo / Board** – impacto físico e financeiro
+### Practical Internet of Things Security – Brian Russell & Drew Van Duren  
+Segurança de IoT e IIoT conectados a ambientes industriais.
 
 ---
 
@@ -197,7 +198,5 @@ Esta trilha aborda **segurança de ambientes industriais e sistemas de controle*
 - Disponibilidade é prioridade máxima
 - Mudança sem engenharia é risco
 - Visibilidade vem antes de controle
-- OT exige abordagem conservadora
-- Segurança protege pessoas, não só dados
-
----
+- Segmentação reduz impacto
+- Segurança em OT protege **pessoas, processos e o negócio**
