@@ -3,85 +3,139 @@
 Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **coleta, análise, contextualização e disseminação de inteligência acionável**, apoiando **SOC, DFIR, Red Team, GRC e tomada de decisão executiva**.
 
 > CTI não é ferramenta, nem dump de IOC.  
-> CTI é **processo analítico estruturado**, orientado a decisão.
+> CTI é **processo analítico estruturado**, orientado a decisão — com **método, evidência e rastreabilidade**.
 
 ---
 
 ## 👥 Carreiras
 
 - **CTI Analyst**  
-  Produz inteligência tática e operacional para SOC, DFIR e times técnicos.
+  Produz inteligência **tática e operacional** para SOC, DFIR e times técnicos (detecção, hunting, priorização).
 
 - **Threat Researcher**  
-  Pesquisa campanhas, TTPs, atores de ameaça, malware e ecossistema criminoso.
+  Pesquisa campanhas, TTPs, atores, malware e infraestrutura, traduzindo achados em **hipóteses e deteções**.
 
 - **Intelligence Lead / CTI Manager**  
-  Define estratégia de CTI, prioriza requisitos de inteligência (IRs) e integra CTI ao negócio.
+  Define estratégia, prioriza **Intelligence Requirements (IRs)**, cria governança de CTI e integra CTI ao negócio.
+
+> CTI maduro tem “cliente interno”: SOC, DFIR, AppSec, Executivo, GRC.  
+> Sem consumidor e IR bem definido, vira **relatório bonito sem impacto**.
 
 ---
 
-## 🧠 Habilidades Técnicas Essenciais
+## 🧠 Domínios Técnicos Essenciais
 
-### 🔍 Coleta & OSINT Estruturado
+### 🎯 Direcionamento (IRs) e Planejamento
+- Definir **perguntas que importam** (IRs): o que o negócio precisa decidir?
+- Priorizar por risco/impacto (coroa, crown jewels, processos críticos)
+- Definir escopo de monitoramento (marca, domínios, IPs, apps, terceiros, cloud)
+- Operacionalizar demanda: backlog, SLAs, cadência de relatórios e alertas
+
+📌 CTI bom começa com **boa pergunta**.
+
+---
+
+### 🔍 Coleta & OSINT Estruturado (com método)
 - Coleta automatizada e manual
 - Fontes abertas, técnicas e humanas (quando aplicável)
-- Avaliação de confiabilidade da fonte
-- Validação e deduplicação de dados
-- Automação, análise de dados
-- Pesquisa incessante
+- Avaliação de confiabilidade da fonte e do conteúdo
+- Validação, deduplicação e enriquecimento
+- Pipelines (ETL/ELT), normalização e taxonomia
+
+📌 OSINT sem validação vira **boato em escala**.
 
 ---
 
-### 🌑 Deep & Dark Web Intelligence
+### 🌑 Deep & Dark Web Intelligence (controlado e ético)
 - Monitoramento de fóruns, marketplaces e chats
-- Análise de vazamentos, credenciais e ofertas criminosas
-- Entendimento de ecossistemas underground
-- Coleta ética e controlada
+- Vazamentos, credenciais, stealer logs, “combos” e ofertas criminosas
+- Entendimento de reputação, confiança e sinalização no underground
+- Coleta ética e controlada (OPSEC, legal e escopo)
+
+📌 Aqui o ganho é **contexto e antecipação**, não “curiosidade mórbida”.
 
 ---
 
-### 🧠 Análise de Ameaças
+### 🧠 Análise de Ameaças (o coração do CTI)
 - Kill Chain, Diamond Model e ATT&CK
-- Análise de campanhas
-- Atribuição (com cautela)
-- Análise de malware (nível CTI)
-- Correlação de indicadores, infraestrutura e comportamento
+- Análise de campanha (timeline, hipóteses, alvos, infraestrutura)
+- Correlação de: indicador + infraestrutura + comportamento + motivação
+- Atribuição **com cautela** (grau de confiança e evidência)
+- Produção de hipóteses acionáveis (detecção, hardening, resposta)
+
+📌 Indicador sem hipótese é só **string**.
 
 ---
 
 ### 🧭 MITRE ATT&CK Aplicado
-- Uso do ATT&CK como **linguagem comum**
-- Mapeamento de TTPs por ator
+- ATT&CK como **linguagem comum** entre CTI, SOC, DFIR e Purple
+- Mapeamento de TTPs por campanha/ator
 - CTI orientado a detecção e hunting
-- Gap analysis de cobertura defensiva
+- Gap analysis de cobertura defensiva (visibilidade x detecção x resposta)
+
+📌 ATT&CK não é checklist: é **mapa para priorizar engenharia de detecção**.
 
 ---
 
-### 📝 Intelligence Reporting
-- Produção de relatórios:
-  - Estratégicos
-  - Operacionais
-  - Táticos
-- Escrita clara e objetiva
-- Comunicação para público técnico e executivo
-- Ciclo de feedback (intelligence lifecycle)
+### 🧪 Engineering Output (CTI que vira controle)
+- Regras: Sigma / SIEM / EDR (quando aplicável)
+- Watchlists: domínios, IPs, ASNs, hashes (com validade e contexto)
+- Playbooks: triagem, validação, enriquecimento e decisão
+- Hardening: recomendações pragmáticas (identidade, e-mail, borda, cloud)
+- Detecção: hipóteses + fontes de telemetria + testes
+
+📌 “Inteligência acionável” = **muda decisão ou muda controle**.
+
+---
+
+### 📝 Intelligence Reporting (para técnico e executivo)
+- **Tático:** IOC + contexto + janela de validade + ação recomendada
+- **Operacional:** campanhas e TTPs + priorização + impacto operacional
+- **Estratégico:** tendência, risco, exposição, recomendações e investimento
+- Escrita clara, objetiva e auditável (com evidência e confiança)
+
+📌 Relatório bom é o que **vira decisão**, não o que “fica bonito”.
 
 ---
 
 ## 🔄 Ciclo de Inteligência (CTI Lifecycle)
 
-1. Direcionamento (Intelligence Requirements – IRs)  
-2. Coleta  
-3. Processamento  
-4. Análise  
-5. Disseminação  
-6. Feedback e melhoria contínua  
+1. **Direcionamento (IRs)**  
+2. **Coleta**  
+3. **Processamento** (normalização, dedupe, enriquecimento)  
+4. **Análise** (hipóteses, correlação, confiança)  
+5. **Disseminação** (alertas, relatórios, briefings)  
+6. **Feedback** (o que gerou ação? o que foi ruído?)
+
+---
+
+## 🧩 Integração com o Ecossistema (CTI de verdade)
+
+### CTI ↔ SOC
+- Prioriza alertas com contexto (campanha, TTP, alvo, risco)
+- Alimenta hunting com hipóteses e pivôs
+- Ajuda no tuning (reduz FP e melhora fidelidade)
+
+### CTI ↔ DFIR
+- Acelera investigação (infra, tooling, padrões, IOCs com contexto)
+- Ajuda na narrativa pós-incidente (linha do tempo e campanha)
+- Sustenta lições aprendidas com visão do adversário
+
+### CTI ↔ AppSec / DevSecOps
+- Campanhas e exploits relevantes para stack do negócio
+- Priorização de correções por exploração ativa (exploit in the wild)
+- Proteção de supply chain e dependências críticas
+
+### CTI ↔ GRC / Executivo
+- Tendências e risco (setor, região, cadeia de fornecedores)
+- Briefings de ameaças para decisão (investimento, prioridade, política)
+- Métricas de exposição e efetividade de resposta
 
 ---
 
 ## 📘 Conteúdos e Referências Oficiais
 
-### 📚 Frameworks e Metodologia
+### Frameworks e metodologia
 - **MITRE ATT&CK – Base Oficial**  
   https://attack.mitre.org/
 
@@ -91,14 +145,12 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 - **NIST SP 800-150 – Guide to Cyber Threat Information Sharing**  
   https://csrc.nist.gov/publications/detail/sp/800-150/final
 
----
-
-### 🧠 Guias de CTI
-- **SANS CTI Whitepapers & Resources**  
-  https://www.sans.org/cyber-security-skills/roadmaps/cyber-threat-intelligence/
-
-- **ENISA – Threat Landscape Reports**  
+### Guias e relatórios
+- **ENISA – Threat Landscape**  
   https://www.enisa.europa.eu/topics/threat-risk-management/threats-and-trends
+
+- **SANS – CTI Resources / Roadmap**  
+  https://www.sans.org/cyber-security-skills/roadmaps/cyber-threat-intelligence/
 
 ---
 
@@ -106,98 +158,77 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 
 > CTI se aprende **analisando campanha real**, não só lendo feed.
 
-### Plataformas de Labs
-- **CyberDefenders – CTI & Threat Analysis Labs**  
+- CyberDefenders – CTI & Threat Analysis  
   https://cyberdefenders.org/
 
-- **TryHackMe – CTI / OSINT / SOC Labs**  
+- TryHackMe – CTI / OSINT / SOC  
   https://tryhackme.com/
 
-- **Blue Team Labs Online (BTLO)**  
+- Blue Team Labs Online (BTLO)  
   https://blueteamlabs.online/
 
 ---
 
 ## 🧰 Ferramentas Open Source Importantes
 
-### 🕵️ OSINT & Coleta
-- **Maltego CE** – https://www.maltego.com/
-- **theHarvester** – https://github.com/laramies/theHarvester
-- **Amass** – https://github.com/owasp-amass
-- **SpiderFoot** – https://github.com/smicallef/spiderfoot
+### OSINT & Coleta
+- Maltego CE – https://www.maltego.com/
+- theHarvester – https://github.com/laramies/theHarvester
+- Amass – https://github.com/owasp-amass
+- SpiderFoot – https://github.com/smicallef/spiderfoot
 
----
+### TIP / CTI Platforms
+- OpenCTI – https://www.opencti.io/
+- MISP – https://www.misp-project.org/
+- Yeti – https://github.com/yeti-platform/yeti
 
-### 🧠 CTI Platforms / TIP
-- **OpenCTI** – https://www.opencti.io/
-- **MISP** – https://www.misp-project.org/
-- **Yeti** – https://github.com/yeti-platform/yeti
-
----
-
-### 🔗 Enriquecimento & Análise
-- **Sigma (regras)** – https://github.com/SigmaHQ/sigma
-- **ATT&CK Navigator** – https://mitre-attack.github.io/attack-navigator/
-- **CAPE Sandbox (community)** – https://github.com/kevoreilly/CAPEv2
-
----
-
-## 📘 Cursos Oficiais (Formação)
-
-### CTI & Threat Intelligence
-- **SANS SEC487 – Open-Source Intelligence (OSINT)**  
-  https://www.sans.org/cyber-security-courses/open-source-intelligence-gathering/
-
-- **SANS FOR578 – Cyber Threat Intelligence**  
-  https://www.sans.org/cyber-security-courses/cyber-threat-intelligence/
-
-- **MITRE ATT&CK Defender (MAD)**  
-  https://attack.mitre.org/resources/training/
-
-- **Cyber Threat Intelligence 101 – Arcx**  
-  https://arcx.io/courses/cyber-threat-intelligence-101  
-
----
-
-### OSINT (Base)
-- **Bellingcat OSINT Guides**  
-  https://www.bellingcat.com/resources/
-
-- **OSINT Framework**  
-  https://osintframework.com/
+### Enriquecimento & detecção
+- Sigma – https://github.com/SigmaHQ/sigma
+- ATT&CK Navigator – https://mitre-attack.github.io/attack-navigator/
+- CAPE Sandbox – https://github.com/kevoreilly/CAPEv2
 
 ---
 
 ## 🏅 Certificações (Validação de Conhecimento)
 
-### CTI / Threat Intelligence
-- **CTIA – Cyber Threat Intelligence Analyst (EC-Council)**  
+- CTIA – EC-Council  
   https://www.eccouncil.org/train-certify/certified-threat-intelligence-analyst-ctia/
 
-- **GCTI – GIAC Cyber Threat Intelligence**  
+- GCTI – GIAC  
   https://www.giac.org/certifications/cyber-threat-intelligence-gcti/
 
-- **SANS Intelligence Track**  
+- SANS Intelligence Track  
   https://www.sans.org/cyber-security-skills/roadmaps/cyber-threat-intelligence/
 
 ---
 
-### Complementares Relevantes
-- **GCIA / GCIH (Blue Team + IR)**  
-  https://www.giac.org/certifications/
+## 🏭 Fabricantes e Soluções (Exemplos) — CTI, DRP e ASM
 
-- **CISSP (visão estratégica)**  
-  https://www.isc2.org/certifications/cissp
+> Aqui é “quem costuma aparecer no mundo real” para operacionalizar CTI/DRP/ASM.  
+> **Ferramenta ajuda**, mas o diferencial é processo + analista + integração.
 
----
+### 📌 CTI / DRP / Brand Protection (muito usado no Brasil)
+- **Axur** — DRP, marca, phishing, vazamentos, takedown e monitoramento de superfícies digitais
+- **SOCRadar** — CTI + ASM/DRP (dependendo do módulo/escopo)
+- **CTI e-Safer** — operação/serviço e integração de CTI 
 
-## 🔗 Integração com Outras Trilhas
+### 🌐 Threat Intelligence Platforms / TIP (plataforma)
+- **Recorded Future**
+- **Mandiant Advantage**
+- **Microsoft Threat Intelligence**
+- **Palo Alto Networks Unit 42**
+- **CrowdStrike Intelligence**
+- **CTI e-Safer** — operação/serviço e integração de CTI 
 
-- **SOC / Blue Team** – enriquecimento e priorização
-- **DFIR** – contexto e atribuição
-- **Red / Purple Team** – emulação de adversários
-- **GRC / Executivo** – risco, tendência e decisão
-- **Cloud / AppSec** – campanhas direcionadas
+### 🛰️ Attack Surface Management (ASM) e Exposição
+- **SOCRadar** (quando contratado com ASM/DRP)
+- **Tenable** (Exposure/ASM dependendo do produto/escopo)
+- **Akamai** (quando o foco é borda + redução/controle de exposição e proteção de superfície web, conforme arquitetura)
+- **CTI e-Safer** — operação/serviço e integração de CTI 
+
+### 🧾 Compartilhamento e padronização (integração)
+- **STIX/TAXII** (padrões, não fabricante)
+- Integração com **SIEM/SOAR/ITSM** para virar ticket, playbook e controle
 
 ---
 
@@ -205,7 +236,7 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 
 - IOC sem contexto não é inteligência
 - ATT&CK é linguagem, não checklist
-- Atribuição exige evidência, não achismo
+- Atribuição exige evidência e grau de confiança
 - Inteligência precisa ser acionável
 - CTI serve à decisão, não ao ego
 
@@ -213,154 +244,41 @@ Esta trilha aborda **Inteligência de Ameaças Cibernéticas** com foco em **col
 
 # 📘 Cyber Threat Intelligence (CTI) – Livros Essenciais
 
-Lista curada de livros **fundamentais para profissionais de CTI**, cobrindo desde **análise estratégica**, **inteligência tática e operacional**, até **malware analysis e engenharia reversa**, pilares para CTI de verdade.
+Lista curada de livros **fundamentais** para CTI **de verdade**: método analítico, integração com IR/SOC, e base técnica para acompanhar adversário.
+
+## Fundamentos e CTI aplicado
+- **Intelligence-Driven Incident Response** — Scott J. Roberts, Rebekah Brown  
+  (CTI + IR/SOC, ciclo de inteligência aplicável ao operacional)
+
+- **The Threat Intelligence Handbook** — Recorded Future  
+  (visão ampla de CTI: estratégico, operacional e tático)
+
+- **Structured Analytic Techniques for Intelligence Analysis** — Heuer Jr., Pherson  
+  (metodologia e técnicas analíticas para reduzir vieses e aumentar rigor)
+
+## CTI técnico (malware e pesquisa)
+- **Practical Malware Analysis** — Sikorski, Honig  
+  (base sólida para CTI técnico e entendimento de comportamento)
+
+- **Learning Malware Analysis** — Monnappa K A  
+  (técnicas modernas e correlação com TTPs)
+
+- **Blue Fox: Arm Assembly Internals and Reverse Engineering** — Maria Markstedter  
+  (reverse mais profundo, útil para pesquisa avançada e ecossistemas modernos)
+
+## OSINT (com estrutura)
+- **Open Source Intelligence Techniques** — Michael Bazzell  
+  (OSINT com método e disciplina)
 
 ---
 
-## 🧠 Fundamentos de Cyber Threat Intelligence
+## 🎯 Observação final
 
-### Intelligence-Driven Incident Response  
-**Autor:** Scott J. Roberts, Rebekah Brown  
-**Foco:** CTI aplicada à resposta a incidentes  
-**Conteúdo-chave:**
-- Integração entre CTI e IR
-- Ciclo de inteligência aplicado a SOC
-- Uso de indicadores, TTPs e contexto
-- Transição de IOC-driven para intelligence-driven
+CTI maduro:
+- começa com IR bem definido
+- transforma dados em hipótese
+- entrega output que vira controle
+- mede impacto (o que foi evitado, acelerado ou priorizado)
 
----
-
-### The Threat Intelligence Handbook  
-**Organização:** Recorded Future  
-**Foco:** Visão ampla de CTI  
-**Conteúdo-chave:**
-- Estratégia, operações e tática
-- Consumo de CTI por executivos, SOC e Red Team
-- Modelos de maturidade
-- Casos reais de uso
-
----
-
-### Practical Threat Intelligence and Data-Driven Threat Hunting  
-**Autor:** Valentina Costa-Giomi  
-**Foco:** CTI operacional e hunting  
-**Conteúdo-chave:**
-- Construção de pipelines de CTI
-- Enriquecimento de dados
-- Threat hunting orientado por inteligência
-- Uso de dados internos + externos
-
----
-
-## 🧭 CTI Estratégico & Analítico
-
-### Cyber Warfare – Truth, Tactics, and Strategies  
-**Autor:** Chase Cunningham (Dr. Zero Trust)  
-**Foco:** CTI estratégico e geopolítico  
-**Conteúdo-chave:**
-- Atores estatais
-- Guerra cibernética
-- Estratégia, dissuasão e impacto
-- CTI para tomada de decisão executiva
-
----
-
-### Structured Analytic Techniques for Intelligence Analysis  
-**Autores:** Richards J. Heuer Jr., Randolph H. Pherson  
-**Foco:** Metodologia analítica  
-**Conteúdo-chave:**
-- Redução de vieses cognitivos
-- Análise estruturada
-- ACH (Analysis of Competing Hypotheses)
-- Pensamento crítico aplicado à inteligência
-
----
-
-## 🧬 Malware, Engenharia Reversa & CTI Técnico
-
-### Practical Malware Analysis  
-**Autores:** Michael Sikorski, Andrew Honig  
-**Foco:** Malware analysis aplicada  
-**Conteúdo-chave:**
-- Análise estática e dinâmica
-- Debugging e unpacking
-- Compreensão de payloads e comportamento
-- Base técnica para CTI técnico
-
----
-
-### Malware Analysis and Detection Engineering  
-**Autor:** Abhijit Mohanta  
-**Foco:** Detecção e engenharia defensiva  
-**Conteúdo-chave:**
-- Malware moderno
-- Como transformar análise em detecção
-- YARA, regras e lógica comportamental
-- Ponte entre CTI e Blue Team
-
----
-
-### Learning Malware Analysis  
-**Autor:** Monnappa K A  
-**Foco:** Malware moderno e TTPs  
-**Conteúdo-chave:**
-- Windows internals
-- Técnicas de evasão
-- Análise comportamental
-- Correlação com MITRE ATT&CK
-
----
-
-### Blue Fox: Arm Assembly Internals and Reverse Engineering  
-**Autora:** Maria Markstedter  
-**Foco:** Engenharia reversa de baixo nível  
-**Conteúdo-chave:**
-- ARM assembly
-- Arquitetura interna
-- Reverse engineering profundo
-- Base sólida para CTI técnico avançado (IoT, mobile, malware moderno)
-
----
-
-## 🕵️ OSINT, Atribuição & Mentalidade Investigativa
-
-### Open Source Intelligence Techniques  
-**Autor:** Michael Bazzell  
-**Foco:** OSINT profissional  
-**Conteúdo-chave:**
-- Coleta estruturada
-- Análise de personas digitais
-- Correlação de dados
-- OSINT aplicado a investigações e CTI
-
----
-
-### The Art of Intelligence  
-**Autor:** Henry A. Crumpton  
-**Foco:** Mentalidade de inteligência  
-**Conteúdo-chave:**
-- Operações reais de inteligência
-- Tomada de decisão sob incerteza
-- Ética e análise estratégica
-- Pensamento de longo prazo
-
----
-
-## 🎯 Observação Final
-
-CTI **não é feed de IOC**.
-
-Esses livros ajudam a construir:
-- Pensamento analítico
-- Capacidade de correlação
-- Compreensão profunda do adversário
-- CTI estratégico, operacional e técnico de verdade
-
-São leituras comuns para profissionais que atuam com:
-- SOC orientado por CTI
-- Threat Hunting
-- Malware Research
-- Digital Risk & APT Tracking
-
----
-
+> Feed é insumo.  
+> Inteligência é **decisão sustentada por evidência**.
