@@ -4,7 +4,7 @@ Base obrigatória para **qualquer trilha**.
 
 ---
 
-## 🌐 Redes (Networking Essentials → CCNA)
+## 🌐 Redes
 
 ### Modelos e Arquitetura de Rede
 - Modelo **OSI** (camadas, funções e troubleshooting)
