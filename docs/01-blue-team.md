@@ -1,6 +1,6 @@
 # 🟦 Blue Team / SOC / Security Operations
 
-## Progressão de Carreira
+## Progressão de Carreira (não há necessariamente uma ordem... podemos ter um Junior L3 e um Sênior L1, por ex). 
 - SOC Analyst L1
 - SOC Analyst L2
 - SOC Analyst L3
