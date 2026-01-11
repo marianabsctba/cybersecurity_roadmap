@@ -166,6 +166,32 @@ Enquanto **Blue Team** representa o **conjunto de capacidades defensivas**, o **
 
 ---
 
+### 🧠 Threat Hunting
+
+Threat Hunting é a atividade **proativa** do Blue Team que busca identificar ameaças **ainda não detectadas automaticamente**, com base em **hipóteses, comportamentos e inteligência de ameaça**.
+
+**Características principais:**
+- Baseado em hipóteses (não em alertas)
+- Usa telemetria defensiva existente
+- Complementa, não substitui, detecção automática
+- Resultado vira regra, playbook ou melhoria de controle
+
+**Fontes usadas no hunting:**
+- SIEM
+- EDR / XDR
+- NDR
+- Logs de Cloud, Firewall, Identity
+- MITRE ATT&CK
+- CTI
+
+**Entregáveis do hunting:**
+- Novas detecções
+- Ajustes de regras
+- Playbooks aprimorados
+- Relatórios de achados
+
+---
+
 ## 🧠 Habilidades Técnicas Essenciais
 
 ### SIEM e Detecção
