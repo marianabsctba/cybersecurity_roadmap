@@ -141,6 +141,17 @@ Esta seção separa **cursos (formação e aprendizado)** de **certificações (
   > Curso oficial de Linux oferecido pela Cisco Networking Academy, cobrindo fundamentos de sistema operacional, linha de comando, processos, permissões e uso do Linux.  
   > **Preparatório direto para a certificação LPI Linux Essentials (LPIC)**.
 
+
+### Idiomas (Inglês Técnico para TI)
+- **English for IT 1 – Cisco Networking Academy**  
+  https://www.netacad.com/courses/english-for-it/english-for-it-1  
+  > Inglês técnico aplicado à TI: vocabulário essencial, leitura de documentação, comunicação básica em ambientes técnicos.
+
+- **English for IT 2 – Cisco Networking Academy**  
+  https://www.netacad.com/courses/english-for-it/english-for-it-2  
+  > Inglês técnico intermediário: leitura avançada de documentação, comunicação profissional, reuniões técnicas e troubleshooting.
+
+---
 ---
 
 ## 🏅 Certificações (Validação de Conhecimento)
