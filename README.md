@@ -29,6 +29,63 @@ Este repositório reúne **carreiras, trilhas técnicas, habilidades e certifica
 
 ---
 
+## 📄 Currículos em Cibersegurança (CVs)
+
+Entrar no mercado de cibersegurança **não depende apenas de estudar** — depende de **como você comunica o que sabe**.
+
+Currículos genéricos, cheios de buzzwords e listas infinitas de ferramentas **não refletem senioridade técnica**, nem ajudam recrutadores ou líderes a entender seu perfil real.
+
+Este roadmap também se preocupa com **empregabilidade técnica**.
+
+---
+
+### 🛠️ Ferramenta de Currículo Técnico – Janeri CV
+
+<p align="center">
+  <a href="https://janeri.com.br/cv/">
+    <img src="https://janeri.com.br/cv/preview.png" alt="Janeri CV - Currículo Técnico para TI e Cibersegurança" width="720" />
+  </a>
+</p>
+
+🔗 https://janeri.com.br/cv/
+
+**Janeri CV** é uma ferramenta online focada em **currículos técnicos**, pensada para profissionais de TI, engenharia e cibersegurança.
+
+#### O que ela faz bem:
+- Estrutura o currículo por **habilidades reais**, não por buzzwords  
+- Ajuda a organizar experiência técnica de forma **clara e objetiva**
+- Evita o modelo “currículo genérico de RH”
+- Facilita a leitura por **recrutadores técnicos e líderes de time**
+- Funciona bem tanto para **junior quanto para senior**
+
+#### Quando usar:
+- Ao buscar **primeira oportunidade** em cibersegurança  
+- Ao migrar de área (ex: redes → SOC, dev → AppSec)  
+- Ao reorganizar o currículo após ganhar maturidade técnica  
+
+> 💡 **Dica alinhada ao roadmap**  
+> Seu currículo deve refletir **a trilha que você escolheu**,  
+> não todas as trilhas ao mesmo tempo.
+
+---
+
+### 📌 Boas práticas de currículo em Cyber (alinhadas ao roadmap)
+
+- Destaque **fundamentos sólidos** antes de ferramentas  
+- Mostre **problemas resolvidos**, não só tecnologias usadas  
+- Evite listas infinitas de buzzwords  
+- Alinhe o currículo à **trilha principal escolhida**
+- Trate certificações como **complemento**, não como centro do CV
+
+---
+
+> ⚠️ Importante  
+> Um bom currículo **não substitui conhecimento**,  
+> mas um currículo ruim pode esconder um ótimo profissional.
+
+
+---
+
 ## 🎯 Objetivos do Roadmap
 
 - 🧭 Ser um **roadmap vivo** (não um material estático)
