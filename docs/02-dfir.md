@@ -1,18 +1,20 @@
 # 🟣 DFIR / Incident Response
 
+> **Quando o alerta vira incidente de verdade**
+
 Esta trilha cobre **Resposta a Incidentes (IR)** e **Forense Digital (DFIR)**, com foco em **investigação técnica, contenção avançada, preservação de evidências e análise pós-incidente**.  
-É a evolução natural do SOC quando o alerta **vira incidente de verdade**.
+É a evolução natural do SOC quando **detectar não é mais suficiente**.
 
 ---
 
-## 👥 Carreiras
+## 👥 Carreiras Associadas
 
 - Incident Responder  
 - Digital Forensics Analyst  
 - CSIRT Analyst  
 - DFIR Lead  
 
-> Em ambientes maduros, DFIR atua **em conjunto com o SOC**, mas com **escopo mais profundo**, técnico e jurídico.
+> Em ambientes maduros, DFIR atua **em conjunto com o SOC**, porém com **escopo mais profundo**, técnico, investigativo e jurídico.
 
 ---
 
@@ -68,7 +70,111 @@ Esta trilha cobre **Resposta a Incidentes (IR)** e **Forense Digital (DFIR)**, c
 - Análise dinâmica controlada
 - Extração de indicadores
 - Classificação e impacto operacional
-- Comunicação com SOC e CTI
+- Comunicação com SOC e times correlatos
+
+---
+
+## 📚 Livros Essenciais de DFIR & Incident Response
+
+> Estes livros são **referências reais de mercado**, usados por **times DFIR, CSIRTs, consultorias e SANS**, cobrindo investigação, método e prática.
+
+---
+
+### 🧱 Fundamentos de DFIR (Obrigatórios)
+
+#### Incident Response & Computer Forensics  
+**Autores:** Jason T. Luttgens, Matthew Pepe, Kevin Mandia  
+
+📌 **Por que ler:**  
+Manual clássico que cobre **IR + Forense** de forma integrada.
+
+**Cobre:**
+- Resposta a incidentes estruturada
+- Coleta e preservação de evidências
+- Forense em sistemas e redes
+- Casos reais e metodologia
+
+---
+
+#### The Practice of Network Security Monitoring  
+**Autor:** Richard Bejtlich  
+
+📌 **Por que ler:**  
+Base conceitual para entender **investigação baseada em evidências de rede**.
+
+**Cobre:**
+- Network Security Monitoring (NSM)
+- Uso de tráfego como evidência
+- Integração SOC → DFIR
+
+---
+
+### 🧠 Forense Avançada
+
+#### The Art of Memory Forensics  
+**Autores:** Michael Hale Ligh, Andrew Case, Jamie Levy, AAron Walters  
+
+📌 **Por que ler:**  
+Padrão ouro em **forense de memória**.
+
+**Cobre:**
+- Dumps de RAM
+- Estruturas internas de SO
+- Detecção de malware avançado
+- Uso profundo do Volatility
+
+---
+
+#### Windows Forensic Analysis  
+**Autor:** Harlan Carvey  
+
+📌 **Por que ler:**  
+Referência prática para **DFIR em ambientes Windows**.
+
+**Cobre:**
+- Registry
+- Event Logs
+- Artefatos de usuário
+- Timeline forensics
+
+---
+
+### 🧪 Investigação Prática & Método
+
+#### File System Forensic Analysis  
+**Autor:** Brian Carrier  
+
+📌 **Por que ler:**  
+Base técnica para **análise de discos e sistemas de arquivos**.
+
+**Cobre:**
+- FAT, NTFS, EXT
+- Estruturas internas
+- Recuperação de dados
+- Evidência em baixo nível
+
+---
+
+#### Blue Team Handbook: Incident Response Edition  
+**Autor:** Don Murdoch  
+
+📌 **Por que ler:**  
+Livro prático e direto para **resposta sob pressão**.
+
+**Cobre:**
+- Playbooks
+- Checklists
+- Decisão rápida em incidentes
+
+---
+
+### 🧠 Complementares (Malware & Investigação)
+
+#### Practical Malware Analysis  
+**Autores:** Michael Sikorski, Andrew Honig  
+
+📌 **Por que ler:**  
+Base sólida para **triagem e análise de malware**.
 
 ---
 
@@ -76,28 +182,23 @@ Esta trilha cobre **Resposta a Incidentes (IR)** e **Forense Digital (DFIR)**, c
 
 ### 🚨 Incident Response
 - **CERT.br – Gestão de Incidentes de Segurança**  
-  https://cursoseventos.nic.br/  
-  > Cursos oficiais do CERT.br sobre resposta a incidentes, CSIRT e coordenação.
+  https://cursoseventos.nic.br/
 
 - **SANS DFIR Whitepapers & Resources**  
-  https://www.sans.org/digital-forensics/resources/  
-  > Materiais técnicos amplamente usados no mercado.
+  https://www.sans.org/digital-forensics/resources/
 
 ---
 
 ### 🧬 Forense Digital
-- **Autopsy Training & Documentation**  
+- **Autopsy – Training & Documentation**  
   https://www.autopsy.com/support/training/  
-  https://www.autopsy.com/support/documentation/  
-  > Ferramenta open source amplamente utilizada em forense.
+  https://www.autopsy.com/support/documentation/
 
-- **Volatility Framework Documentation**  
-  https://volatilityfoundation.org/  
-  > Framework padrão de mercado para memory forensics.
+- **Volatility Framework – Official Docs**  
+  https://volatilityfoundation.org/
 
-- **The Sleuth Kit Documentation**  
-  https://sleuthkit.org/  
-  > Base para análise forense de sistemas de arquivos.
+- **The Sleuth Kit – Documentation**  
+  https://sleuthkit.org/
 
 ---
 
@@ -112,63 +213,45 @@ Esta trilha cobre **Resposta a Incidentes (IR)** e **Forense Digital (DFIR)**, c
 
 ## 🧪 Labs Práticos (DFIR / IR)
 
-> DFIR **só se aprende investigando**. Esses labs simulam **incidentes reais**.
+> DFIR **só se aprende investigando**.
 
-### Plataformas de Labs
-- **CyberDefenders – DFIR Labs**  
-  https://cyberdefenders.org/  
-  > Análise de discos, memória, PCAPs e artefatos reais.
+- CyberDefenders  
+  https://cyberdefenders.org/
 
-- **TryHackMe – DFIR & Incident Response Rooms**  
-  https://tryhackme.com/  
-  > Salas focadas em forense, memory analysis e IR.
+- TryHackMe – DFIR / IR  
+  https://tryhackme.com/
 
-- **Blue Team Labs Online (BTLO)**  
-  https://blueteamlabs.online/  
-  > Labs específicos de investigação forense e resposta.
+- Blue Team Labs Online  
+  https://blueteamlabs.online/
 
-- **DFIR IRIS (Open Source Platform)**  
-  https://dfir-iris.org/  
-  > Plataforma open source para gestão de incidentes DFIR.
+- DFIR IRIS (Open Source)  
+  https://dfir-iris.org/
 
 ---
 
 ## 🏅 Certificações (Validação de Conhecimento)
 
-### GIAC / SANS (DFIR)
-- **GIAC GCFE – Certified Forensic Examiner**  
-  https://www.giac.org/certifications/certified-forensic-examiner-gcfe/
-
-- **GIAC GCFA – Certified Forensic Analyst**  
-  https://www.giac.org/certifications/certified-forensic-analyst-gcfa/
-
-- **GIAC GREM – Reverse Engineering Malware**  
-  https://www.giac.org/certifications/reverse-engineering-malware-grem/
-
----
+### GIAC / SANS
+- GCFE  
+- GCFA  
+- GREM  
 
 ### EC-Council
-- **CHFI – Computer Hacking Forensic Investigator**  
-  https://www.eccouncil.org/train-certify/computer-hacking-forensic-investigator-chfi/
+- CHFI  
 
----
-
-### IACIS (Forense Tradicional)
-- **CFCE – Certified Forensic Computer Examiner**  
-  https://www.iacis.com/certifications/cfce/
-
-- **BCFE – Basic Computer Forensic Examiner**  
-  https://www.iacis.com/certifications/bcfe/
+### IACIS
+- CFCE  
+- BCFE  
 
 ---
 
 ## 🔗 Integração com Outras Trilhas
 
-- **SOC / Blue Team** – detecção e escalonamento
-- **CTI** – contexto e atribuição
-- **Cloud Security** – incidentes em IaaS/PaaS
-- **GRC / Jurídico** – conformidade e evidências
-- **Executivo** – impacto, risco e decisão
+- SOC / Blue Team – detecção e escalonamento
+- CTI – contexto e atribuição
+- Cloud Security – incidentes em IaaS/PaaS
+- GRC / Jurídico – conformidade e evidências
+- Executivo – impacto, risco e decisão
 
 ---
 
@@ -179,5 +262,3 @@ Esta trilha cobre **Resposta a Incidentes (IR)** e **Forense Digital (DFIR)**, c
 - DFIR não é só ferramenta, é **método**
 - Comunicação é tão crítica quanto técnica
 - Todo incidente deve melhorar o SOC
-
----
