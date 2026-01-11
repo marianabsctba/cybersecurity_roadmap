@@ -184,6 +184,9 @@ Pentest **profissional** segue metodologia. Framework ≠ burocracia.
 - **PortSwigger Web Security Academy (Gratuito)**  
   https://portswigger.net/web-security
 
+# RedScan Academy
+
+Link oficial do curso ➤ https://redscanacademy.mindz.com.br/ 
 ---
 
 ### Active Directory / Red Team
