@@ -216,3 +216,179 @@ Cloud Security **não é firewall na nuvem**.
 - Multicloud sem governança vira caos
 
 ---
+# 📚 Livros Técnicos Essenciais de Cloud Security
+
+Esta lista reúne **livros técnicos amplamente reconhecidos** para quem deseja **entender segurança em nuvem de forma profunda**, indo além de configurações pontuais e cobrindo **arquitetura, identidade, governança, risco e resposta a incidentes**.
+
+São leituras usadas por:
+- Cloud Security Engineers
+- Cloud Architects
+- AppSec em ambientes cloud
+- SOC e DFIR com foco em nuvem
+- Liderança técnica
+
+---
+
+## 🧱 Fundamentos de Cloud & Arquitetura Segura
+
+### Cloud Security and Privacy
+**Autores:** Tim Mather, Subra Kumaraswamy, Shahed Latif  
+
+📌 **Por que é essencial:**  
+Livro clássico que estabelece a **base conceitual de segurança em nuvem**.
+
+**Cobre:**
+- Modelos de responsabilidade compartilhada
+- Riscos de cloud computing
+- Identidade, isolamento e governança
+- Aspectos legais e de compliance
+
+> Ideal para entender **o porquê das decisões de segurança em cloud**, não só o como.
+
+---
+
+### Designing Secure Cloud Architecture
+**Autor:** Michael S. Smith  
+
+📌 **Por que é essencial:**  
+Foco direto em **arquitetura segura**, não em ferramentas.
+
+**Cobre:**
+- Design seguro em AWS, Azure e GCP
+- Segmentação, identidade e logging
+- Arquiteturas resilientes e escaláveis
+- Threat modeling em cloud
+
+---
+
+## 🔐 Identidade, Controle de Acesso & Zero Trust
+
+### Identity and Data Security for Web Development
+**Autor:** Jonathan LeBlanc  
+
+📌 **Por que é relevante:**  
+Conecta **identidade, autenticação e autorização** com aplicações modernas em cloud.
+
+**Cobre:**
+- IAM moderno
+- OAuth, OIDC e tokens
+- Autorização em ambientes distribuídos
+- Segurança orientada a identidade
+
+---
+
+### Zero Trust Networks
+**Autor:** Evan Gilman, Doug Barth  
+
+📌 **Por que é essencial:**  
+Base conceitual de **Zero Trust**, extremamente aplicável a cloud.
+
+**Cobre:**
+- Identity-first security
+- Segmentação lógica
+- Aplicação prática de Zero Trust
+- Casos reais de adoção
+
+---
+
+## 🌐 Redes, Tráfego & Perímetro em Cloud
+
+### Practical Cloud Security
+**Autor:** Chris Dotson  
+
+📌 **Por que é essencial:**  
+Livro extremamente prático, focado em **segurança operacional em cloud**.
+
+**Cobre:**
+- Network security em cloud
+- IAM, logging e monitoramento
+- Resposta a incidentes em cloud
+- Casos reais e armadilhas comuns
+
+> Excelente ponte entre **Cloud + SOC + DFIR**.
+
+---
+
+### AWS Security
+**Autor:** Albert Anthony  
+
+📌 **Por que é relevante:**  
+Foco técnico em **segurança aplicada na AWS**, com conceitos reutilizáveis em outras clouds.
+
+**Cobre:**
+- IAM e políticas
+- Segurança de rede
+- Logging e auditoria
+- Hardening de serviços
+
+---
+
+## 📊 Governança, Risco & Postura de Segurança
+
+### Cloud Governance
+**Autor:** Jeroen Mulder  
+
+📌 **Por que é essencial:**  
+Aborda **governança real em ambientes cloud**, não só compliance teórico.
+
+**Cobre:**
+- Políticas e padrões
+- Gestão de risco
+- Controle de custos e segurança
+- Cloud em larga escala
+
+---
+
+### Security and Privacy in Cloud Computing
+**Autores:** Siani Pearson, George Yee  
+
+📌 **Por que é relevante:**  
+Visão acadêmica e estratégica sobre **privacidade, risco e segurança em cloud**.
+
+---
+
+## 🧠 Cloud + Incidentes & DFIR
+
+### Incident Response in the Cloud
+**Autor:** Chris Dotson  
+
+📌 **Por que é essencial:**  
+Livro focado em **resposta a incidentes especificamente em cloud**.
+
+**Cobre:**
+- Logs e evidências em cloud
+- Limitações forenses
+- Coordenação com SOC e DFIR
+- Casos reais de incidentes
+
+---
+
+## 🎯 Como Usar Esta Lista
+
+- 📌 Comece pelos **fundamentos de arquitetura**
+- 📌 Aprofunde em **identidade e redes**
+- 📌 Avance para **governança e resposta a incidentes**
+- 📌 Conecte com **AppSec, SOC e DFIR**
+
+> 💡 Cloud Security não é uma trilha isolada.  
+> Ela **cruza identidade, redes, aplicações, logs e risco**.
+
+---
+
+## ⚠️ Observação Importante
+
+Esses livros:
+- ❌ não são rápidos
+- ❌ não são tutoriais passo a passo
+- ❌ não prometem atalhos
+
+Mas:
+- ✅ formam base sólida
+- ✅ explicam decisões arquiteturais
+- ✅ diferenciam profissionais seniores
+
+---
+
+> Cloud muda rápido.  
+> **Fundamentos bons duram décadas.**
+
