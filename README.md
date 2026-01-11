@@ -94,6 +94,7 @@ Este repositório reúne **carreiras, trilhas técnicas, habilidades e certifica
 ### 🏛️ Estratégia & Futuro
 - [Arquitetura & Executivo](docs/11-executive-architecture.md)
 - [Segurança de IA](docs/12-ai-security.md)
+- [Segurança Blockchain & WEB3](docs/15-blockchain-security.md)
 
 ---
 
