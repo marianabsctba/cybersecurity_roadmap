@@ -164,6 +164,9 @@ Esta trilha cobre **Governança, Risco, Compliance e Privacidade**, com foco em 
 - **CRISC – Certified in Risk and Information Systems Control**  
   https://www.isaca.org/credentialing/crisc
 
+- **CCISO – Certified Chief Information Security Officer (EC-Council)**  
+  https://www.eccouncil.org/train-certify/certified-chief-information-security-officer-cciso/
+
 ---
 
 ### Privacidade
