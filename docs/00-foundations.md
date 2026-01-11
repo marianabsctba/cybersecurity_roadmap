@@ -196,24 +196,6 @@ Curadoria de **canais técnicos e confiáveis** para aprender **redes de computa
 
 ## 🧱 Redes & CCNA (Fundação Técnica)
 
-### Cisco Networking Academy (oficial)
-- Conteúdo oficial de CCNA
-- Switching, Routing, VLAN, NAT, ACL, WAN
-- Base sólida e alinhada ao currículo Cisco
-
-YouTube: https://www.youtube.com/@CiscoNetAcad
-
----
-
-### Jeremy Cioara (CBT Nuggets)
-- Didática excelente
-- CCNA, CCNP, troubleshooting
-- Ensina como **pensar como a rede**
-
-YouTube: https://www.youtube.com/@JeremyCioara
-
----
-
 ### Professor Messer
 - CCNA, Network+, Security+
 - Explicações diretas e objetivas
@@ -244,25 +226,7 @@ YouTube: https://www.youtube.com/@NetworkChuck
 
 ---
 
-### The Cyber Mentor
-- Redes sob a ótica ofensiva
-- Reconhecimento, scanning, tráfego
-- Ponte entre redes e pentest
-
-YouTube: https://www.youtube.com/@TheCyberMentor
-
----
-
 ## 🧪 Análise de Tráfego & Pacotes
-
-### Wireshark (canal oficial)
-- Análise profunda de pacotes
-- TCP handshake, DNS, TLS, SMB
-- Fundamental para SOC e IR
-
-YouTube: https://www.youtube.com/@Wireshark
-
----
 
 ### Chris Greer
 - Análise de tráfego em nível avançado
@@ -284,14 +248,6 @@ YouTube: https://www.youtube.com/@BlackHillsInformationSecurity
 
 ---
 
-### SANS Institute
-- Network monitoring
-- IDS/IPS, NetFlow, PCAP
-- Conteúdo avançado e confiável
-
-YouTube: https://www.youtube.com/@SANSBlueTeam
-
----
 
 ## 🇧🇷 Conteúdo em Português
 
@@ -300,23 +256,5 @@ YouTube: https://www.youtube.com/@SANSBlueTeam
 - Muito bom para fundamentos
 
 YouTube: https://www.youtube.com/@bosontreinamentos
-
----
-
-### Descomplicando Redes
-- Routing, Switching
-- Linguagem simples e clara
-
-YouTube: https://www.youtube.com/@DescomplicandoRedes
-
----
-
-## 🧭 Sugestão de Trilha de Estudo
-
-1. Cisco Networking Academy / Professor Messer  
-2. Practical Networking  
-3. David Bombal / NetworkChuck  
-4. Wireshark + Chris Greer  
-5. BHIS / The Cyber Mentor  
 
 ---
