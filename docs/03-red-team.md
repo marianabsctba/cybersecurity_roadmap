@@ -451,6 +451,9 @@ Lista curada de livros **clássicos e amplamente reconhecidos** em **Offensive S
 
 # 🔴 Offensive Security – Canais Essenciais (Pentest & Red Team)
 
+### Daniel Donda
+YouTube: https://www.youtube.com/@DanielDonda
+
 ### Penegui
 YouTube: https://www.youtube.com/@penegui
 
