@@ -106,6 +106,19 @@ O uso de IA **não substitui estudo nem experiência**, mas pode ajudar a:
 
 ---
 
+### 🧰 Veja também: Super Power Job Robot (chatbot do Osvaldo)
+
+O **Osvaldo** tem um chatbot chamado **Super Power Job Robot** no mesmo link, capaz de:
+- preparar seu **CV**
+- deixar seu **LinkedIn afiado**
+- **simular entrevistas**
+- dizer exatamente **como falar com recrutadores**
+
+> 📌 **Como usar na prática**  
+> Quando surgir uma dúvida, você pode **abrir o GPT no link e receber a ajuda na hora**, com orientação objetiva para o seu próximo passo.
+
+---
+
 ## 📌 Boas práticas de currículo em Cibersegurança
 
 ### 🧩 Conteúdo
