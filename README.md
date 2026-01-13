@@ -149,12 +149,15 @@ Para complementar o estudo individual, este roadmap também incentiva **troca pr
 
 Este roadmap é **intencionalmente aberto**.
 
-Sugestões, correções e evoluções são bem-vindas:
-- issues
-- pull requests
-- discussões técnicas fundamentadas
+Sugestões, correções e melhorias são bem-vindas. 
 
-> ❗ Contribuições devem refletir **prática real de mercado**, não apenas opinião.
+Para saber como colaborar, leia nosso guia de contribuição [aqui](CONTRIBUTING.md)
+
+---
+
+## 👥 Contribuidores
+
+<a href="https://github.com/marianabsctba/cybersecurity_roadmap/graphs/contributors"><img src="https://contrib.rocks/image?repo=marianabsctba/cybersecurity_roadmap" /></a>
 
 ---
 
@@ -168,4 +171,6 @@ Este material pode ser usado para:
 
 Desde que **mantida a referência ao repositório**.
 
----
+Este trabalho é licenciado sob a [Licença Creative Commons Atribuição 4.0 Internacional](http://creativecommons.org/licenses/by/4.0/).
+
+**Copyright © 2026 Mariana B S**
