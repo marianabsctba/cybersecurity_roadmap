@@ -37,6 +37,10 @@ Sem estes fundamentos, não existe SOC eficiente, Red Team consistente, CTI de q
 | 2 – Enlace | Endereçamento físico | Ethernet, ARP |
 | 1 – Física | Meio físico | Cabo, sinal, Wi-Fi |
 
+**Vídeos essenciais para entender o Modelo OSI na prática**
+- [Modelo OSI x TCP/IP (comparação detalhada)](https://www.youtube.com/watch?v=c5vfwNBbl4g)
+- [What is OSI Model | Real World Examples](https://www.youtube.com/watch?v=0y6FtKsg6J4)
+
 > 💡 **Dica prática:**  
 > Saber **mapear um problema para a camada correta** acelera troubleshooting e investigação de incidentes.
 
