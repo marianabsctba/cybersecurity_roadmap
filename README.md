@@ -133,6 +133,9 @@ Para complementar o estudo individual, este roadmap também incentiva **troca pr
 - [Segurança de IA](docs/12-ai-security.md)
 - [Segurança Blockchain & WEB3](docs/15-blockchain-security.md)
 
+### 🤓 Conteúdos Relacionados 
+- [The Supreme Art of Cyberwar](https://github.com/stnert/The-Supreme-Art-Of-Cyberwar)
+
 ---
 
 ## 🧠 Como Ler as Trilhas
