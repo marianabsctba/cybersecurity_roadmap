@@ -134,7 +134,7 @@ Ferramentas open source:
 - `WPScan`
 - `John The Ripper`
 - `Hashcat`
-- `medusa`
+- `Medusa`
 
 ---
 
