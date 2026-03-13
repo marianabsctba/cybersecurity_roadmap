@@ -74,6 +74,14 @@ Para complementar o estudo individual, este roadmap também incentiva **troca pr
 - **CTI News**  
   🔗 https://chat.whatsapp.com/Di2IOdTG0hLGxEL7N1izQN
   
+- **RedScan Academy - Community - 0ff3ns!v3 S3cur!ty ®**  
+  🔗 https://chat.whatsapp.com/CshIrU6iKNz15rQcLEhv7p
+
+- **RedScan Academy - Vagas de Emprego 2.0 ®**  
+  🔗 https://chat.whatsapp.com/HLJYGUm1wEaL3WfVf5EcAZ
+
+- **Discord RedScan Academy - Community - 0ff3ns!v3 S3cur!ty ®**  
+  🔗 https://discord.gg/ZzQA7q3X
 
 > 💡 **Boa prática**  
 > Use grupos para **discussão técnica, dúvidas objetivas e troca profissional**.  
