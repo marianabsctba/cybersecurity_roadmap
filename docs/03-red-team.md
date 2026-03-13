@@ -129,12 +129,15 @@ Ferramentas:
 - Lateral movement
 
 Ferramentas:
-- `BloodHound` / `SharpHound`
+- `kerbrute`
+- `rpcclient`
+- `BloodHound` / `SharpHound` / `BloodHound-python`
 - `NetExec`
 - `CrackMapExec`
 - `Impacket`
 - `Rubeus`
 - `Mimikatz`
+- `Certify`
 - `Responder`
 
 ---
@@ -167,6 +170,14 @@ Ferramentas:
 - `PowerSploit`
 - `Donut`
 - `ScareCrow`
+- `Cobalt Stike`
+
+Algumas Técnicas de Bypass:
+- Ofuscação;
+- Process Injection;
+- Patching amsiScanBuffer;
+- amsiInitFailed; e
+- Reflection.
 
 ---
 
