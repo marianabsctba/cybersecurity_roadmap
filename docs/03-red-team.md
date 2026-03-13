@@ -117,6 +117,9 @@ Ferramentas open source:
 - `amass`, `dnsx`
 - `whatweb`, `httpx`
 - `enum4linux`, `ldapsearch`
+- `hunter.io`
+- `shodan` / `censys`
+- `nuclei`
 
 ---
 
@@ -210,8 +213,55 @@ Algumas Técnicas de Bypass:
 - amsiInitFailed; e
 - Reflection.
 
----
+Algumas Técnicas Anti-Forense:
+- Ocultação
+- Destruição
+- Falsificação
+- Evasão de Ferramentas
 
+Ocultação:
+- Criptografia
+- Esteganografia
+- Limpeza de Logs
+
+Destruição:
+- Deleção Segura
+- Destruição Física
+
+Falsificação:
+- Forjar requisições
+- Alterar timestamp
+- Mascaramento de Logs
+
+Evasão de Ferramentas:
+- Rootkits
+- Anti-Debugging
+
+---
+### 🎯 Simulação de Ameaças APT
+- Avaliar resiliência
+- Treinar equipes
+- Identificar lacunas
+- Validar ferramentas
+
+Funcionamento:
+- Planejamento
+- Execução controlada
+- Monitoramento
+- Análise pós-exercício
+
+Técnicas comuns simuladas:
+- Phishing avançado
+- Uso de malware customizado
+- Movimentação lateral
+- Escalação de privilégios
+- Exfiltração de dados
+
+Ferramentas de simulação:
+- `caldera`
+- `metta`
+
+---
 ### 🧬 Exploit Development (Avançado)
 - Análise de binários
 - Buffer overflow e heap
