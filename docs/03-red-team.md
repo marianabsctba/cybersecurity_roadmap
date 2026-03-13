@@ -92,6 +92,19 @@ Ferramentas típicas:
 
 ---
 
+## 🔑 Principais Metodologias de Pentest
+
+- PTES (Penetration Testing Execution Standard)
+- OSSTMM (Open Source Security Testing Methodology Manual)
+- NIST SP 800-115 (Technical Guide to Information Security Testing and Assessment)
+- OWASP Testing Guide
+
+> PTES e OSSTMM são os padrões mais técnicos e abrangentes, NIST SP 800-115 é voltado para conformidade,
+> e OWASP Testing Guide é referência em aplicações web. A escolha deve alinhar-se ao objetivo do teste e
+> ao nível de maturidade da organização.
+
+---
+
 ## 🧠 Habilidades Técnicas Essenciais
 
 ### 🔍 Enumeração & Reconhecimento
@@ -104,6 +117,24 @@ Ferramentas open source:
 - `amass`, `dnsx`
 - `whatweb`, `httpx`
 - `enum4linux`, `ldapsearch`
+
+---
+
+### 🛠️ Ataques de a Senhas e Sistemas de Autenticação
+- Ataque de força bruta - bruteforce
+- Pulverização de senhas - password spray
+- Ataque de dicionário - dictionary attack
+- Preenchimento de credenciais - credential stuffing
+- Ataque de tabela arco-íris - rainbow table
+
+Ferramentas open source:
+- `Metasploit Framework`
+- `Hydra`
+- `Burp Suite`
+- `WPScan`
+- `John The Ripper`
+- `Hashcat`
+- `medusa`
 
 ---
 
