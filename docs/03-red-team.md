@@ -239,6 +239,7 @@ Evasão de Ferramentas:
 
 ---
 ### 🎯 Simulação de Ameaças APT
+Objetivos:
 - Avaliar resiliência
 - Treinar equipes
 - Identificar lacunas
