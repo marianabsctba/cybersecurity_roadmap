@@ -130,6 +130,7 @@ Ferramentas:
 
 Ferramentas:
 - `BloodHound` / `SharpHound`
+- `NetExec`
 - `CrackMapExec`
 - `Impacket`
 - `Rubeus`
