@@ -23,7 +23,8 @@ Este repositório reúne **carreiras, trilhas técnicas, habilidades e certifica
 
 🔗 https://www.youtube.com/watch?v=TCzB94pCojk
 
-> 🎥 **As faces da Cibersegurança — o que você precisa saber antes de entrar no mercado**  
+> 🎥 **As faces da Cibersegurança — o que você precisa saber antes de entrar no mercado**
+> 
 > Este vídeo explica **como as áreas se conectam**, **quais expectativas são reais**,  
 > **onde as pessoas erram ao entrar na área** e **como usar este roadmap corretamente**.
 
