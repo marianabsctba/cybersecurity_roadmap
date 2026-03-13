@@ -97,6 +97,43 @@ Para complementar o estudo individual, este roadmap também incentiva **troca pr
 
 ---
 
+## 🧾 Roadmap de Certificações (Mercado Brasileiro)
+
+Para complementar as trilhas técnicas deste repositório, também mantemos um **roadmap vivo de certificações em cibersegurança**, focado nas certificações **mais solicitadas no mercado brasileiro**.
+
+🔗 **Cybersecurity Certifications Roadmap**  
+https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap
+
+Esse material organiza certificações por:
+
+- áreas da cibersegurança (Blue Team, Red Team, Purple Team, Cloud, AppSec, GRC, entre outras)
+- nível de experiência (fundamental → intermediário → avançado)
+- relevância no mercado brasileiro
+- relação com papéis reais da indústria
+
+> ⚠️ **Importante**  
+> Assim como o restante deste projeto, este roadmap **não é uma lista de cursos** e **não promete atalhos de carreira**.
+
+O objetivo é **mapear certificações que aparecem no mercado real**, ajudando profissionais a entender:
+
+- onde cada certificação se encaixa
+- quando ela faz sentido na carreira
+- como ela se conecta com habilidades técnicas
+
+💡 **Boa prática**
+
+Use certificações como:
+
+- validação de conhecimento
+- estrutura de estudo
+- posicionamento profissional
+
+Mas lembre-se:
+
+> **Certificação não substitui experiência prática.**
+
+---
+
 ## 📚 Índice de Trilhas
 
 ### 📄 Currículos & Carreira (Faça um currículo otimizado para vaga e ATS)
