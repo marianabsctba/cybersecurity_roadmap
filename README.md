@@ -28,12 +28,12 @@ Este repositório reúne **carreiras, trilhas técnicas, habilidades e certifica
 > **onde as pessoas erram ao entrar na área** e **como usar este roadmap corretamente**.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=TCzB94pCojk">
+  <a href="https://www.youtube.com/watch?v=Ow7hZ_Q0wiE">
     <img src="https://img.youtube.com/vi/Ow7hZ_Q0wiE/0.jpg" alt="Palestra RED TEAM: Soft Skills and study environment" width="720" />
   </a>
 </p>
 
-🔗 https://www.youtube.com/watch?v=TCzB94pCojk
+🔗 https://www.youtube.com/watch?v=Ow7hZ_Q0wiE
 
 > 🎥 **Palestra RED TEAM: Soft Skills and study environment**
 > “Red Team não é só técnica. É mentalidade, estratégia e disciplina.”
