@@ -416,15 +416,14 @@ Pentest **profissional** segue metodologia. Framework ≠ burocracia.
 - **GPEN – GIAC Penetration Tester**  
   https://www.giac.org/certifications/penetration-tester-gpen/  
 
----
-
-### 🔥 Advanced (Red Team / Exploit / Web / Infra)
 - **OSCP – Offensive Security Certified Professional**  
   https://www.offsec.com/certifications/oscp/
 
 - **OSWA – Offensive Security Web Assessor**  
   https://www.offsec.com/certifications/oswa/
+---
 
+### 🔥 Advanced (Red Team / Exploit / Web / Infra)
 - **OSWE – Offensive Security Web Expert**  
   https://www.offsec.com/certifications/oswe/
 
@@ -553,6 +552,9 @@ YouTube: https://www.youtube.com/@penegui
 
 ### Prof. Julio Della Flora
 YouTube: https://www.youtube.com/@HardwareHacking
+
+### RedScan Academy - Off3ns!v3 S3cur!ty
+YouTube: https://www.youtube.com/@red-scan-academy
 
 ### Gabriel Pato
 YouTube: https://www.youtube.com/@gabrielpato
