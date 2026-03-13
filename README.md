@@ -38,10 +38,9 @@ Este repositório reúne **carreiras, trilhas técnicas, habilidades e certifica
 
 🔗 https://www.youtube.com/watch?v=Ow7hZ_Q0wiE
 
-> 🎥 **Palestra RED TEAM: Soft Skills and study environment**
-> 
+> 🎥 **Palestra RED TEAM: Soft Skills and study environment** 
 > “Red Team não é só técnica. É mentalidade, estratégia e disciplina.”
-
+>
 > Neste bate papo, buscamos encontrar nosso ponto de equilíbrio entre os **hard e soft skills**,
 > em consonância com o direcionamento de **estudos estruturados** em uma sequência lógica,
 > incentivando a construção de seus próprios laboratórios.
