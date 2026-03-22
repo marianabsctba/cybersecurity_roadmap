@@ -123,6 +123,15 @@ Para complementar o estudo individual, este roadmap também incentiva **troca pr
 
 ---
 
+## 🧾 Roadmap de Cursos, Especializações, Mestrados e doutorados
+
+Para complementar as trilhas técnicas deste repositório, também mantemos um **roadmap vivo de cursos em cibersegurança nacionais**.
+
+🔗 **Repositório de Cursos de Universidades Públicas e Privadas**  
+https://marianabsctba.github.io/Lista_Cursos_Graduacao/
+
+---
+
 ## 🧾 Roadmap de Certificações (Mercado Brasileiro)
 
 Para complementar as trilhas técnicas deste repositório, também mantemos um **roadmap vivo de certificações em cibersegurança**, focado nas certificações **mais solicitadas no mercado brasileiro**.
