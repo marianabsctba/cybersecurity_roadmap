@@ -148,6 +148,7 @@ Ferramentas open source:
 
 Ferramentas:
 - `metasploit`
+- `dark-moon` (pentester autônomo com IA, host MCP)
 - `sqlmap`
 - `ffuf`, `wfuzz`
 - `nikto`
