@@ -1,0 +1,369 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080a10"><meta name="description" content="DevSecOps & Kubernetes Security — Cybersecurity Master Roadmap de Mariana BS"><title>DevSecOps & Kubernetes Security | Cybersecurity Master Roadmap</title><style>
+:root{--bg:#080a10;--panel:#11151f;--line:#2b3242;--text:#f5f7fb;--muted:#abb5c7;--pink:#ff4fa3;--cyan:#40d9ff;--lime:#b9f45d}*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;overflow-x:hidden;background:radial-gradient(circle at 12% 0,rgba(255,79,163,.12),transparent 30%),radial-gradient(circle at 90% 5%,rgba(64,217,255,.09),transparent 26%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}a{color:inherit}.wrap{width:min(940px,calc(100% - 32px));margin:auto}.top{position:sticky;top:0;z-index:20;background:rgba(8,10,16,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{min-height:68px;display:flex;align-items:center;gap:12px}.brand{font-weight:950;letter-spacing:-.05em;text-decoration:none;white-space:nowrap}.brand i{color:var(--pink);font-style:normal}.navlinks{margin-left:auto;display:flex;gap:9px;align-items:center}.navlinks a,.pill{padding:9px 11px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-size:.75rem;font-weight:850}.cert{background:linear-gradient(135deg,var(--pink),#ff7b55);border:0!important;color:#1b0610}.hero{padding:58px 0 28px}.eyebrow{font-size:.69rem;color:var(--cyan);font-weight:950;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(2.35rem,7vw,5rem);line-height:.95;letter-spacing:-.06em;margin:13px 0 18px;overflow-wrap:anywhere}.hero p{color:var(--muted);max-width:720px}.content{padding:18px clamp(18px,5vw,50px) 45px;margin:20px 0 40px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#121722,#0c0f17);overflow-wrap:anywhere}.content h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1;letter-spacing:-.05em;margin:36px 0 22px}.content h2{font-size:clamp(1.45rem,3.5vw,2rem);line-height:1.15;letter-spacing:-.025em;margin:38px 0 14px}.content h3{font-size:1.16rem;color:var(--cyan);margin:28px 0 10px}.content h4{color:var(--lime)}.content p,.content li{color:#c9d0dc}.content a{color:#ff91c6;text-underline-offset:3px}.content ul,.content ol{padding-left:24px}.content li{margin:5px 0}.content blockquote{margin:22px 0;padding:14px 18px;border-left:4px solid var(--pink);background:rgba(255,79,163,.07);border-radius:0 10px 10px 0}.content table{display:block;width:100%;overflow-x:auto;border-collapse:collapse;margin:20px 0}.content th,.content td{padding:10px 12px;border:1px solid var(--line);text-align:left;min-width:120px}.content th{background:#191e2a}.content code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#080b11;border:1px solid #2c3443;border-radius:6px;padding:2px 5px;color:var(--lime)}.content pre{padding:16px;background:#080b11;border:1px solid var(--line);border-radius:12px;overflow-x:auto}.content pre code{border:0;padding:0}.content img{max-width:100%;height:auto}.content hr{border:0;border-top:1px solid var(--line);margin:34px 0}.page-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0 65px}.page-nav a{padding:17px;border:1px solid var(--line);border-radius:14px;background:var(--panel);text-decoration:none;font-weight:850}.page-nav a:last-child{text-align:right}.cert-box{padding:22px;margin:28px 0;border:1px solid rgba(255,79,163,.55);border-radius:16px;background:rgba(255,79,163,.08)}.cert-box strong{display:block;font-size:1.15rem}.cert-box a{display:inline-block;margin-top:12px;padding:10px 13px;background:var(--pink);border-radius:9px;color:#19040e;text-decoration:none;font-weight:950}.footer{border-top:1px solid var(--line);padding:30px 0 45px;color:var(--muted);font-size:.82rem}.footer .wrap{display:flex;justify-content:space-between;gap:20px}@media(max-width:650px){.wrap{width:calc(100% - 22px)}.nav{min-height:60px}.brand{font-size:.9rem}.navlinks a:not(.cert){display:none}.navlinks .cert{font-size:.66rem;padding:7px 8px}.hero{padding-top:38px}.hero h1{font-size:clamp(2.15rem,11vw,3rem)}.content{padding:10px 15px 30px;border-radius:15px}.content h1{font-size:2rem}.content h2{font-size:1.45rem}.page-nav{grid-template-columns:1fr}.page-nav a:last-child{text-align:left}.footer .wrap{flex-direction:column}}
+.reading-progress{position:fixed;left:0;top:0;z-index:50;width:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--cyan));box-shadow:0 0 18px rgba(64,217,255,.55)}.reader{display:grid;grid-template-columns:210px minmax(0,1fr);gap:18px;align-items:start}.toc{position:sticky;top:88px;max-height:calc(100vh - 110px);overflow:auto;padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(15,19,28,.92)}.toc>strong{display:block;margin-bottom:12px;color:var(--cyan);font-size:.67rem;letter-spacing:.14em}.toc nav{display:grid;gap:4px}.toc a{padding:6px 7px;border-radius:7px;color:#aeb7c7;text-decoration:none;font-size:.73rem;line-height:1.3}.toc a:hover,.toc a.active{background:rgba(255,79,163,.1);color:#ff9ac9}.reader .content{min-width:0;margin-top:0}.top-button{position:fixed;right:16px;bottom:16px;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:#151a25;color:white;text-decoration:none;font-weight:900}@media(max-width:900px){.reader{grid-template-columns:1fr}.toc{display:none}}</style></head><body><div class="reading-progress" id="readingProgress"></div><header class="top"><nav class="wrap nav"><a class="brand" href="index.html">BE<i>SAFE</i> // ROADMAP</a><div class="navlinks"><a href="index.html#trilhas">TODAS AS TRILHAS</a><a class="cert" href="https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap/" target="_blank" rel="noreferrer">🏅 CERTIFICAÇÕES ↗</a></div></nav></header><main class="wrap"><section class="hero"><div class="eyebrow">TRILHA 07 DE 18</div><h1>☸️ DevSecOps & Kubernetes Security</h1><p>Conteúdo integral do Cybersecurity Master Roadmap. Estude no seu ritmo, pratique e use certificações como validação — não como atalho.</p></section><div class="reader"><aside class="toc"><strong>NESTA TRILHA</strong><nav id="toc"></nav></aside><article class="content" id="content"><h1>☸️ DevSecOps &amp; Kubernetes Security</h1>
+<p>Esta trilha aborda <strong>segurança integrada ao ciclo de entrega de software e à camada de plataforma</strong>, com foco em <strong>Infrastructure as Code (IaC), containers, Kubernetes, supply chain e runtime security</strong>.</p>
+<blockquote>
+<p>⚠️ <strong>Importante</strong><br>DevSecOps <strong>não é</strong> um cargo isolado nem apenas “rodar SAST no CI”.<br>DevSecOps é a <strong>prática de integrar segurança ao fluxo de engenharia</strong>, enquanto <strong>Platform / Kubernetes Security</strong> trata da <strong>proteção da infraestrutura, do cluster e do runtime</strong>, onde o impacto é real.</p>
+</blockquote>
+<hr>
+<h2>👥 Carreiras</h2>
+<ul>
+<li><p><strong>DevSecOps Engineer</strong><br>Atua no <strong>ponto de interseção entre desenvolvimento, infraestrutura e segurança</strong>, integrando controles ao SDLC, pipelines CI/CD, IaC e supply chain.</p>
+</li>
+<li><p><strong>Platform / Kubernetes Security Engineer</strong><br>Responsável por <strong>garantir que a plataforma seja segura por padrão</strong>, cobrindo clusters, workloads, identidade, rede, políticas e runtime.</p>
+</li>
+</ul>
+<hr>
+<h2>🧠 Domínios Técnicos Essenciais</h2>
+<h3>📦 IaC Security (Infrastructure as Code)</h3>
+<blockquote>
+<p>Em cloud e Kubernetes, <strong>infraestrutura é código</strong> — e código inseguro escala rápido.</p>
+</blockquote>
+<ul>
+<li>Segurança de Terraform, Helm, CloudFormation e ARM</li>
+<li>Validação de configurações <strong>antes do deploy</strong></li>
+<li>Detecção de misconfiguration replicável</li>
+<li>Enforcement de padrões técnicos (policy as code)</li>
+<li>Prevenção de drift entre código e ambiente real</li>
+</ul>
+<p>Ferramentas open source:</p>
+<ul>
+<li><strong>Checkov</strong> – <a href="https://github.com/bridgecrewio/checkov">https://github.com/bridgecrewio/checkov</a>  </li>
+<li><strong>tfsec</strong> – <a href="https://github.com/aquasecurity/tfsec">https://github.com/aquasecurity/tfsec</a>  </li>
+<li><strong>Terrascan</strong> – <a href="https://github.com/accurics/terrascan">https://github.com/accurics/terrascan</a>  </li>
+<li><strong>KICS</strong> – <a href="https://github.com/Checkmarx/kics">https://github.com/Checkmarx/kics</a></li>
+</ul>
+<hr>
+<h3>🐳 Container Image Security</h3>
+<blockquote>
+<p>Uma imagem insegura vira <strong>mil containers inseguros</strong>.</p>
+</blockquote>
+<ul>
+<li>Scanning de imagens em build e registry</li>
+<li>Vulnerabilidades em SO base e dependências</li>
+<li>Uso de imagens mínimas e imutáveis</li>
+<li>Assinatura, verificação e confiança de imagens</li>
+<li>Controle de origem (base images confiáveis)</li>
+</ul>
+<p>Ferramentas open source:</p>
+<ul>
+<li><strong>Trivy</strong> – <a href="https://github.com/aquasecurity/trivy">https://github.com/aquasecurity/trivy</a>  </li>
+<li><strong>Grype</strong> – <a href="https://github.com/anchore/grype">https://github.com/anchore/grype</a>  </li>
+<li><strong>Syft</strong> – <a href="https://github.com/anchore/syft">https://github.com/anchore/syft</a>  </li>
+<li><strong>Docker Scout (community)</strong> – <a href="https://docs.docker.com/scout/">https://docs.docker.com/scout/</a></li>
+</ul>
+<hr>
+<h3>☸️ Kubernetes Security (Cluster &amp; Workloads)</h3>
+<blockquote>
+<p>Kubernetes <strong>não é seguro por padrão</strong> — ele é flexível por padrão.</p>
+</blockquote>
+<ul>
+<li>Hardening de cluster (control plane e nodes)</li>
+<li>RBAC, service accounts e identidade</li>
+<li>Network Policies e isolamento de tráfego</li>
+<li>Pod Security Standards</li>
+<li>Segregação de namespaces e ambientes</li>
+<li>Proteção e acesso seguro ao etcd</li>
+</ul>
+<p>Ferramentas open source:</p>
+<ul>
+<li><strong>kube-bench</strong> – <a href="https://github.com/aquasecurity/kube-bench">https://github.com/aquasecurity/kube-bench</a>  </li>
+<li><strong>kube-hunter</strong> – <a href="https://github.com/aquasecurity/kube-hunter">https://github.com/aquasecurity/kube-hunter</a>  </li>
+<li><strong>Kubescape</strong> – <a href="https://github.com/kubescape/kubescape">https://github.com/kubescape/kubescape</a>  </li>
+<li><strong>Kyverno</strong> – <a href="https://kyverno.io/">https://kyverno.io/</a>  </li>
+<li><strong>OPA Gatekeeper</strong> – <a href="https://github.com/open-policy-agent/gatekeeper">https://github.com/open-policy-agent/gatekeeper</a></li>
+</ul>
+<hr>
+<h3>🧠 Admission Control &amp; Policy as Code</h3>
+<blockquote>
+<p>Segurança declarativa é <strong>controle escalável</strong>.</p>
+</blockquote>
+<ul>
+<li>Validação de manifests no momento do deploy</li>
+<li>Bloqueio automático de configurações inseguras</li>
+<li>Enforcement técnico (não só guideline)</li>
+<li>Compliance contínuo e versionável</li>
+<li>Redução de erro humano em escala</li>
+</ul>
+<p>Ferramentas:</p>
+<ul>
+<li><strong>OPA / Gatekeeper</strong> – <a href="https://www.openpolicyagent.org/">https://www.openpolicyagent.org/</a>  </li>
+<li><strong>Kyverno</strong> – <a href="https://kyverno.io/">https://kyverno.io/</a></li>
+</ul>
+<hr>
+<h3>🧬 Runtime Security</h3>
+<blockquote>
+<p>O pipeline falha. O ataque <strong>acontece em runtime</strong>.</p>
+</blockquote>
+<ul>
+<li>Detecção de comportamento anômalo</li>
+<li>Monitoramento de syscalls e eventos do kernel</li>
+<li>Detecção de container escape</li>
+<li>Visibilidade de processos e chamadas suspeitas</li>
+<li>Resposta em tempo real</li>
+</ul>
+<p>Ferramentas open source:</p>
+<ul>
+<li><strong>Falco</strong> – <a href="https://falco.org/">https://falco.org/</a>  </li>
+<li><strong>Tetragon (eBPF)</strong> – <a href="https://github.com/cilium/tetragon">https://github.com/cilium/tetragon</a>  </li>
+<li><strong>Tracee</strong> – <a href="https://github.com/aquasecurity/tracee">https://github.com/aquasecurity/tracee</a></li>
+</ul>
+<hr>
+<h3>🔗 Supply Chain Security</h3>
+<blockquote>
+<p>O atacante agora entra <strong>antes do deploy</strong>.</p>
+</blockquote>
+<ul>
+<li>Proteção de pipelines CI/CD</li>
+<li>Integridade de artefatos e builds</li>
+<li>Assinatura e verificação criptográfica</li>
+<li>Proveniência e rastreabilidade (SLSA)</li>
+<li>Redução de dependência não confiável</li>
+</ul>
+<p>Ferramentas open source:</p>
+<ul>
+<li><strong>Sigstore / cosign</strong> – <a href="https://www.sigstore.dev/">https://www.sigstore.dev/</a>  </li>
+<li><strong>in-toto</strong> – <a href="https://in-toto.io/">https://in-toto.io/</a>  </li>
+<li><strong>SLSA Framework</strong> – <a href="https://slsa.dev/">https://slsa.dev/</a></li>
+</ul>
+<hr>
+<h2>🧪 Labs Práticos (Essenciais)</h2>
+<blockquote>
+<p>Essa trilha <strong>não funciona sem laboratório</strong>.</p>
+</blockquote>
+<ul>
+<li><p><strong>Killercoda (Kubernetes Labs)</strong><br><a href="https://killercoda.com/">https://killercoda.com/</a></p>
+</li>
+<li><p><strong>OWASP Kubernetes Goat</strong><br><a href="https://github.com/madhuakula/kubernetes-goat">https://github.com/madhuakula/kubernetes-goat</a></p>
+</li>
+<li><p><strong>Cloud Native Security Labs</strong><br><a href="https://github.com/aquasecurity/cloud-native-security-labs">https://github.com/aquasecurity/cloud-native-security-labs</a></p>
+</li>
+<li><p><strong>TryHackMe – DevSecOps &amp; Kubernetes</strong><br><a href="https://tryhackme.com/">https://tryhackme.com/</a></p>
+</li>
+</ul>
+<hr>
+<h2>📘 Cursos Oficiais (Formação)</h2>
+<h3>Kubernetes &amp; Cloud Native</h3>
+<ul>
+<li><p>Linux Foundation – Kubernetes Security Fundamentals (LFS460)<br><a href="https://training.linuxfoundation.org/training/kubernetes-security-fundamentals-lfs460/">https://training.linuxfoundation.org/training/kubernetes-security-fundamentals-lfs460/</a></p>
+</li>
+<li><p>Kubernetes Docs – Security Concepts<br><a href="https://kubernetes.io/docs/concepts/security/">https://kubernetes.io/docs/concepts/security/</a></p>
+</li>
+</ul>
+<hr>
+<h3>DevSecOps &amp; Supply Chain</h3>
+<ul>
+<li><p>DevSecOps Foundation (DOFD)<br><a href="https://devopsinstitute.com/certifications/devsecops-foundation/">https://devopsinstitute.com/certifications/devsecops-foundation/</a></p>
+</li>
+<li><p>Google SLSA &amp; Supply Chain Security<br><a href="https://slsa.dev/">https://slsa.dev/</a></p>
+</li>
+</ul>
+<hr>
+<h2>🏅 Certificações</h2>
+<ul>
+<li><strong>CKA – Certified Kubernetes Administrator</strong>  </li>
+<li><strong>CKS – Certified Kubernetes Security Specialist</strong>  </li>
+<li><strong>AWS Security – Specialty</strong></li>
+</ul>
+<hr>
+<h2>📚 Livros Técnicos Essenciais (DevSecOps &amp; Kubernetes)</h2>
+<h3>Kubernetes Security</h3>
+<p><strong>Autor:</strong> Liz Rice, Michael Hausenblas  </p>
+<blockquote>
+<p>Referência moderna e prática sobre <strong>segurança real em Kubernetes</strong>.</p>
+</blockquote>
+<h3>Container Security</h3>
+<p><strong>Autor:</strong> Liz Rice  </p>
+<blockquote>
+<p>Base sólida sobre containers, namespaces, cgroups e runtime.</p>
+</blockquote>
+<h3>Practical Cloud Native Security</h3>
+<p><strong>Autor:</strong> Mark Coleman, Dan Nemeth  </p>
+<blockquote>
+<p>Segurança aplicada a ambientes cloud native, do build ao runtime.</p>
+</blockquote>
+<h3>Securing DevOps</h3>
+<p><strong>Autor:</strong> Julien Vehent  </p>
+<blockquote>
+<p>Clássico sobre <strong>segurança em pipelines, automação e cultura DevSecOps</strong>.</p>
+</blockquote>
+<h3>Software Supply Chain Security</h3>
+<p><strong>Autores:</strong> Seth Vargo et al.  </p>
+<blockquote>
+<p>Base moderna sobre ataques à cadeia de suprimentos e mitigação.</p>
+</blockquote>
+<hr>
+<h2>🔗 Integração com Outras Trilhas</h2>
+<ul>
+<li><strong>AppSec</strong> – segurança de código e pipelines</li>
+<li><strong>Cloud Security</strong> – identidade, rede e governança</li>
+<li><strong>SOC / Blue Team</strong> – detecção e resposta em runtime</li>
+<li><strong>GRC</strong> – políticas, risco e compliance</li>
+</ul>
+<hr>
+<h2>📌 Princípios-Chave de DevSecOps &amp; Kubernetes Security</h2>
+<ul>
+<li>Segurança começa <strong>antes do deploy</strong></li>
+<li>Kubernetes amplifica erros</li>
+<li>Policy as Code é controle real</li>
+<li>Runtime é onde o ataque acontece</li>
+<li>Supply chain é o novo alvo</li>
+</ul>
+<hr>
+<h1>🏭 Fabricantes &amp; Plataformas — DevSecOps &amp; Kubernetes Security</h1>
+<p>Este documento lista <strong>fabricantes e plataformas amplamente usados no mercado</strong> para <strong>DevSecOps, Kubernetes Security, Cloud Native Security e Supply Chain Security</strong>.</p>
+<blockquote>
+<p>⚠️ <strong>Importante</strong><br>Fabricantes <strong>não substituem fundamentos</strong>.<br>Eles <strong>implementam controles</strong>, mas <strong>quem garante segurança é arquitetura + processo + engenharia</strong>.</p>
+</blockquote>
+<p>A lista está organizada <strong>por domínio técnico</strong>, refletindo <strong>uso real em ambientes maduros</strong>.</p>
+<hr>
+<h2>📦 IaC Security &amp; Policy as Code</h2>
+<p>Ferramentas focadas em <strong>segurança de infraestrutura como código</strong>, validação preventiva e enforcement técnico.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>Palo Alto Networks – Prisma Cloud (IaC Security)</strong></li>
+<li><strong>Check Point – CloudGuard</strong></li>
+<li><strong>Snyk IaC</strong></li>
+<li><strong>Bridgecrew (Checkov)</strong></li>
+<li><strong>Aqua Security (IaC &amp; Cloud Native)</strong></li>
+<li><strong>HashiCorp Sentinel</strong> (policy as code)</li>
+<li><strong>Sysdig Secure (IaC context)</strong></li>
+<li><strong>Tenable Cloud Security</strong> (IaC + misconfiguration + exposure context)</li>
+</ul>
+<hr>
+<h2>🐳 Container Image Security &amp; Registry Protection</h2>
+<p>Proteção de imagens, dependências, registries e pipelines de build.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>Aqua Security</strong></li>
+<li><strong>Sysdig Secure</strong></li>
+<li><strong>Anchore</strong></li>
+<li><strong>Snyk Container</strong></li>
+<li><strong>JFrog Xray</strong></li>
+<li><strong>Docker Scout</strong></li>
+<li><strong>Palo Alto Prisma Cloud (Container Security)</strong></li>
+<li><strong>Trend Micro Cloud One – Container Security</strong></li>
+<li><strong>Tenable Container Security</strong> (vulnerabilities + exposure)</li>
+</ul>
+<hr>
+<h2>☸️ Kubernetes Security (Cluster, Workloads &amp; Configuração)</h2>
+<p>Segurança de clusters, namespaces, RBAC, policies e hardening.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>Aqua Security</strong></li>
+<li><strong>Sysdig Secure</strong></li>
+<li><strong>Palo Alto Prisma Cloud</strong></li>
+<li><strong>Check Point CloudGuard</strong></li>
+<li><strong>ARMO / Kubescape</strong></li>
+<li><strong>Red Hat Advanced Cluster Security (ACS)</strong></li>
+<li><strong>VMware Tanzu Security</strong></li>
+<li><strong>Google GKE Security / Anthos Security</strong></li>
+<li><strong>Microsoft Defender for Containers</strong></li>
+<li><strong>Tenable Cloud Security (K8s posture + risk)</strong></li>
+</ul>
+<hr>
+<h2>🧠 Admission Control &amp; Policy Enforcement</h2>
+<p>Validação e bloqueio de configurações inseguras <strong>no momento do deploy</strong>.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>OPA / Gatekeeper</strong></li>
+<li><strong>Kyverno</strong></li>
+<li><strong>HashiCorp Sentinel</strong></li>
+<li><strong>Red Hat Advanced Cluster Security</strong></li>
+<li><strong>Palo Alto Prisma Cloud (policy engine)</strong></li>
+</ul>
+<hr>
+<h2>🧬 Runtime Security (Detecção &amp; Resposta)</h2>
+<p>Detecção comportamental, syscalls, eBPF e resposta em tempo real.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>Aqua Security</strong></li>
+<li><strong>Sysdig Secure</strong></li>
+<li><strong>Falco (CNCF)</strong></li>
+<li><strong>Cilium / Tetragon</strong></li>
+<li><strong>Trend Micro Cloud One</strong></li>
+<li><strong>CrowdStrike Falcon Cloud Security</strong></li>
+<li><strong>Palo Alto Prisma Cloud (Runtime Protection)</strong></li>
+</ul>
+<hr>
+<h2>🌐 Microsegmentação &amp; Zero Trust Leste–Oeste</h2>
+<p>Proteção de <strong>tráfego interno</strong>, workloads, containers e VMs, com foco em <strong>Zero Trust</strong> e <strong>redução de blast radius</strong>.</p>
+<blockquote>
+<p>📌 Essencial em Kubernetes, cloud híbrida e ambientes distribuídos.</p>
+</blockquote>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>Akamai Guardicore (Microsegmentation)</strong></li>
+<li><strong>Illumio</strong></li>
+<li><strong>VMware NSX</strong></li>
+<li><strong>Cisco Secure Workload (Tetration)</strong></li>
+<li><strong>Palo Alto Prisma Cloud (Microsegmentation features)</strong></li>
+<li><strong>Cilium (eBPF-based networking &amp; security)</strong></li>
+</ul>
+<hr>
+<h2>🔗 Supply Chain Security (CI/CD &amp; Proveniência)</h2>
+<p>Proteção do pipeline, integridade de artefatos e ataques à cadeia de suprimentos.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>GitHub Advanced Security</strong></li>
+<li><strong>GitLab Ultimate (DevSecOps)</strong></li>
+<li><strong>Snyk</strong></li>
+<li><strong>JFrog Xray</strong></li>
+<li><strong>Sigstore (cosign)</strong></li>
+<li><strong>in-toto</strong></li>
+<li><strong>Google SLSA</strong></li>
+<li><strong>Chainguard</strong></li>
+</ul>
+<hr>
+<h2>📊 CNAPP / Exposure Management (Visão Unificada)</h2>
+<p>Plataformas que correlacionam <strong>configuração, vulnerabilidade, identidade e exposição real</strong>.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>Palo Alto Networks – Prisma Cloud</strong></li>
+<li><strong>Aqua Security Platform</strong></li>
+<li><strong>Sysdig Secure</strong></li>
+<li><strong>Check Point CloudGuard</strong></li>
+<li><strong>Wiz</strong></li>
+<li><strong>Orca Security</strong></li>
+<li><strong>Lacework</strong></li>
+<li><strong>Microsoft Defender for Cloud</strong></li>
+<li><strong>Tenable Cloud Security / Tenable One</strong></li>
+</ul>
+<blockquote>
+<p>📌 Aqui entra <strong>exposure management</strong>, não só posture.</p>
+</blockquote>
+<hr>
+<h2>🔐 Identidade &amp; Secrets (Plataforma &amp; Pipelines)</h2>
+<p>Gestão de identidade, segredos e acesso em ambientes cloud native.</p>
+<h3>Fabricantes / Plataformas</h3>
+<ul>
+<li><strong>HashiCorp Vault</strong></li>
+<li><strong>CyberArk</strong></li>
+<li><strong>AWS Secrets Manager</strong></li>
+<li><strong>Azure Key Vault</strong></li>
+<li><strong>Google Secret Manager</strong></li>
+<li><strong>Doppler</strong></li>
+<li><strong>Akeyless</strong></li>
+</ul>
+<hr>
+<h2>🧭 Como Usar Esta Lista</h2>
+<ul>
+<li>📌 <strong>Não escolha ferramenta antes do problema</strong></li>
+<li>📌 Avalie seu <strong>nível de maturidade</strong></li>
+<li>📌 Priorize <strong>prevenção + visibilidade + runtime</strong></li>
+<li>📌 Entenda onde entra <strong>microsegmentação</strong></li>
+<li>📌 Evite sobreposição de ferramentas</li>
+</ul>
+<blockquote>
+<p>💡 Ambientes maduros usam <strong>menos ferramentas, melhor integradas</strong>.</p>
+</blockquote>
+<hr>
+<h2>⚠️ Observação Final</h2>
+<ul>
+<li>Fabricantes mudam</li>
+<li>Features migram</li>
+<li>Produtos se fundem</li>
+</ul>
+<p>👉 <strong>Fundamentos, arquitetura e método permanecem.</strong></p>
+<p>DevSecOps e Kubernetes Security <strong>não são tool-driven</strong>.<br>São <strong>engineering-driven</strong>.</p>
+<aside class="cert-box"><strong>🏅 Quer escolher a certificação certa para esta área?</strong><span> Consulte o roadmap dedicado por segmento, nível e relevância no mercado brasileiro.</span><br><a href="https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap/" target="_blank" rel="noreferrer">ABRIR ROADMAP DE CERTIFICAÇÕES ↗</a></aside></article></div><nav class="page-nav" aria-label="Navegação entre trilhas"><a href="05-cloud-security.html">← Cloud Security</a><a href="07-iam-zero-trust.html">IAM & Zero Trust →</a></nav></main><footer class="footer"><div class="wrap"><span>Cybersecurity Master Roadmap</span><span>Mariana BS - Cybersecurity Engineer</span></div></footer><a class="top-button" href="#">↑</a><script>const headings=[...document.querySelectorAll('#content h2,#content h3')];const toc=document.querySelector('#toc');headings.forEach((h,i)=>{h.id='sec-'+i;const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;a.style.paddingLeft=h.tagName==='H3'?'16px':'7px';toc.appendChild(a)});function progress(){const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('#readingProgress').style.width=(max>0?scrollY/max*100:0)+'%'}addEventListener('scroll',progress,{passive:true});progress();</script></body></html>

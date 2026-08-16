@@ -1,0 +1,285 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080a10"><meta name="description" content="Segurança de Blockchain & Web3 — Cybersecurity Master Roadmap de Mariana BS"><title>Segurança de Blockchain & Web3 | Cybersecurity Master Roadmap</title><style>
+:root{--bg:#080a10;--panel:#11151f;--line:#2b3242;--text:#f5f7fb;--muted:#abb5c7;--pink:#ff4fa3;--cyan:#40d9ff;--lime:#b9f45d}*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;overflow-x:hidden;background:radial-gradient(circle at 12% 0,rgba(255,79,163,.12),transparent 30%),radial-gradient(circle at 90% 5%,rgba(64,217,255,.09),transparent 26%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}a{color:inherit}.wrap{width:min(940px,calc(100% - 32px));margin:auto}.top{position:sticky;top:0;z-index:20;background:rgba(8,10,16,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{min-height:68px;display:flex;align-items:center;gap:12px}.brand{font-weight:950;letter-spacing:-.05em;text-decoration:none;white-space:nowrap}.brand i{color:var(--pink);font-style:normal}.navlinks{margin-left:auto;display:flex;gap:9px;align-items:center}.navlinks a,.pill{padding:9px 11px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-size:.75rem;font-weight:850}.cert{background:linear-gradient(135deg,var(--pink),#ff7b55);border:0!important;color:#1b0610}.hero{padding:58px 0 28px}.eyebrow{font-size:.69rem;color:var(--cyan);font-weight:950;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(2.35rem,7vw,5rem);line-height:.95;letter-spacing:-.06em;margin:13px 0 18px;overflow-wrap:anywhere}.hero p{color:var(--muted);max-width:720px}.content{padding:18px clamp(18px,5vw,50px) 45px;margin:20px 0 40px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#121722,#0c0f17);overflow-wrap:anywhere}.content h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1;letter-spacing:-.05em;margin:36px 0 22px}.content h2{font-size:clamp(1.45rem,3.5vw,2rem);line-height:1.15;letter-spacing:-.025em;margin:38px 0 14px}.content h3{font-size:1.16rem;color:var(--cyan);margin:28px 0 10px}.content h4{color:var(--lime)}.content p,.content li{color:#c9d0dc}.content a{color:#ff91c6;text-underline-offset:3px}.content ul,.content ol{padding-left:24px}.content li{margin:5px 0}.content blockquote{margin:22px 0;padding:14px 18px;border-left:4px solid var(--pink);background:rgba(255,79,163,.07);border-radius:0 10px 10px 0}.content table{display:block;width:100%;overflow-x:auto;border-collapse:collapse;margin:20px 0}.content th,.content td{padding:10px 12px;border:1px solid var(--line);text-align:left;min-width:120px}.content th{background:#191e2a}.content code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#080b11;border:1px solid #2c3443;border-radius:6px;padding:2px 5px;color:var(--lime)}.content pre{padding:16px;background:#080b11;border:1px solid var(--line);border-radius:12px;overflow-x:auto}.content pre code{border:0;padding:0}.content img{max-width:100%;height:auto}.content hr{border:0;border-top:1px solid var(--line);margin:34px 0}.page-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0 65px}.page-nav a{padding:17px;border:1px solid var(--line);border-radius:14px;background:var(--panel);text-decoration:none;font-weight:850}.page-nav a:last-child{text-align:right}.cert-box{padding:22px;margin:28px 0;border:1px solid rgba(255,79,163,.55);border-radius:16px;background:rgba(255,79,163,.08)}.cert-box strong{display:block;font-size:1.15rem}.cert-box a{display:inline-block;margin-top:12px;padding:10px 13px;background:var(--pink);border-radius:9px;color:#19040e;text-decoration:none;font-weight:950}.footer{border-top:1px solid var(--line);padding:30px 0 45px;color:var(--muted);font-size:.82rem}.footer .wrap{display:flex;justify-content:space-between;gap:20px}@media(max-width:650px){.wrap{width:calc(100% - 22px)}.nav{min-height:60px}.brand{font-size:.9rem}.navlinks a:not(.cert){display:none}.navlinks .cert{font-size:.66rem;padding:7px 8px}.hero{padding-top:38px}.hero h1{font-size:clamp(2.15rem,11vw,3rem)}.content{padding:10px 15px 30px;border-radius:15px}.content h1{font-size:2rem}.content h2{font-size:1.45rem}.page-nav{grid-template-columns:1fr}.page-nav a:last-child{text-align:left}.footer .wrap{flex-direction:column}}
+.reading-progress{position:fixed;left:0;top:0;z-index:50;width:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--cyan));box-shadow:0 0 18px rgba(64,217,255,.55)}.reader{display:grid;grid-template-columns:210px minmax(0,1fr);gap:18px;align-items:start}.toc{position:sticky;top:88px;max-height:calc(100vh - 110px);overflow:auto;padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(15,19,28,.92)}.toc>strong{display:block;margin-bottom:12px;color:var(--cyan);font-size:.67rem;letter-spacing:.14em}.toc nav{display:grid;gap:4px}.toc a{padding:6px 7px;border-radius:7px;color:#aeb7c7;text-decoration:none;font-size:.73rem;line-height:1.3}.toc a:hover,.toc a.active{background:rgba(255,79,163,.1);color:#ff9ac9}.reader .content{min-width:0;margin-top:0}.top-button{position:fixed;right:16px;bottom:16px;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:#151a25;color:white;text-decoration:none;font-weight:900}@media(max-width:900px){.reader{grid-template-columns:1fr}.toc{display:none}}</style></head><body><div class="reading-progress" id="readingProgress"></div><header class="top"><nav class="wrap nav"><a class="brand" href="index.html">BE<i>SAFE</i> // ROADMAP</a><div class="navlinks"><a href="index.html#trilhas">TODAS AS TRILHAS</a><a class="cert" href="https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap/" target="_blank" rel="noreferrer">🏅 CERTIFICAÇÕES ↗</a></div></nav></header><main class="wrap"><section class="hero"><div class="eyebrow">TRILHA 16 DE 18</div><h1>⛓️ Segurança de Blockchain & Web3</h1><p>Conteúdo integral do Cybersecurity Master Roadmap. Estude no seu ritmo, pratique e use certificações como validação — não como atalho.</p></section><div class="reader"><aside class="toc"><strong>NESTA TRILHA</strong><nav id="toc"></nav></aside><article class="content" id="content"><h1>⛓️ Segurança de Blockchain &amp; Web3</h1>
+<p>Esta trilha aborda <strong>segurança de ecossistemas blockchain e Web3</strong>, com foco em <strong>smart contracts, protocolos, infraestrutura descentralizada, carteiras, bridges, governança e risco sistêmico</strong>.</p>
+<p>Blockchain Security <strong>não é só auditar smart contract</strong>.<br>É <strong>criptografia, economia, código, arquitetura distribuída e governança</strong>, tudo ao mesmo tempo.</p>
+<blockquote>
+<p>⚠️ Em Web3, <strong>bug vira perda financeira direta</strong>.<br>Não existe rollback, não existe “patch depois”.</p>
+</blockquote>
+<hr>
+<h2>🎯 Objetivos da Trilha</h2>
+<ul>
+<li>Entender <strong>como blockchains realmente funcionam</strong></li>
+<li>Identificar <strong>vetores reais de ataque em Web3</strong></li>
+<li>Aplicar <strong>controles técnicos, econômicos e arquiteturais</strong></li>
+<li>Preparar profissionais para <strong>auditoria, defesa e arquitetura segura</strong></li>
+<li>Conectar <strong>segurança técnica, risco financeiro e governança</strong></li>
+</ul>
+<hr>
+<h2>👥 Carreiras em Blockchain Security</h2>
+<ul>
+<li><strong>Blockchain Security Engineer</strong></li>
+<li><strong>Smart Contract Auditor</strong></li>
+<li><strong>Web3 Security Researcher</strong></li>
+<li><strong>Protocol Security Architect</strong></li>
+<li><strong>DeFi Risk Analyst</strong></li>
+<li><strong>Security Lead (Web3 / Crypto)</strong></li>
+</ul>
+<blockquote>
+<p>Em Web3, segurança é <strong>core business</strong>, não suporte.</p>
+</blockquote>
+<hr>
+<h2>🧱 Fundamentos Técnicos (Obrigatórios)</h2>
+<h3>🔗 Conceitos de Blockchain</h3>
+<ul>
+<li>Ledger distribuído</li>
+<li>Consenso (PoW, PoS, variantes)</li>
+<li>Imutabilidade e finality</li>
+<li>Chaves públicas e privadas</li>
+<li>Transações, blocos e estados</li>
+<li>On-chain vs off-chain</li>
+</ul>
+<hr>
+<h3>🔐 Criptografia Aplicada</h3>
+<ul>
+<li>Hash functions</li>
+<li>Assinaturas digitais</li>
+<li>Merkle Trees</li>
+<li>Zero-Knowledge Proofs (ZKPs)</li>
+<li>Threshold signatures</li>
+<li>Multi-sig</li>
+</ul>
+<blockquote>
+<p>Falha criptográfica = falha sistêmica.</p>
+</blockquote>
+<hr>
+<h3>🧠 Economia &amp; Incentivos (Crítico)</h3>
+<ul>
+<li>Tokenomics</li>
+<li>Game theory</li>
+<li>Incentive alignment</li>
+<li>MEV (Maximal Extractable Value)</li>
+<li>Ataques econômicos</li>
+</ul>
+<blockquote>
+<p>Muitos ataques <strong>não são bugs</strong>, são <strong>incentivos mal desenhados</strong>.</p>
+</blockquote>
+<hr>
+<h2>🧨 Principais Ameaças em Blockchain / Web3</h2>
+<h3>🔓 Smart Contracts</h3>
+<ul>
+<li>Reentrancy</li>
+<li>Integer overflow / underflow</li>
+<li>Access control flaws</li>
+<li>Oracle manipulation</li>
+<li>Flash loan attacks</li>
+<li>Logic bugs</li>
+<li>Unsafe upgradeability</li>
+</ul>
+<hr>
+<h3>🌉 Infraestrutura &amp; Protocolos</h3>
+<ul>
+<li>Bridge exploits</li>
+<li>Consensus manipulation</li>
+<li>Validator compromise</li>
+<li>RPC abuse</li>
+<li>Node poisoning</li>
+<li>DNS hijacking</li>
+</ul>
+<hr>
+<h3>💼 Carteiras &amp; Usuários</h3>
+<ul>
+<li>Private key leakage</li>
+<li>Phishing e wallet drainers</li>
+<li>Malicious dApps</li>
+<li>Approval abuse</li>
+<li>Seed phrase compromise</li>
+</ul>
+<hr>
+<h3>🧠 Governança &amp; DAO</h3>
+<ul>
+<li>Governance capture</li>
+<li>Vote manipulation</li>
+<li>Sybil attacks</li>
+<li>Economic majority attacks</li>
+</ul>
+<hr>
+<h2>🧩 Superfícies de Ataque Web3</h2>
+<ul>
+<li>Smart contracts</li>
+<li>Wallets (hot / cold)</li>
+<li>RPC endpoints</li>
+<li>Bridges</li>
+<li>Oracles</li>
+<li>Frontends Web3</li>
+<li>Governance mechanisms</li>
+<li>Off-chain services</li>
+</ul>
+<hr>
+<h2>🛡️ Controles de Segurança em Blockchain</h2>
+<h3>🔧 Técnicos</h3>
+<ul>
+<li>Secure smart contract patterns</li>
+<li>Formal verification</li>
+<li>Static &amp; dynamic analysis</li>
+<li>Fuzzing</li>
+<li>On-chain monitoring</li>
+<li>Rate limiting de RPC</li>
+<li>Multisig e timelocks</li>
+</ul>
+<hr>
+<h3>🧪 Secure Web3 SDLC</h3>
+<ul>
+<li>Threat modeling para Web3</li>
+<li>Auditorias independentes</li>
+<li>Testes econômicos</li>
+<li>Bug bounty programs</li>
+<li>Monitoramento contínuo on-chain</li>
+</ul>
+<hr>
+<h3>🧠 Governança &amp; Risco</h3>
+<ul>
+<li>Defense-in-depth em protocolos</li>
+<li>Circuit breakers</li>
+<li>Emergency pause</li>
+<li>Risk committees</li>
+<li>Disclosure responsável</li>
+</ul>
+<hr>
+<h2>📘 Frameworks, Normas e Referências</h2>
+<h3>🔗 Frameworks Técnicos</h3>
+<ul>
+<li><p><strong>OWASP Smart Contract Top 10</strong><br><a href="https://owasp.org/www-project-smart-contract-top-10/">https://owasp.org/www-project-smart-contract-top-10/</a></p>
+</li>
+<li><p><strong>Ethereum Smart Contract Best Practices</strong><br><a href="https://consensys.github.io/smart-contract-best-practices/">https://consensys.github.io/smart-contract-best-practices/</a></p>
+</li>
+<li><p><strong>Trail of Bits – Blockchain Security Resources</strong><br><a href="https://github.com/trailofbits/blockchain-security">https://github.com/trailofbits/blockchain-security</a></p>
+</li>
+</ul>
+<hr>
+<h3>🧭 Governança &amp; Risco</h3>
+<ul>
+<li><p><strong>DeFi Risk Framework (Gauntlet / Community)</strong><br><a href="https://gauntlet.network/">https://gauntlet.network/</a></p>
+</li>
+<li><p><strong>Crypto Risk Framework (WEF)</strong><br><a href="https://www.weforum.org/">https://www.weforum.org/</a></p>
+</li>
+</ul>
+<hr>
+<h2>🧪 Labs Práticos (Blockchain / Web3)</h2>
+<blockquote>
+<p>Blockchain security <strong>se aprende explorando exploits reais</strong>.</p>
+</blockquote>
+<h3>Labs e Ambientes</h3>
+<ul>
+<li><p><strong>Damn Vulnerable DeFi</strong><br><a href="https://github.com/SunWeb3Sec/DeFiHackLabs">https://github.com/SunWeb3Sec/DeFiHackLabs</a></p>
+</li>
+<li><p><strong>Ethernaut (OpenZeppelin)</strong><br><a href="https://ethernaut.openzeppelin.com/">https://ethernaut.openzeppelin.com/</a></p>
+</li>
+<li><p><strong>Capture The Ether</strong><br><a href="https://capturetheether.com/">https://capturetheether.com/</a></p>
+</li>
+<li><p><strong>Paradigm CTF (Blockchain)</strong><br><a href="https://ctf.paradigm.xyz/">https://ctf.paradigm.xyz/</a></p>
+</li>
+<li><p><strong>Foundry / Hardhat Test Labs</strong><br><a href="https://book.getfoundry.sh/">https://book.getfoundry.sh/</a></p>
+</li>
+</ul>
+<hr>
+<h2>🧰 Ferramentas Importantes</h2>
+<h3>🔍 Análise &amp; Auditoria</h3>
+<ul>
+<li><strong>Slither</strong> – <a href="https://github.com/crytic/slither">https://github.com/crytic/slither</a></li>
+<li><strong>Mythril</strong> – <a href="https://github.com/ConsenSys/mythril">https://github.com/ConsenSys/mythril</a></li>
+<li><strong>Manticore</strong> – <a href="https://github.com/trailofbits/manticore">https://github.com/trailofbits/manticore</a></li>
+<li><strong>Echidna (fuzzing)</strong> – <a href="https://github.com/crytic/echidna">https://github.com/crytic/echidna</a></li>
+</ul>
+<hr>
+<h3>🧠 Desenvolvimento Seguro</h3>
+<ul>
+<li><strong>Hardhat</strong> – <a href="https://hardhat.org/">https://hardhat.org/</a></li>
+<li><strong>Foundry</strong> – <a href="https://github.com/foundry-rs/foundry">https://github.com/foundry-rs/foundry</a></li>
+<li><strong>OpenZeppelin Contracts</strong> – <a href="https://openzeppelin.com/contracts/">https://openzeppelin.com/contracts/</a></li>
+</ul>
+<hr>
+<h3>🔎 Monitoramento On-chain</h3>
+<ul>
+<li><strong>Tenderly</strong> – <a href="https://tenderly.co/">https://tenderly.co/</a></li>
+<li><strong>Forta (Detection Network)</strong> – <a href="https://forta.org/">https://forta.org/</a></li>
+</ul>
+<hr>
+<h2>📘 Cursos e Formação</h2>
+<h3>Blockchain Security</h3>
+<ul>
+<li><p><strong>Secureum Bootcamp</strong><br><a href="https://secureum.xyz/">https://secureum.xyz/</a></p>
+</li>
+<li><p><strong>Trail of Bits – Blockchain Security Training</strong><br><a href="https://www.trailofbits.com/training/">https://www.trailofbits.com/training/</a></p>
+</li>
+<li><p><strong>Ethernaut CTF (OpenZeppelin)</strong><br><a href="https://ethernaut.openzeppelin.com/">https://ethernaut.openzeppelin.com/</a></p>
+</li>
+</ul>
+<hr>
+<h3>Complementares</h3>
+<ul>
+<li><strong>Cryptography I – Stanford (Dan Boneh)</strong><br><a href="https://crypto.stanford.edu/~dabo/courses/onlinecrypto/">https://crypto.stanford.edu/~dabo/courses/onlinecrypto/</a></li>
+</ul>
+<hr>
+<h2>🏅 Certificações (Contexto Web3)</h2>
+<blockquote>
+<p>Ainda <strong>não existe certificação universal</strong> como CISSP em Web3.<br>Avaliar sempre <strong>reputação técnica</strong>, não marketing.</p>
+</blockquote>
+<ul>
+<li>Secureum Certifications (Skill-based)</li>
+<li>Auditor programs de plataformas (Ethereum, Solana, etc.)</li>
+</ul>
+<hr>
+<h2>📚 Livros Essenciais de Blockchain &amp; Web3 Security</h2>
+<h3>Mastering Ethereum</h3>
+<p><strong>Autor:</strong> Andreas M. Antonopoulos  </p>
+<blockquote>
+<p>Base técnica obrigatória para entender Ethereum e smart contracts.</p>
+</blockquote>
+<hr>
+<h3>Blockchain Security from the Ground Up</h3>
+<p><strong>Autor:</strong> George K. Thiruvathukal  </p>
+<blockquote>
+<p>Visão estrutural de segurança em blockchains.</p>
+</blockquote>
+<hr>
+<h3>Building Secure and Reliable Smart Contracts</h3>
+<p><strong>Organização:</strong> Trail of Bits  </p>
+<blockquote>
+<p>Guia técnico usado em auditorias reais.</p>
+</blockquote>
+<hr>
+<h3>DeFi and the Future of Finance</h3>
+<p><strong>Autores:</strong> Campbell R. Harvey et al.  </p>
+<blockquote>
+<p>Entendimento profundo de riscos econômicos em DeFi.</p>
+</blockquote>
+<hr>
+<h3>Hands-On Smart Contract Development with Solidity</h3>
+<p><strong>Autor:</strong> Kevin Solorio  </p>
+<blockquote>
+<p>Desenvolvimento com foco em segurança prática.</p>
+</blockquote>
+<hr>
+<h2>🔗 Integração com Outras Trilhas</h2>
+<ul>
+<li><strong>AppSec</strong> – lógica, código e testes</li>
+<li><strong>Cloud Security</strong> – RPC, nodes e infra</li>
+<li><strong>IAM &amp; Zero Trust</strong> – identidade e chaves</li>
+<li><strong>GRC / Risco</strong> – impacto financeiro e compliance</li>
+<li><strong>CTI</strong> – campanhas e ataques Web3</li>
+</ul>
+<hr>
+<h2>📌 Princípios-Chave de Blockchain Security</h2>
+<ul>
+<li>Código é dinheiro</li>
+<li>Bug é perda financeira</li>
+<li>Incentivo mal desenhado é vulnerabilidade</li>
+<li>Auditoria não elimina risco</li>
+<li>Governança importa tanto quanto criptografia</li>
+</ul>
+<hr>
+<blockquote>
+<p>Blockchain muda rápido.<br><strong>Criptografia, arquitetura e risco continuam sendo a base.</strong></p>
+</blockquote>
+<aside class="cert-box"><strong>🏅 Quer escolher a certificação certa para esta área?</strong><span> Consulte o roadmap dedicado por segmento, nível e relevância no mercado brasileiro.</span><br><a href="https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap/" target="_blank" rel="noreferrer">ABRIR ROADMAP DE CERTIFICAÇÕES ↗</a></aside></article></div><nav class="page-nav" aria-label="Navegação entre trilhas"><a href="14-pericia-forense-digital.html">← Perícia Forense Digital</a><a href="16-direito-digital.html">Direito Digital & Cyber Law →</a></nav></main><footer class="footer"><div class="wrap"><span>Cybersecurity Master Roadmap</span><span>Mariana BS - Cybersecurity Engineer</span></div></footer><a class="top-button" href="#">↑</a><script>const headings=[...document.querySelectorAll('#content h2,#content h3')];const toc=document.querySelector('#toc');headings.forEach((h,i)=>{h.id='sec-'+i;const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;a.style.paddingLeft=h.tagName==='H3'?'16px':'7px';toc.appendChild(a)});function progress(){const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('#readingProgress').style.width=(max>0?scrollY/max*100:0)+'%'}addEventListener('scroll',progress,{passive:true});progress();</script></body></html>

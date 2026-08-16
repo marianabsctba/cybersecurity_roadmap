@@ -1,0 +1,328 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080a10"><meta name="description" content="Application Security (AppSec) — Cybersecurity Master Roadmap de Mariana BS"><title>Application Security (AppSec) | Cybersecurity Master Roadmap</title><style>
+:root{--bg:#080a10;--panel:#11151f;--line:#2b3242;--text:#f5f7fb;--muted:#abb5c7;--pink:#ff4fa3;--cyan:#40d9ff;--lime:#b9f45d}*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;overflow-x:hidden;background:radial-gradient(circle at 12% 0,rgba(255,79,163,.12),transparent 30%),radial-gradient(circle at 90% 5%,rgba(64,217,255,.09),transparent 26%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}a{color:inherit}.wrap{width:min(940px,calc(100% - 32px));margin:auto}.top{position:sticky;top:0;z-index:20;background:rgba(8,10,16,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{min-height:68px;display:flex;align-items:center;gap:12px}.brand{font-weight:950;letter-spacing:-.05em;text-decoration:none;white-space:nowrap}.brand i{color:var(--pink);font-style:normal}.navlinks{margin-left:auto;display:flex;gap:9px;align-items:center}.navlinks a,.pill{padding:9px 11px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-size:.75rem;font-weight:850}.cert{background:linear-gradient(135deg,var(--pink),#ff7b55);border:0!important;color:#1b0610}.hero{padding:58px 0 28px}.eyebrow{font-size:.69rem;color:var(--cyan);font-weight:950;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(2.35rem,7vw,5rem);line-height:.95;letter-spacing:-.06em;margin:13px 0 18px;overflow-wrap:anywhere}.hero p{color:var(--muted);max-width:720px}.content{padding:18px clamp(18px,5vw,50px) 45px;margin:20px 0 40px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#121722,#0c0f17);overflow-wrap:anywhere}.content h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1;letter-spacing:-.05em;margin:36px 0 22px}.content h2{font-size:clamp(1.45rem,3.5vw,2rem);line-height:1.15;letter-spacing:-.025em;margin:38px 0 14px}.content h3{font-size:1.16rem;color:var(--cyan);margin:28px 0 10px}.content h4{color:var(--lime)}.content p,.content li{color:#c9d0dc}.content a{color:#ff91c6;text-underline-offset:3px}.content ul,.content ol{padding-left:24px}.content li{margin:5px 0}.content blockquote{margin:22px 0;padding:14px 18px;border-left:4px solid var(--pink);background:rgba(255,79,163,.07);border-radius:0 10px 10px 0}.content table{display:block;width:100%;overflow-x:auto;border-collapse:collapse;margin:20px 0}.content th,.content td{padding:10px 12px;border:1px solid var(--line);text-align:left;min-width:120px}.content th{background:#191e2a}.content code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#080b11;border:1px solid #2c3443;border-radius:6px;padding:2px 5px;color:var(--lime)}.content pre{padding:16px;background:#080b11;border:1px solid var(--line);border-radius:12px;overflow-x:auto}.content pre code{border:0;padding:0}.content img{max-width:100%;height:auto}.content hr{border:0;border-top:1px solid var(--line);margin:34px 0}.page-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0 65px}.page-nav a{padding:17px;border:1px solid var(--line);border-radius:14px;background:var(--panel);text-decoration:none;font-weight:850}.page-nav a:last-child{text-align:right}.cert-box{padding:22px;margin:28px 0;border:1px solid rgba(255,79,163,.55);border-radius:16px;background:rgba(255,79,163,.08)}.cert-box strong{display:block;font-size:1.15rem}.cert-box a{display:inline-block;margin-top:12px;padding:10px 13px;background:var(--pink);border-radius:9px;color:#19040e;text-decoration:none;font-weight:950}.footer{border-top:1px solid var(--line);padding:30px 0 45px;color:var(--muted);font-size:.82rem}.footer .wrap{display:flex;justify-content:space-between;gap:20px}@media(max-width:650px){.wrap{width:calc(100% - 22px)}.nav{min-height:60px}.brand{font-size:.9rem}.navlinks a:not(.cert){display:none}.navlinks .cert{font-size:.66rem;padding:7px 8px}.hero{padding-top:38px}.hero h1{font-size:clamp(2.15rem,11vw,3rem)}.content{padding:10px 15px 30px;border-radius:15px}.content h1{font-size:2rem}.content h2{font-size:1.45rem}.page-nav{grid-template-columns:1fr}.page-nav a:last-child{text-align:left}.footer .wrap{flex-direction:column}}
+.reading-progress{position:fixed;left:0;top:0;z-index:50;width:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--cyan));box-shadow:0 0 18px rgba(64,217,255,.55)}.reader{display:grid;grid-template-columns:210px minmax(0,1fr);gap:18px;align-items:start}.toc{position:sticky;top:88px;max-height:calc(100vh - 110px);overflow:auto;padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(15,19,28,.92)}.toc>strong{display:block;margin-bottom:12px;color:var(--cyan);font-size:.67rem;letter-spacing:.14em}.toc nav{display:grid;gap:4px}.toc a{padding:6px 7px;border-radius:7px;color:#aeb7c7;text-decoration:none;font-size:.73rem;line-height:1.3}.toc a:hover,.toc a.active{background:rgba(255,79,163,.1);color:#ff9ac9}.reader .content{min-width:0;margin-top:0}.top-button{position:fixed;right:16px;bottom:16px;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:#151a25;color:white;text-decoration:none;font-weight:900}@media(max-width:900px){.reader{grid-template-columns:1fr}.toc{display:none}}</style></head><body><div class="reading-progress" id="readingProgress"></div><header class="top"><nav class="wrap nav"><a class="brand" href="index.html">BE<i>SAFE</i> // ROADMAP</a><div class="navlinks"><a href="index.html#trilhas">TODAS AS TRILHAS</a><a class="cert" href="https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap/" target="_blank" rel="noreferrer">🏅 CERTIFICAÇÕES ↗</a></div></nav></header><main class="wrap"><section class="hero"><div class="eyebrow">TRILHA 05 DE 18</div><h1>🟩 Application Security (AppSec)</h1><p>Conteúdo integral do Cybersecurity Master Roadmap. Estude no seu ritmo, pratique e use certificações como validação — não como atalho.</p></section><div class="reader"><aside class="toc"><strong>NESTA TRILHA</strong><nav id="toc"></nav></aside><article class="content" id="content"><h1>🟩 Application Security (AppSec)</h1>
+<blockquote>
+<p><strong>Segurança de aplicações do design ao runtime</strong></p>
+</blockquote>
+<p>Esta trilha aborda <strong>segurança de aplicações ponta a ponta</strong>, cobrindo <strong>Secure SDLC</strong>, <strong>segurança de código</strong>, <strong>pipelines CI/CD</strong>, <strong>testes automatizados</strong>, <strong>modelagem de ameaças</strong> e <strong>proteção em runtime</strong>, com foco em <strong>reduzir risco antes, durante e depois do deploy</strong>.</p>
+<p>AppSec existe para <strong>evitar que vulnerabilidades cheguem à produção</strong> — e, quando chegam, garantir que o impacto seja mínimo.</p>
+<hr>
+<h2>👥 Carreiras em AppSec</h2>
+<ul>
+<li><strong>AppSec Engineer</strong></li>
+<li><strong>Product Security Engineer</strong></li>
+<li><strong>AppSec Lead</strong></li>
+</ul>
+<blockquote>
+<p>🧠 AppSec atua como <strong>ponte entre desenvolvimento, segurança e negócio</strong>.<br>Não é “time do não”, é <strong>time do código seguro e do design correto</strong>.</p>
+</blockquote>
+<hr>
+<h2>🧩 Fabricantes &amp; Plataformas (AppSec no mercado)</h2>
+<blockquote>
+<p>AppSec “no mundo real” costuma ser um <strong>stack</strong> (não um produto único).<br>Abaixo estão <strong>fabricantes e plataformas amplamente usados</strong>, por domínio.</p>
+</blockquote>
+<h3>🧬 SAST (Static Application Security Testing)</h3>
+<ul>
+<li><strong>Snyk Code</strong> — SAST integrado ao fluxo de dev</li>
+<li><strong>Checkmarx</strong> — SAST enterprise</li>
+<li><strong>Veracode</strong> — SAST + políticas/gestão</li>
+<li><strong>SonarSource (SonarQube/SonarCloud)</strong> — qualidade + security rules (muito usado em SDLC)</li>
+</ul>
+<h3>🌐 DAST (Dynamic Application Security Testing)</h3>
+<ul>
+<li><strong>Invicti (Netsparker)</strong> — DAST web comercial</li>
+<li><strong>Acunetix</strong> — DAST web comercial</li>
+<li><strong>Rapid7 InsightAppSec</strong> — DAST + integração com pipeline</li>
+<li><strong>Burp Suite Professional (PortSwigger)</strong> — padrão de mercado para testes manuais (apoia DAST “humano”)</li>
+</ul>
+<h3>🧬 IAST (Interactive Application Security Testing) — <em>Comerciais (exemplos reais)</em></h3>
+<ul>
+<li><strong>Contrast Security (IAST/RASP)</strong> — instrumentação da aplicação + detecção em execução</li>
+<li><strong>Veracode IAST</strong> — instrumentação e testes durante execução</li>
+<li><strong>Synopsys Seeker (IAST)</strong> — IAST para apps em execução (linha Seeker)</li>
+</ul>
+<blockquote>
+<p>IAST costuma entrar quando você quer <strong>achar falhas em runtime</strong> com contexto de código e requisição.</p>
+</blockquote>
+<h3>📦 SCA (Software Composition Analysis) / Dependências</h3>
+<ul>
+<li><strong>Snyk Open Source</strong> — SCA + priorização</li>
+<li><strong>Mend (WhiteSource)</strong> — SCA enterprise</li>
+<li><strong>JFrog Xray</strong> — SCA na cadeia de artefatos</li>
+<li><strong>Sonatype Nexus Lifecycle</strong> — SCA + governança de dependências</li>
+</ul>
+<h3>🔑 Secrets &amp; Exposure (segredos e vazamentos)</h3>
+<ul>
+<li><strong>GitGuardian</strong> — detecção de secrets e vazamentos em repos</li>
+<li><strong>Truffle Security (TruffleHog)</strong> — detecção de secrets (muito usado em pipelines)</li>
+</ul>
+<h3>☁️ IaC Security (Terraform/K8s manifests/policy)</h3>
+<ul>
+<li><strong>Snyk IaC</strong> — IaC scanning</li>
+<li><strong>Palo Alto Prisma Cloud</strong> — IaC + CNAPP (stack cloud)</li>
+<li><strong>Wiz</strong> — posture/exposure (stack cloud)</li>
+<li><strong>Checkmarx / Bridgecrew (Checkov)</strong> — muito usado em IaC scanning (via Checkov)</li>
+</ul>
+<h3>🔗 WAAP / API Security (proteção e governança de API)</h3>
+<ul>
+<li><strong>Cequence Security</strong> — <strong>API Security</strong> e proteção contra abuso/bots (forte em APIs)</li>
+<li><strong>Akamai</strong> — WAAP / edge security (dependendo do pacote/arquitetura)</li>
+<li><strong>Cloudflare</strong> — WAAP e controles para APIs (quando aplicável)</li>
+<li><strong>F5</strong> — WAF/WAAP e proteção de apps/APIs</li>
+</ul>
+<blockquote>
+<p>📌 <strong>API Security nasce em AppSec</strong> (design/autorização/contratos).<br>WAAP/API Gateway/WAF ajudam na <strong>camada de proteção/observabilidade</strong> em produção.</p>
+</blockquote>
+<hr>
+<h2>🧠 Habilidades Técnicas Essenciais</h2>
+<h3>🛡️ Secure SDLC (Base de Tudo)</h3>
+<ul>
+<li>Requisitos de segurança</li>
+<li>Design seguro</li>
+<li>Threat Modeling</li>
+<li>Gates de segurança</li>
+<li>Segurança contínua em produção</li>
+</ul>
+<blockquote>
+<p>Segurança não entra no final.<br><strong>Segurança nasce no design.</strong></p>
+</blockquote>
+<hr>
+<h3>⚠️ OWASP &amp; Classes de Ameaça</h3>
+<table>
+<thead>
+<tr>
+<th>Domínio</th>
+<th>O que cobre</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OWASP Top 10 (Web)</td>
+<td>Vulnerabilidades clássicas de aplicações web</td>
+</tr>
+<tr>
+<td>OWASP API Top 10</td>
+<td>Falhas de autorização, lógica e exposição em APIs</td>
+</tr>
+<tr>
+<td>OWASP Mobile Top 10</td>
+<td>Segurança em apps móveis</td>
+</tr>
+<tr>
+<td>CWE Top 25</td>
+<td>Erros comuns de programação</td>
+</tr>
+<tr>
+<td>MITRE ATT&amp;CK</td>
+<td>Correlação quando aplicável</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>🔍 Code Review Seguro</h3>
+<ul>
+<li>Revisão manual de código</li>
+<li>Análise de lógica e fluxo</li>
+<li>Sanitização e validação de entrada</li>
+<li>Autorização e controle de acesso</li>
+</ul>
+<blockquote>
+<p>Muitas falhas <strong>não são detectáveis por ferramenta</strong>.<br>Elas vivem na <strong>lógica de negócio</strong>.</p>
+</blockquote>
+<hr>
+<h3>🧠 Threat Modeling</h3>
+<ul>
+<li>STRIDE</li>
+<li>DREAD</li>
+<li>PASTA</li>
+<li>Modelagem baseada em fluxo e ativos</li>
+<li>Documentação viva</li>
+</ul>
+<hr>
+<h2>🔐 API Security (Parte Central de AppSec)</h2>
+<p>APIs <strong>são aplicações</strong> — e hoje concentram <strong>os maiores riscos modernos</strong>.</p>
+<p>API Security não é apenas testar endpoints.<br>É garantir que <strong>autenticação, autorização e lógica de negócio</strong> estejam corretas <strong>desde o design</strong>.</p>
+<h3>Principais riscos em APIs</h3>
+<ul>
+<li>Broken Object Level Authorization (BOLA)</li>
+<li>Broken Function Level Authorization (BFLA)</li>
+<li>Excessive Data Exposure</li>
+<li>Falhas de rate limiting</li>
+<li>Abuso de lógica e automação maliciosa</li>
+</ul>
+<blockquote>
+<p>📌 <strong>Importante</strong><br>API Security <strong>nasce em AppSec</strong>.<br>Blue Team entra depois, monitorando e respondendo a abuso.</p>
+</blockquote>
+<hr>
+<h2>🔄 AppSec Lifecycle – Segurança de Código</h2>
+<blockquote>
+<p>Cada técnica cobre <strong>uma parte do risco</strong>.<br>Nenhuma é suficiente sozinha.</p>
+</blockquote>
+<hr>
+<h3>🔎 SAST – Static Application Security Testing</h3>
+<p>Análise de código-fonte sem executar a aplicação.</p>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>Semgrep – <a href="https://semgrep.dev/">https://semgrep.dev/</a></li>
+<li>Bandit (Python) – <a href="https://github.com/PyCQA/bandit">https://github.com/PyCQA/bandit</a></li>
+<li>FindSecBugs (Java) – <a href="https://find-sec-bugs.github.io/">https://find-sec-bugs.github.io/</a></li>
+<li>Brakeman (Ruby) – <a href="https://brakemanscanner.org/">https://brakemanscanner.org/</a></li>
+<li>Psalm (PHP) – <a href="https://psalm.dev/">https://psalm.dev/</a></li>
+</ul>
+<hr>
+<h3>🌐 DAST – Dynamic Application Security Testing</h3>
+<p>Testes com a aplicação em execução.</p>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>OWASP ZAP – <a href="https://www.zaproxy.org/">https://www.zaproxy.org/</a></li>
+<li>Nikto – <a href="https://github.com/sullo/nikto">https://github.com/sullo/nikto</a></li>
+<li>w3af – <a href="https://github.com/andresriancho/w3af">https://github.com/andresriancho/w3af</a></li>
+</ul>
+<hr>
+<h3>🧬 IAST – Interactive Application Security Testing</h3>
+<p>Instrumentação da aplicação durante execução.</p>
+<ul>
+<li>Predominantemente comercial</li>
+<li>Uso comum: integração com APM + testes</li>
+<li>Exemplos comerciais (IAST):<ul>
+<li>Contrast Security – <a href="https://www.contrastsecurity.com/">https://www.contrastsecurity.com/</a></li>
+<li>Veracode IAST – <a href="https://www.veracode.com/">https://www.veracode.com/</a></li>
+<li>Synopsys Seeker – <a href="https://www.synopsys.com/software-integrity/security-testing/interactive-application-security-testing.html">https://www.synopsys.com/software-integrity/security-testing/interactive-application-security-testing.html</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>📱 MAST – Mobile Application Security Testing</h3>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>MobSF – <a href="https://github.com/MobSF/Mobile-Security-Framework-MobSF">https://github.com/MobSF/Mobile-Security-Framework-MobSF</a></li>
+<li>Drozer – <a href="https://github.com/WithSecureLabs/drozer">https://github.com/WithSecureLabs/drozer</a></li>
+</ul>
+<hr>
+<h3>🔗 API Security – Testes Técnicos</h3>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>OWASP Amass (enumeração) – <a href="https://github.com/owasp-amass">https://github.com/owasp-amass</a></li>
+<li>OWASP ZAP API Scan</li>
+<li>Postman + scripts</li>
+<li>Schemathesis – <a href="https://schemathesis.readthedocs.io/">https://schemathesis.readthedocs.io/</a></li>
+</ul>
+<hr>
+<h3>📦 SCA – Software Composition Analysis</h3>
+<p>Análise de dependências e bibliotecas.</p>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>OWASP Dependency-Check – <a href="https://owasp.org/www-project-dependency-check/">https://owasp.org/www-project-dependency-check/</a></li>
+<li>Trivy – <a href="https://github.com/aquasecurity/trivy">https://github.com/aquasecurity/trivy</a></li>
+<li>Syft – <a href="https://github.com/anchore/syft">https://github.com/anchore/syft</a></li>
+<li>Grype – <a href="https://github.com/anchore/grype">https://github.com/anchore/grype</a></li>
+</ul>
+<hr>
+<h3>☁️ IaC Security (Infrastructure as Code)</h3>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>Checkov – <a href="https://github.com/bridgecrewio/checkov">https://github.com/bridgecrewio/checkov</a></li>
+<li>Terrascan – <a href="https://github.com/accurics/terrascan">https://github.com/accurics/terrascan</a></li>
+<li>KICS – <a href="https://github.com/Checkmarx/kics">https://github.com/Checkmarx/kics</a></li>
+<li>tfsec – <a href="https://github.com/aquasecurity/tfsec">https://github.com/aquasecurity/tfsec</a></li>
+</ul>
+<hr>
+<h3>🔑 Secrets Detection</h3>
+<p>Detecção de chaves e segredos no código.</p>
+<p><strong>Ferramentas open source:</strong></p>
+<ul>
+<li>Gitleaks – <a href="https://github.com/gitleaks/gitleaks">https://github.com/gitleaks/gitleaks</a></li>
+<li>TruffleHog – <a href="https://github.com/trufflesecurity/trufflehog">https://github.com/trufflesecurity/trufflehog</a></li>
+</ul>
+<hr>
+<h2>🧪 Labs Práticos (Essenciais)</h2>
+<blockquote>
+<p>AppSec <strong>se aprende quebrando aplicação e corrigindo código</strong>.</p>
+</blockquote>
+<ul>
+<li><p>PortSwigger Web Security Academy<br><a href="https://portswigger.net/web-security">https://portswigger.net/web-security</a></p>
+</li>
+<li><p>OWASP Juice Shop<br><a href="https://owasp.org/www-project-juice-shop/">https://owasp.org/www-project-juice-shop/</a></p>
+</li>
+<li><p>TryHackMe – AppSec / Web Paths<br><a href="https://tryhackme.com/">https://tryhackme.com/</a></p>
+</li>
+<li><p>Hack The Box Academy – Web &amp; AppSec<br><a href="https://academy.hackthebox.com/">https://academy.hackthebox.com/</a></p>
+</li>
+<li><p>Secure Code Warrior Labs<br><a href="https://securecodewarrior.com/">https://securecodewarrior.com/</a></p>
+</li>
+<li><p>OWASP WebGoat<br><a href="https://owasp.org/www-project-webgoat/">https://owasp.org/www-project-webgoat/</a></p>
+</li>
+</ul>
+<hr>
+<h2>📘 Cursos e Recursos Oficiais</h2>
+<h3>OWASP</h3>
+<ul>
+<li>OWASP Top 10<br><a href="https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</a></li>
+<li>OWASP ASVS<br><a href="https://owasp.org/www-project-application-security-verification-standard/">https://owasp.org/www-project-application-security-verification-standard/</a></li>
+<li>OWASP WSTG<br><a href="https://owasp.org/www-project-web-security-testing-guide/">https://owasp.org/www-project-web-security-testing-guide/</a></li>
+</ul>
+<hr>
+<h3>DevSecOps / AppSec</h3>
+<ul>
+<li>DevSecOps Foundation (DOFD)<br><a href="https://devopsinstitute.com/certifications/devsecops-foundation/">https://devopsinstitute.com/certifications/devsecops-foundation/</a></li>
+<li>Microsoft Secure DevOps<br><a href="https://learn.microsoft.com/training/paths/secure-devops/">https://learn.microsoft.com/training/paths/secure-devops/</a></li>
+<li>AWS DevSecOps Learning Path<br><a href="https://aws.amazon.com/training/devsecops/">https://aws.amazon.com/training/devsecops/</a></li>
+</ul>
+<hr>
+<h2>🏅 Certificações</h2>
+<ul>
+<li>CSSLP – ISC2  </li>
+<li>GWAPT – GIAC  </li>
+<li>OSWE – Offensive Security  </li>
+<li>CASE Java / .NET – EC-Council</li>
+</ul>
+<hr>
+<h2>🔗 Integração com Outras Trilhas</h2>
+<ul>
+<li>DevOps / Cloud → pipelines e runtime</li>
+<li>SOC / Blue Team → detecção e abuso</li>
+<li>DFIR → resposta a incidentes de aplicação</li>
+<li>GRC → requisitos, risco e compliance</li>
+</ul>
+<hr>
+<h2>📌 Princípios-Chave de AppSec</h2>
+<ul>
+<li>Segurança começa no design</li>
+<li>Código inseguro escala rápido</li>
+<li>Automação sem contexto falha</li>
+<li>AppSec é contínuo, não projeto</li>
+<li>Quem escreve código participa da segurança</li>
+</ul>
+<hr>
+<h1>📚 Livros Essenciais de Application Security (AppSec)</h1>
+<p>Esta lista apresenta <strong>livros reconhecidos e amplamente recomendados</strong> para construção de conhecimento profundo em segurança de aplicações, cobrindo desde princípios, design seguro, análise de código, até testes e melhores práticas.</p>
+<hr>
+<h2>🧱 Fundamentos e Web/AppSec “raiz”</h2>
+<h3>The Web Application Hacker’s Handbook</h3>
+<p><strong>Autores:</strong> Dafydd Stuttard &amp; Marcus Pinto<br>Clássico para entender ataques web e defesa prática (auth, sessão, injeções, lógica, etc.).</p>
+<h3>The Tangled Web</h3>
+<p><strong>Autor:</strong> Michal Zalewski<br>Fundamentos de segurança web moderna (browsers, same-origin, sessões, etc.).</p>
+<hr>
+<h2>🧠 Threat Modeling (Design seguro)</h2>
+<h3>Threat Modeling: Designing for Security</h3>
+<p><strong>Autor:</strong> Adam Shostack<br>O livro referência para incorporar threat modeling no SDLC.</p>
+<hr>
+<h2>🔍 Code Review / Avaliação de software</h2>
+<h3>The Art of Software Security Assessment</h3>
+<p><strong>Autores:</strong> Mark Dowd, John McDonald &amp; Justin Schuh<br>Profundo e técnico para análise de código e identificação de falhas reais.</p>
+<h3>Secure Coding in C and C++</h3>
+<p><strong>Autor:</strong> Robert C. Seacord<br>Clássico para vulnerabilidades e boas práticas em baixo nível.</p>
+<hr>
+<h2>🔗 APIs, Auth e Identidade</h2>
+<h3>API Security in Action</h3>
+<p><strong>Autor:</strong> Neil Madden<br>Excelente para segurança real de APIs (authn/authz, tokens, JWT, práticas modernas).</p>
+<h3>OAuth 2 in Action</h3>
+<p><strong>Autores:</strong> Justin Richer &amp; Antonio Sanso<br>Guia prático e sólido sobre OAuth2 e padrões usados no mundo real.</p>
+<hr>
+<h2>🏗️ Engenharia de segurança aplicada (base “senior”)</h2>
+<h3>Security Engineering: A Guide to Building Dependable Distributed Systems</h3>
+<p><strong>Autor:</strong> Ross Anderson<br>Livro gigante e fundamental para pensamento de segurança em sistemas distribuídos.</p>
+<hr>
+<h2>🧪 Bug bounty / mundo real (complementar)</h2>
+<h3>Real-World Bug Hunting</h3>
+<p><strong>Autor:</strong> Peter Yaworski<br>Casos reais que ajudam a treinar o olhar para falhas que passam em checklist.</p>
+<hr>
+<aside class="cert-box"><strong>🏅 Quer escolher a certificação certa para esta área?</strong><span> Consulte o roadmap dedicado por segmento, nível e relevância no mercado brasileiro.</span><br><a href="https://marianabsctba.github.io/Cybersecurity_Certifications_Roadmap/" target="_blank" rel="noreferrer">ABRIR ROADMAP DE CERTIFICAÇÕES ↗</a></aside></article></div><nav class="page-nav" aria-label="Navegação entre trilhas"><a href="03-red-team.html">← Red Team & Pentest</a><a href="05-cloud-security.html">Cloud Security →</a></nav></main><footer class="footer"><div class="wrap"><span>Cybersecurity Master Roadmap</span><span>Mariana BS - Cybersecurity Engineer</span></div></footer><a class="top-button" href="#">↑</a><script>const headings=[...document.querySelectorAll('#content h2,#content h3')];const toc=document.querySelector('#toc');headings.forEach((h,i)=>{h.id='sec-'+i;const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;a.style.paddingLeft=h.tagName==='H3'?'16px':'7px';toc.appendChild(a)});function progress(){const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('#readingProgress').style.width=(max>0?scrollY/max*100:0)+'%'}addEventListener('scroll',progress,{passive:true});progress();</script></body></html>
